@@ -1,0 +1,657 @@
+
+/******************************************************************
+           가입단계 Style Css 
+***********************/
+
+.trip-wrap .signUp-wrap span.choiceChk.first label {
+  border-radius: 5px 0 0 5px;
+}
+.trip-wrap .signUp-wrap span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+.trip-wrap .signUp-wrap span.choiceChk input {
+  width: 100%; height: 38px;line-height: 38px;
+}
+.trip-wrap .signUp-wrap span.choiceChk label {
+  width: 100%; height: 38px; line-height: 38px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center;
+  margin: 0 -1px;
+  cursor: pointer;
+}
+
+/*********************************************** 1단계 01-1 */
+.trip-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.trip-wrap > h2 {
+  font-size: var(--mrz-fS-title-05); font-weight: 700;
+  text-align: center; color: var(--mrz-color-white);
+  background-color: var(--mrz-color-red);
+  height: 45px; line-height: 45px;
+}
+.trip-wrap .title-wrap {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--mrz-row-20) auto;
+  padding-bottom: var(--mrz-row-10);
+  border-bottom: 2px solid var(--mrz-color-black);
+}
+.trip-wrap .title-wrap > h3 {
+  font-size: var(--mrz-fS-title-07); font-weight: 400;
+  line-height: 28px;
+}
+.trip-wrap .title-wrap .btn-right {
+  position: absolute; top: 0px; right: 0px;
+  float: right;
+  height: 28px;
+}
+.trip-wrap .title-wrap .btn-right a.red-line {
+  border-radius: 14px;
+  width: 68px;
+}
+
+.trip-wrap .signUp-wrap {
+  width: 90%;
+  margin: var(--mrz-row-20) auto 0;
+}
+.trip-wrap .signUp-wrap > h3.title {
+  font-size: var(--mrz-fS-title-04); font-weight: 700;
+}
+.trip-wrap .signUp-wrap > ul.stage-01 {
+  width: 100%;
+  overflow: hidden;
+}
+.trip-wrap .signUp-wrap > ul.stage-01 > li {
+  position: relative;
+  width: 100%;
+  margin-top: var(--mrz-row-10);
+}
+.trip-wrap .signUp-wrap > ul.stage-01 > li.first {
+  float: left;
+  width: 49%;
+  margin-left: 0%;
+}
+.trip-wrap .signUp-wrap > ul.stage-01 > li.second {
+  float: left;
+  width: 49%;
+  margin-left: 2%;
+}
+ul.stage-01 > li strong {
+  display: block;
+  margin-top: var(--mrz-row-20);
+  font-size: var(--mrz-fS-text-01); font-weight: 400;
+}
+ul.stage-01 > li p.type-dash {
+  text-indent: -10px;
+  padding-left: 10px; padding-top: 7px;
+  line-height: 140%; 
+  letter-spacing: -0.0625rem;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+}
+.trip-wrap .signUp-wrap > ul.stage-01 > li.first span.choiceChk {
+  margin-left: 1px;
+}
+ul.stage-01 > li span.choiceChk {
+  height: 39px; line-height: 39px; width: 52px;
+  margin-top: var(--mrz-row-10);
+}
+ul.stage-01 > li span.choiceChk.first label {
+  border-radius: 5px 0 0 5px;
+}
+ul.stage-01 > li span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+ul.stage-01 > li span.choiceChk label {
+  width: 58px; height: 39px; line-height: 39px;
+}
+ul.stage-01 > li input {
+  width: 85%; height: 39px; line-height: 39px;
+}
+ul.stage-01 > li input.input01 {
+  width: 100%; height: 39px; line-height: 39px;
+  margin-top: var(--mrz-row-10);
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+ul.stage-01 > li .select-box {
+  width: calc(100% - 2px); 
+  height: 39px; line-height: 39px;
+  margin-top: var(--mrz-row-10);
+}
+ul.stage-01 > li .select-box select {
+  height: 37px; line-height: 37px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400; color: var(--mrz-color-black);
+  padding-left: 5%;
+}
+ul.stage-01 > li .date_picker {
+  position: relative;
+  display: inline-block;
+  width: calc(70% - 2px);; height: 39px; line-height: 39px;
+  box-sizing: border-box;
+  padding-right: 10%;  margin-top: var(--mrz-row-10);
+  border: 1px solid var(--mrz-color-light-gray);
+  border-radius: 3px;
+  background-color: var(--mrz-color-white);
+  cursor: pointer;
+  z-index: 2;
+}
+ul.stage-01 > li .date_picker img {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    -wbkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 18px;
+    height: 20px;
+}
+ul.stage-01 > li .date_picker input {
+  width: 80%;
+  height: 36px; line-height: 36px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+ul.stage-01 > li .select-box.hour {
+  display: inline-block;
+  width: calc(28% - 2px);; height: 37px; line-height: 37px;
+  margin-left: 2%;
+}
+.trip-wrap .signUp-wrap .button-center {
+  margin: var(--mrz-row-30) auto 0;
+}
+.trip-wrap .signUp-wrap .button-center a.red {
+  height: 48px; line-height: 48px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.trip-wrap .signUp-wrap .know-wrap {
+  width: 100%;
+  margin: var(--mrz-row-30) auto 0;
+  background-color: var(--mrz-color-light-silver);
+}
+.trip-wrap .signUp-wrap .know-wrap .cont {
+  padding: 20px 5%;
+}
+.trip-wrap .signUp-wrap .know-wrap .cont > strong {
+  display: block;
+  font-size: var(--mrz-fS-title-07); font-weight: 500;
+  margin-bottom: var(--mrz-row-10);
+}
+.trip-wrap .signUp-wrap .know-wrap .cont p {
+  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height: 140%;
+  padding-top: 7px;
+}
+.trip-wrap .signUp-wrap .know-wrap .cont p.type-dash {
+  text-indent: -15px;
+  padding-left: 15px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height: 140%;
+}
+
+
+/*********************************************** 1단계 01-2 */
+.trip-wrap .signUp-wrap .step {
+  display: block;
+  overflow: hidden;
+  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-20);
+  border-bottom: 2px solid var(--mrz-color-red);
+}
+.trip-wrap .signUp-wrap .step.last {
+  padding-bottom: 0;
+  border-bottom: 0px;
+}
+.trip-wrap .signUp-wrap .step > h4 {
+  font-size: var(--mrz-fS-title-07); font-weight: 700; line-height: 140%;
+}
+.trip-wrap .signUp-wrap .step > h4 a.button {
+  float: right;
+  width: 58px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.trip-wrap .signUp-wrap .step > ul > li {
+  float: left;
+  width: 35%;
+  margin-left: 2%;
+}
+.trip-wrap .signUp-wrap .step > ul > li:nth-child(2n+1) {
+  width: 63%;
+  margin-left: 0%;
+}
+.trip-wrap .signUp-wrap .step > ul > li strong {
+  display: block;
+  font-size: var(--mrz-fS-text-02); font-weight: 500; line-height: 140%;
+  margin: 10px 0 5px;
+}
+.trip-wrap .signUp-wrap .step > ul > li .input01 {
+  width: 90%;
+}
+.trip-wrap .signUp-wrap .step > ul > li span.choiceChk {
+  width: 49%; 
+}
+.trip-wrap .signUp-wrap .step > ul > li span.choiceChk.first label {
+  border-radius: 5px 0 0 5px;
+}
+.trip-wrap .signUp-wrap .step > ul > li span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+.trip-wrap .signUp-wrap .step .button-center {
+  margin: 0 auto 0;
+}
+.trip-wrap .signUp-wrap .step .button-center .bule-line {
+  border-radius: 28px;
+  width: calc(100% - 2px);
+  font-size: var(--mrz-fS-text-02); font-weight: 500; line-height: 36px;
+}
+
+/******************************************** 가입단계 step 02 */
+.table-wrap {
+  width: 100%;
+  margin-top: var(--mrz-row-30);
+}
+.table-wrap .tab {
+  overflow: hidden;
+  background-color: var(--mrz-color-light-silver);
+}
+.table-wrap .tab button {
+  background-color: inherit;
+  float: left;
+  width: 50%;
+  border: 1px solid var(--mrz-color-light-gray); border-right: 0px;
+  padding: 12px 0;
+  text-align: center; font-size: var(--mrz-fS-text-02); font-weight: 400;
+  transition: 0.3s;
+}
+.table-wrap .tab button.tablinks {
+  font-weight: 500;
+}
+.table-wrap .tab button:last-child {
+  border-right: 1px solid var(--mrz-color-light-gray);
+}
+.table-wrap .tab button:hover {
+  background-color: var(--mrz-color-light-gray);
+}
+.table-wrap .tab button.active {
+  background-color: var(--mrz-color-red);
+  border-color: var(--mrz-color-deep-red);
+  color: var(--mrz-color-white);
+}
+.table-wrap .tab button.active:first-child {
+  border-right: 1px solid var(--mrz-color-deep-red);
+}
+.table-wrap .tabcontent {
+  width: 100%;
+  font-family: var(--mrz-ffam-noto);
+  margin-top: var(--mrz-row-10);
+}
+.table-wrap .tabcontent .caption {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02);
+  padding-top: var(--mrz-row-10);
+}
+.table-wrap .tabcontent  table tr th,
+.table-wrap .tabcontent  table tr td {
+  font-family: var(--mrz-ffam-noto);
+}
+.trip-wrap .signUp-wrap .button-center {
+  margin: var(--mrz-row-30) auto 0;
+}
+.trip-wrap .signUp-wrap .button-center > ul > li {
+  float: left;
+  width: 49%;
+  margin-left: 2%;
+}
+.trip-wrap .signUp-wrap .button-center > ul > li:first-child {
+  margin-left: 0%;
+}
+.trip-wrap .signUp-wrap .button-center > ul > li a {
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  height: 48px; line-height: 48px;
+}
+
+/******************************************** 가입단계 step 03 */
+.trip-wrap .signUp-wrap .step03 {
+  width: 100%;
+  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-20);
+  border-bottom: 2px solid var(--mrz-color-red);
+}
+.trip-wrap .signUp-wrap .step03 h3 {
+  font-size: var(--mrz-fS-title-07); font-weight: 700;
+}
+.trip-wrap .signUp-wrap .step03 h3 a.button {
+  float: right;
+  width: 58px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li {
+  position: relative;
+  width: 100%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.last {
+  position: relative;
+  width: 100%; height: 100px;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li strong {
+  display: block;
+  font-size: var(--mrz-fS-text-02);
+  font-weight: 500;
+  line-height: 140%;
+  margin: 10px 0 5px;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.eng input {
+  display: inline-block;
+  width: 60%;
+  margin-left: 2%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.eng input.first {
+  width: 38%;
+  margin-left: 0%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.resident input {
+  display: inline-block;
+  width: 47%;
+  margin-left: 0%;
+  vertical-align: top;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.resident span {
+  display: inline-block;
+  width: 6%;
+  text-align: center;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  line-height: 39px;
+  vertical-align: top;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li span.choiceChk {
+  width: 58px;
+}
+
+.trip-wrap .signUp-wrap .step03  > ul > li .nationality {
+  position: absolute; top: 35px; left: 120px;
+  width: 56%; height: auto; line-height: 41px;
+  vertical-align: top;
+  margin-left: 2%; margin-bottom: 10px;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li .nationality .caption {  
+  font-size: var(--mrz-fS-text-03);
+  line-height: 160%;
+  margin-top: var(--mrz-row-5); margin-left: -128px;
+}
+#noneDiv1, #noneDiv2, #noneDiv3 {
+  display: none;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.tel input {
+  display: inline-block;
+  width: 30%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.tel > span {
+  display: inline-block;
+  width: 10%; line-height: 39px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center; vertical-align: top;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.tel input.first {
+  display: inline-block;
+  width: 20%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.email input {
+  display: inline-block;
+  width: 45%;
+}
+.trip-wrap .signUp-wrap .step03  > ul > li.email > span {
+  display: inline-block;
+  width: 10%; line-height: 39px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center; vertical-align: top;
+}
+
+/******************************************** 가입단계 step 04 */
+.trip-wrap .signUp-wrap .step04 {
+  width: 100%;
+  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
+  border-bottom: 2px solid var(--mrz-color-red);
+}
+.trip-wrap .signUp-wrap .step04.last {
+  padding-bottom: 0;
+  border-bottom: 0px;
+}
+.trip-wrap .signUp-wrap .step04 h3 {
+  font-size: var(--mrz-fS-title-07); font-weight: 700;
+}
+.trip-wrap .signUp-wrap .step04  > ul > li {
+  position: relative;
+  width: 100%;
+  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height:140%;
+  margin-top: var(--mrz-row-20);
+  text-indent: -14px;
+  padding-left: 14px;
+}
+.trip-wrap .signUp-wrap .step04  > ul > li strong {
+  display: block;
+  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height:140%;
+  padding-left: 12px;
+}
+.trip-wrap .signUp-wrap .step04 > ul > li.choice {
+  float: right;
+  font-size: 0;
+  text-align: right;
+  margin-top: var(--mrz-row-5);
+  text-indent: -0px;
+  padding-left: 0px;
+}
+.trip-wrap .signUp-wrap .step04 > ul > li.choice span.choiceChk {
+  width: 58px;
+}
+.trip-wrap .signUp-wrap .step04 .btn-center {
+  margin-top: var(--mrz-row-20);
+}
+.trip-wrap .signUp-wrap .step04 .btn-center a.button {
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  height: 48px; line-height: 48px;
+}
+.trip-wrap .signUp-wrap .step04 .accord-wrap {
+  margin-top: var(--mrz-row-10);
+}
+.accord-wrap .terms {
+  position: relative;
+  border: 1px solid var(--mrz-color-light-gray); border-bottom: 0px;
+}
+.accord-wrap .terms:last-child {
+  border-bottom: 1px solid var(--mrz-color-light-gray);
+}
+.accord-wrap .terms > ul > li {
+  float: left;
+  width: 44%; height: 32px; line-height:32px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  margin-left: 5%;
+}
+.accord-wrap .terms > ul > li.first {
+  width: calc(100% - 5%); height: 32px; line-height:32px;
+  margin-left: 5%;
+}
+.accord-wrap .terms > ul > li.first a.red-line {
+  display: inline-block;
+  width: 60%; height: 18px; line-height: 18px;
+  font-size: var(--mrz-fS-text-03);
+  margin-left: 2%;
+  border-radius: 5px;
+}
+.accord-wrap .terms > ul > li.second {
+  float: right;
+  margin: 0 5% 10px 2%;
+  font-size: 0;
+  text-align: right;
+}
+.accord-wrap .terms > ul > li a.gray-line {
+  height: 32px; line-height: 32px; width: 100px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  border-radius: 5px;
+}
+.accord-wrap .terms > ul > li.second span.choiceChk,
+.accord-wrap .terms .accord .choice span.choiceChk {
+  width: 58px;
+}
+.accord-wrap .terms > ul > li.second span.choiceChk input,
+.accord-wrap .terms .accord .choice  span.choiceChk input {
+  height: 32px; line-height: 32px;
+}
+.accord-wrap .terms > ul > li.second span.choiceChk label,
+.accord-wrap .terms .accord .choice span.choiceChk label {
+  height: 32px; line-height: 32px; min-height: 32px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  text-align: center; margin: 0 -1px;
+  cursor: pointer;
+}
+.accord-wrap .terms .terms-list dt {
+  width: calc(100% - 5%); height: 75px; line-height:32px;
+  margin-left: 5%;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  vertical-align: top;
+}
+.accord-wrap .terms .terms-list dt span {
+  display: inline-block;
+  background: url('../image/sub/icon-arrow-up.svg') no-repeat;
+  background-size: 100%;
+  width: 16px; height: 7px;
+  vertical-align: top; 
+  margin-top:13px; margin-left: 5px;
+  transform: rotate( 180deg );
+  transition: 0.3s;
+}
+.accord-wrap .terms .terms-list dt.selected span {
+  transform: rotate( 0deg );
+  transition: 0.3s;
+}
+.accord-wrap .terms .btn {
+  position: absolute; top: 32px; left: 5%;
+}
+.accord-wrap .terms .btn a.gray-line {
+  height: 32px; line-height: 32px; width: 100px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  border-radius: 5px;
+}
+.accord-wrap .terms .Choice {
+  position: absolute; top: 32px; right: 5%;
+  font-size: 0;
+}
+.accord-wrap .terms .Choice span.choiceChk {
+  width: 58px;
+}
+.accord-wrap .terms .Choice span.choiceChk input {
+  height: 32px; line-height: 32px;
+}
+.accord-wrap .terms .Choice span.choiceChk label {
+  height: 32px; line-height: 32px; min-height: 32px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400; 
+  text-align: center;
+  margin: 0 -1px;
+  cursor: pointer;
+}
+.accord-wrap .terms .terms-list dd {
+  display: none;
+  background-color: var(--mrz-color-light-silver);
+  transition: 0.3s;
+}
+.terms-list dd > ul > li {
+  width: calc(100% - 8%);
+  text-indent: -8%;  
+  padding: 10px 0 0; padding-left: 8%;
+  font-size: 0;
+  border-top: 1px solid var(--mrz-color-light-gray);
+}
+.terms-list dd > ul > li span {
+  margin-left: 5%;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.terms-list dd > ul > li.choice {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 5%);
+  font-size: 0;
+  border-top: 0px; padding: 5px 0 10px; padding-right: 5%;
+  text-align: right;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice span.choiceChk {
+  width: 58px;
+  margin-left: 0;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice span.choiceChk input {
+  height: 32px; line-height: 32px;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice span.choiceChk label {
+  height: 32px; line-height: 32px; min-height: 32px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400; 
+  text-align: center;
+  margin: 0 -1px;
+  cursor: pointer;
+}
+
+/******************************************** 가입단계 step 05 */
+.trip-wrap .signUp-wrap .step05 {
+  width: 100%;
+  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
+}
+.step05 > ul {
+  overflow: hidden;
+}
+.step05 > ul > li {
+  float: left;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  line-height: 25px;
+}
+.step05 > ul > li strong {
+  font-weight: 700;
+}
+.step05 > ul > li:nth-child(2n+1) {
+  width: 30%;
+}
+.step05 > ul > li:nth-child(2n+2) {
+  width: 70%;
+}
+.step05 .box-wrap {
+  width: calc(100% - 10%);
+  background-color: var(--mrz-color-light-silver);
+  padding: 30px 5%;
+  margin-top: var(--mrz-row-30);
+}
+.step05 .box-wrap strong {
+  display: block;
+  font-size: var(--mrz-fS-title-07); font-weight: 700;
+  color: var(--mrz-color-red);
+  text-align: center;
+}
+.step05 .box-wrap p {
+  padding-top: var(--mrz-row-5);
+  font-size: var(--mrz-fS-title-07); font-weight: 400;
+  text-align: center;
+}
+
+/******************************************** 가입단계 step 06 */
+.trip-wrap .signUp-wrap .step06 {
+  width: 100%;
+  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
+}
+.step06 i.icon-finish {
+  position: relative;
+  display: block;
+  width: 150px; height: 150px;
+  background-color: var(--mrz-color-light-silver);
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.step06 i.icon-finish:before {
+  content: "";
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../image/sub/icon-registration.png') no-repeat;
+  background-size: 100%;
+  width: 64px; height: 64px;
+}
+.step06 strong {
+  display: block;
+  font-size: var(--mrz-fS-title-05); font-weight: 700;
+  text-align: center;
+  margin-top: var(--mrz-row-30);
+}
+.step06 p {
+  padding-top: var(--mrz-row-5);
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center;
+}

@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+.mwrap {
+  width:100%;
+  min-width:280px;
+}
+.type-dash {
+  text-indent: -7px;
+  padding-left: 7px;
+}
+/******************************************************************
+           header Style Css 
+***********************/
+header {
+  position: relative;
+  height:45px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .2);
+}
+header h1 {
+  position: absolute; top: 50%; left:2%;
+  transform: translateY(-50%);
+  width: 70%; height:32px;
+  font-size: 0;
+}
+header h1 a img {
+  display: inline-block;
+  height:32px;
+}
+header h1 a > span {
+  display: inline-block;
+  position: relative;
+  height:32px; width: 10px;
+  overflow: hidden;
+  vertical-align: top;
+  margin: 0 2%;
+}
+header h1 a span > img {
+  position: absolute; top: 50%; left:0;
+  transform: translateY(-50%);
+  width:10px; height: 9px;
+  margin-top: 5%;
+}
+header .icon-list {
+  position: absolute; top: 7px; right:3%;
+  cursor:pointer;
+  /* width: 35px; height: 35px;*/
+}
+header .icon-list > span {
+  display: block;
+  width: 28px; height: 3px;
+  margin-top: 5px;
+  background-color: var(--mrz-color-black);
+  border-radius: 3px;
+}
+
+.sidenav {
+  height: 100%; width: 0;
+  position: fixed; top: 0; right: 0; z-index: 11;
+  background-color: var(--mrz-color-navy);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav h1 {
+  position: absolute; top: 10px; left: 3%;
+  transform: translateY(0%);
+  width: 100%;
+}
+.sidenav h1 > span {
+  height: 32px; width: 10px;
+  overflow: hidden;
+  vertical-align: top;
+  margin: 0 1%;
+}
+.sidenav h1 img:nth-child(3) {
+  height: 32px;
+}
+.sidenav > ul > li {
+  display: block;
+  line-height: 58px; width: 90%;
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+  margin: 0 auto;
+}
+.sidenav > ul > li a {
+  display: block;
+  line-height: 58px;
+  font-size: var(--mrz-fS-title-08);
+  color: var(--mrz-color-light-silver);
+  padding-left: 5%;
+}
+.sidenav a.closebtn {
+  position: absolute; top: -10px; right: 2%;
+  margin-left: 0px;
+  transition: 0.5s;
+}
+.sidenav .closebtn img {
+  height:15px; width: 15px;
+  margin: 15px;
+}
+
+
+/******************************************************************
+           footer Style Css 
+***********************/
+footer {
+  width:100%; 
+  background-color: var(--mrz-color-deep-gray);
+  margin-top: var(--mrz-row-50);
+  padding: 0  0 20px 0;
+}
+footer ul.menu {
+  width:90%;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--mrz-color-white);
+  overflow: hidden;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+footer ul.menu li {
+  float: left;
+  position: relative;
+  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
+  padding:10px 5% 0px;
+}
+footer ul.menu li a {
+  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
+  color: var(--mrz-color-white);
+}
+footer ul.menu li:before {
+  content: "";
+  position: absolute; top: 12px; left: 0px;
+  width: 1px; height: 11px;
+  background-color: var(--mrz-color-white);
+}
+footer ul.menu li.first {
+  padding-left: 0px;
+}
+footer ul.menu li.first:before {
+  content: "";
+  width: 0px; height: 0px;
+}
+footer .address {
+  width: 90%;
+  margin: 10px auto;
+}
+footer .address > ul > li {
+  position: relative;
+  font-size: var(--mrz-fS-text-03); font-weight: 200; line-height: 120%;
+  color: var(--mrz-color-white);
+}
+footer .address > ul > li span {
+  position: relative;
+  font-size: var(--mrz-fS-text-03); font-weight: 400; line-height: 120%;
+  color: var(--mrz-color-white);
+  padding: 10px 3%;
+  word-break: keep-all;
+}
+footer .address > ul > li span:first-child {
+  padding-left: 0px;
+}
+footer .address > ul > li span:after {
+  content: "";
+  position: absolute; top: 14px; right: 0px;
+  width: 1px; height: 11px;
+  background-color: var(--mrz-color-white);
+}
+footer .address > ul > li span:last-child:after  {
+  position: absolute; top: 0px; right: 0px;
+  width: 0px; height: 0px;
+}
+footer .address > ul > li.copyright {
+  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
+  margin: 10px 0 5px;
+}
+
+/*********************************************************************************************
+						  Table Style css
+*****************************/
+/************************************* gray style */
+.table-gray {
+  width:100%;
+  border-collapse:collapse;
+  border-spacing:0px;
+}
+.table-gray thead th,
+.table-gray tbody th,
+.table-gray tbody td {
+  border: 1px solid var(--mrz-color-light-gray);
+  padding: 15px 20px; line-height: 140%;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  vertical-align: middle; letter-spacing: -.0313rem;
+  word-break: keep-all;
+}
+.table-gray thead th {
+  background-color: var(--mrz-color-light-silver);
+  font-size: var(--mrz-fS-text-01); font-weight: 700;
+}
+.table-gray tbody th {
+  background-color: var(--mrz-color-snow);
+  font-size: var(--mrz-fS-text-02); font-weight: 500;
+}
+.table-gray tbody td {
+  background-color: var(--mrz-color-white);
+}
+.table-gray tbody td p {
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.table-gray thead th span.Blank {
+  display: block;
+}
+
+/************************************* deep-gray style */
+.table-deepGray {
+  width:100%;
+  border-collapse:collapse;
+  border-spacing:0px;
+}
+.table-deepGray thead th,
+.table-deepGray tbody th,
+.table-deepGray tbody td {
+  border: 1px solid var(--mrz-color-gray);
+  padding: 10px 5%; line-height: 140%;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  vertical-align: middle;
+  letter-spacing: -.0313rem;
+	word-break: keep-all;
+}
+.table-deepGray thead th {
+  background-color: var(--mrz-color-light-gray);
+  font-weight: 700;
+}
+.table-deepGray tbody th {
+  background-color: var(--mrz-color-light-gray);
+  font-weight: 700;
+  text-align: left;
+}
+.table-deepGray tbody td {
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+}
+.table-deepGray tbody td p {
+  font-size: var(--mrz-fS-text-03);
+}
+/************************************* red style */
+.table-red {
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.table-red thead th,
+.table-red tbody th,
+.table-red tbody td {
+  border: 1px solid var(--mrz-color-light-gray);
+  padding: 15px 2%; line-height: 140%;
+  vertical-align: middle;
+  letter-spacing: -.0313rem;
+  text-align: center; font-size: var(--mrz-fS-text-03);
+}
+.table-red thead th {
+  background-color: var(--mrz-color-red);
+  font-size: var(--mrz-fS-text-02); font-weight: 700;
+  border: 1px solid var(--mrz-color-deep-red);
+  color: var(--mrz-color-white);
+  word-break: keep-all;
+}
+.table-red thead th.coral {
+  background-color: var(--mrz-color-coral);
+  border-right-color: var(--mrz-color-red);
+  border-bottom-color: var(--mrz-color-red);
+}
+.table-red thead th span {
+  display: block;
+  color: var(--mrz-color-white); line-height: 120%;
+}
+.table-red tbody th {
+  background-color: var(--mrz-color-snow);
+  font-size: var(--mrz-fS-text-03); font-weight: 700;
+  word-break: keep-all;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+}
+.tooltip span {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border-radius: 100%;
+  background-color: var(--mrz-color-blue);
+  color: var(--mrz-color-white);
+  font-size: .75rem; line-height: 16px;
+}
+.tooltip .tooltip-content {
+  visibility: hidden;
+  position: absolute; bottom: 180%; left: 50%; z-index: 1;
+  width: 240px;
+  background-color: var(--mrz-color-blue);
+  color: var(--mrz-color-white); text-align: center; line-height: 140%;
+  font-size: var(--mrz-fS-text-02); font-weight: 100;
+  margin-left: -50px;
+  padding: 15px 10px;
+}
+.tooltip .tooltip-content::after {
+  content: " ";
+  position: absolute; top: 100%; left: 50%;
+  margin-left: -90px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--mrz-color-blue) transparent transparent transparent;
+}
+.tooltip:hover .tooltip-content { visibility: visible; }
+.table-red tbody td p.type_dash {
+  position: relative;
+  padding: 0px 0 0 13px;
+}
+.table-red tbody td p.type_dash:before {
+  content: "-";
+  position: absolute; top: 0px; left: 0px;
+}
+
+/*********************************************************************************************
+						  반응형 해상도 관련 Style css
+*****************************/
+
+@media only screen and (max-width:320px) and (min-width:280px){
+  /********************************************************************** 1300 미만 해상도 */
+  footer .address > ul > li span {
+	display: block;
+  padding: 5px 0 0;
+  }
+  footer .address > ul > li span:after {
+	content: "";
+	position: absolute; top: 0px; right: 0px;
+	width: 0px; height: 0px;
+  }
+}
+
+@media only screen and (max-width:1299px) and (min-width:1200px){
+  /********************************************************************** 1300 미만 해상도 */
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px){
+  /********************************************************************** 1024 미만 해상도 */
+}
+
+@media only screen and (max-width:999px) and (min-width:900px){
+  /********************************************************************** 900 미만 해상도 */
+}

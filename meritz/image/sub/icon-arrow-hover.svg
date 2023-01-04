@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask-box" width="14" height="14" transform="translate(491 21)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon-arrow-hover" transform="translate(-491 -21)" clip-path="url(#clip-path)">
+    <path id="icon-arrow" d="M6.181,1.17a1,1,0,0,1,1.638,0L12.9,8.427A1,1,0,0,1,12.079,10H1.921A1,1,0,0,1,1.1,8.427Z" transform="translate(505 33) rotate(180)" fill="#ef3b24"/>
+  </g>
+</svg>
