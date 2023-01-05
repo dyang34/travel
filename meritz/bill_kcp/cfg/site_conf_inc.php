@@ -63,8 +63,8 @@ $g_wsdl           = "real_KCPPaymentService.wsdl";
 /* = 실결제 시 : 반드시 KCP에서 발급한 사이트코드(site_cd)와 사이트키(site_key) = */
 /* =            로 설정해 주십시오.                                             = */
 /* ============================================================================== */
-$g_conf_site_cd   = "A8AE2";
-$g_conf_site_key  = "2NkEOPQysTIj92CtyId0RH1__";
+$g_conf_site_cd   = "AHZA0";
+$g_conf_site_key  = "2kV9NjsiWpflE3UCserJ7of__";
 
 if (defined('_TOURSAFE_SUBSITE_G_CONF_SITE_CD')) {
     $g_conf_site_cd = _TOURSAFE_SUBSITE_G_CONF_SITE_CD;
@@ -79,7 +79,7 @@ if (defined('_TOURSAFE_SUBSITE_G_CONF_SITE_KEY')) {
 /* =----------------------------------------------------------------------------= */
 /* = 사이트명 설정(한글 불가) : 반드시 영문자로 설정하여 주시기 바랍니다.       = */
 /* ============================================================================== */
-$g_conf_site_name = "TOURSAFE";
+$g_conf_site_name = "petsafe";
 
 /* ============================================================================== */
 /* = 지불 데이터 셋업 (변경 불가)                                               = */
