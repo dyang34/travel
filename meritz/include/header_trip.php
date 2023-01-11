@@ -10,6 +10,10 @@ if(empty($__SITE_META_TITLE)) {
 	$__SITE_META_TITLE = "메리츠화재 - 여행자를 위한 간편보험 가입";
 }
 
+if($__SITE_META_TITLE_FIX) {
+	$__SITE_META_TITLE = $__SITE_META_TITLE_FIX;
+}
+
 if(empty($__SITE_META_DESC)) {
 	$__SITE_META_DESC = "국내, 해외 어디든 공인인증서 없이 간편하게 가입하는 든든한 여행자보험. 비자, 출입국 정도 등 여행에 관련한 보든 정보를 제공합니다.";
 }
