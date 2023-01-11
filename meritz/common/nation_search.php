@@ -46,7 +46,7 @@
 			$where = " and (nation_name LIKE '".$s_nation."%')";
 		}
 
-		$sql="select no, nation_name from nation where  use_type='Y' ".$where;
+		$sql="select no, nation_name from nation where (use_type='Y' or nation_name='이스라엘') ".$where;
 		$result=mysql_query($sql);
 		while($row=mysql_fetch_array($result)) {
 			$nation_both[] = array('nation_code'=>$row['no'],'nation_name'=>$row['nation_name']);		
