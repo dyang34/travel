@@ -25,6 +25,7 @@ if ($_GET["adm_show_session"]=="Y") {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
+	<meta name="title" content="<?=$__SITE_META_TITLE?>" />
 	<meta name="description" content="<?=$__SITE_META_DESC?>" />
 	<meta name="author" content="비아이에스">
 	<meta name="keywords" content="여행자보험, 여행자보험추천, 여행자보험비교, 국내여행자보험, 여행보험, 해외여행자보험, 해외여행보험, 여행, 해외여행, 국내여행, 휴가, 출장, 유학, 유학생보험, 유학보험, 메리츠화재">
@@ -36,7 +37,7 @@ if ($_GET["adm_show_session"]=="Y") {
 	
 	<link rel="icon" type="image/png" sizes="32x32" href="/travel/meritz/favicon.ico?v=<?=time()?>">
 
-	<title>메리츠화재 - 여행자보험</title>
+	<title><?=$__SITE_META_TITLE?></title>
 	<link rel="stylesheet" type="text/css" href="/travel/meritz/css/style.css?v=<?=time()?>">
 	<link rel="stylesheet" type="text/css" href="/travel/meritz/css/basic.css?v=<?=time()?>">
 	<link rel="stylesheet" type="text/css" href="/travel/meritz/css/button.css?v=<?=time()?>">

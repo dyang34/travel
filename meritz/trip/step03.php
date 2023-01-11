@@ -2,6 +2,8 @@
 <?php
 $SYS_ROOT_DIR = substr($_SERVER['DOCUMENT_ROOT'], 0, strrpos(substr($_SERVER['DOCUMENT_ROOT'], 0, strlen($_SERVER['DOCUMENT_ROOT'])-1),'/',0));
 
+$__SITE_META_TITLE = "여행자보험 간편가입(3단계)";
+
 require_once $SYS_ROOT_DIR."/travel/meritz/include/header_trip.php";
 require_once $SYS_ROOT_DIR."/travel/meritz/common/JsUtil.php";
 require_once $SYS_ROOT_DIR."/travel/meritz/common/function_step.php";
