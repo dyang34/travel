@@ -46,6 +46,9 @@ require_once $SYS_ROOT_DIR."/travel/meritz/include/leftmenu_trip.php";
 						<b>1.</b> 여러국가를 여행하셔도 보장되오니, <span class="fc-blue">여러국가를 여행하실 경우에는 가장 오래 체류할 국가를 선택</span>해주시면 됩니다. 단, 여행  예정인 국가 중 보험인수 제한 국가가 포함되어  있을 경우 보험 가입이 불가능 합니다. 
 						(<span id="btn-restr" class="fc-red">여행금지국가</span>&nbsp;확인)
 					</div>
+					<div class="capt">
+						※ 여행 중 해당 국가에 여행금지 구역 방문하는 경우 보상이 되지 않을 수 있습니다.
+					</div>
 					<div class="type-dash">
 						<b>2.</b> 이중국적자, 외국인의 경우 모국으로 여행은 가입 불가합니다.
 					</div>
