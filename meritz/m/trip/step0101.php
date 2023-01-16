@@ -383,11 +383,15 @@ require_once $SYS_ROOT_DIR."/travel/meritz/m/include/header.php";
 	}
 
 	$("#nation_search").focusin(function(){
-		nation_search_fun();
+		if($('input[name=trip_type]:checked').val()=="2") {
+			nation_search_fun();
+		}
 	});
 	
 	$("#nation_search").on("paste keyup ",function(){
-		nation_search_fun();
+		if($('input[name=trip_type]:checked').val()=="2") {
+			nation_search_fun();
+		}
 	});
 	
 	$('#swin_close').on("click",function(){
