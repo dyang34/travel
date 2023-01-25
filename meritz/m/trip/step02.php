@@ -54,7 +54,7 @@ $cur_date=date("Y-m-d");
 $cal_type_array=array();
 $arrMember = array();
 
-$sql="select * from plan_code_type_hana where company_type=2 and title <> '' and member_no='".$site_config_member_no."' and trip_type='".$tripType."' order by no asc";
+$sql="select * from plan_code_type_hana where company_type=2 and title <> '' and member_no='".$site_config_type_member_no."' and trip_type='".$tripType."' order by no asc";
 $result=mysql_query($sql, $conn);
 
 $arrPlanTypeList = array();
