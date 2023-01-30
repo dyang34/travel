@@ -15,7 +15,12 @@ if ($row_check['no']=='') {
 	JsUtil::alertReplace("유효하지 않은 접근으로 차단되었습니다.","../index.php");
 	exit;
 }
+
+$apply_no = getApplyNo($row_check["company_type"],$row_check["regdate"],$row_check["no"]);
 ?>
+<script type="text/javascript">
+	const apply_no = '<?=$apply_no?>';
+</script>
 <div class="trip-wrap">
 
 	<div class="signUp-wrap">
