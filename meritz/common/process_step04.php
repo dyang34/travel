@@ -133,7 +133,7 @@ $sql_tmp="insert into hana_plan_tmp set
 			join_cnt='".count($_SESSION["travel_step"]["1"]["member"])."',
 			plan_type='".$plan_type."',
 			referer_type='1',
-			company_type = 3,
+			company_type = 2,
 			regdate='".time()."'
 ";	
 
