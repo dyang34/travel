@@ -81,6 +81,13 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 			if ($cal_age >= 0 && $cal_age <= 14) {
 				$cal_type="1";
 			} elseif ($cal_age >= 15 && $cal_age <= 69) {
+/*
+				if ($term_year < 15) {
+					$cal_type="1";	
+				} else {
+					$cal_type="2";
+				}
+*/				
 				$cal_type="2";
 			} elseif ($cal_age >= 70 && $cal_age <= 79) {
 				$cal_type="3";
@@ -91,6 +98,13 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 			if ($cal_age >= 0 && $cal_age <= 14) {
 				$cal_type="1";
 			} elseif ($cal_age >= 15 && $cal_age <= 69) {
+/*
+				if ($term_year < 15) {
+					$cal_type="1";	
+				} else {
+					$cal_type="2";
+				}
+*/				
 				$cal_type="2";
 			} elseif ($cal_age >= 70 && $cal_age <= 79) {
 				$cal_type="3";
@@ -100,12 +114,13 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 		}
 
 		array_push($cal_type_array, $cal_type);
-		array_push($arrMember, array('gender' => $_SESSION["travel_step"]["1"]["member"][$i]["gender"], 'cal_age'=>$cal_age));
+		array_push($arrMember, array('gender' => $_SESSION["travel_step"]["1"]["member"][$i]["gender"], 'cal_age'=>$cal_age, 'cal_type'=>$cal_type));
 	}
 }
 
 $cal_type_query=implode( ',', array_unique($cal_type_array) );
 
+// 고급형(3), 표준형(2), 실속형(1)
 $sql="select plan_title, left(MIN(plan_type),1) as plan_type_src from plan_code_hana where company_type=2 and member_no='".$site_config_member_no
 	."' and trip_type='".$tripType
 	."' and cal_type in (".$cal_type_query.") group by plan_title order by plan_type desc";
@@ -132,8 +147,13 @@ for($i=0;$i<count($arrPlanList);$i++) {
 
 	$sum_price = 0;
 	for($i_member=0;$i_member<count($arrMember);$i_member++) {
-		$sql_price="select price from plan_code_price_hana where company_type=2 and member_no='".$site_config_member_no."' and trip_type='".$tripType."' 
-			and plan_type like '%".$arrPlanList[$i]["plan_type_src"]."%' and sex = '".$arrMember[$i_member]["gender"]."' and age = '".$arrMember[$i_member]["cal_age"]."' and term_day >= '".$term_day."' order by term_day asc limit 1";
+		$sql_price="select price from plan_code_price_hana a
+			left join plan_code_hana b
+			on a.plan_code = b.plan_code and a.company_type = b.company_type and a.member_no = b.member_no and a.trip_type = b.trip_type
+			where a.company_type=2 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
+			and a.plan_type like '%".$arrPlanList[$i]["plan_type_src"]."%' and b.cal_type = '".$arrMember[$i_member]["cal_type"]."' 
+			and sex = '".$arrMember[$i_member]["gender"]."' and age = '".$arrMember[$i_member]["cal_age"]."' and term_day >= '".$term_day."' 
+			order by term_day asc limit 1";
 
 		$rs_plan_price=mysql_query($sql_price, $conn);
 		//$row_plan_price = $rs_plan_price->fetch_assoc();
@@ -254,6 +274,7 @@ for($i=0;$i<count($arrPlanList);$i++) {
 for($i=0;$i<count($arrMember);$i++) {
 ?>
 	<input type="hidden" name="cal_age[]" value="<?=$arrMember[$i]["cal_age"]?>" />
+	<input type="hidden" name="cal_type[]" value="<?=$arrMember[$i]["cal_type"]?>" />
 <?php
 }
 ?>

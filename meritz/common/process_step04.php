@@ -146,11 +146,11 @@ $_SESSION["travel_step"]["4"]["session_key"] = $session_key;
 $arrMember = $_SESSION["travel_step"]["1"]["member"];
 for($i=0;$i<count($arrMember);$i++) {
 
-	$sql_price="select plan_code, price
-						, (select plan_title from plan_code_hana b where b.company_type=a.company_type and b.member_no=a.member_no and b.plan_code = a.plan_code limit 1) as plan_title
-						, (select plan_title_src from plan_code_hana b where b.company_type=a.company_type and b.member_no=a.member_no and b.plan_code = a.plan_code limit 1) as plan_title_src
-				from plan_code_price_hana a where company_type=2 and member_no='".$site_config_member_no."' and trip_type='".$tripType."' 
-				and plan_type like '%".$plan_type."%' and sex = '".$arrMember[$i]["gender"]."' 
+	$sql_price="select a.plan_code, price, b.plan_title, b.plan_title_src from plan_code_price_hana a 
+				left join plan_code_hana b 
+				on a.plan_code = b.plan_code and a.company_type = b.company_type and a.member_no = b.member_no and a.trip_type = b.trip_type 
+				where a.company_type=2 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
+				and a.plan_type like '%".$plan_type."%' and b.cal_type = '".$arrMember[$i]["cal_type"]."' and sex = '".$arrMember[$i]["gender"]."' 
 				and age = '".$arrMember[$i]["cal_age"]."' and term_day >= '".$term_day."' order by term_day asc limit 1";
 
 	$rs_plan_price=mysql_query($sql_price, $conn);
