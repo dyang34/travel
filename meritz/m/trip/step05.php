@@ -23,6 +23,7 @@ if(chk_step_session($pageStepNo)) {
 		$result=mysql_query($sql, $conn);
 		$row=mysql_fetch_array($result);
 		
+		$company_type = $row['company_type'];
 		$_SESSION["travel_step"]["1"]["trip_type"] = $row["trip_type"];
 		$_SESSION["travel_step"]["1"]["trip_purpose"] = $row["trip_purpose"];
 		$_SESSION["travel_step"]["1"]["nation_search"] = $arrParam2[0];
@@ -54,7 +55,10 @@ if(chk_step_session($pageStepNo)) {
 
 		$sum_price = 0;
 		$_SESSION["travel_step"]["1"]["member"] = array();
-		$sql="select * from hana_plan_member_tmp where tmp_no = '".$_POST[ "param_opt_1"]."' order by no";
+		$sql="select a.* 
+				, (SELECT cal_type FROM plan_code_hana b WHERE b.company_type = '".$company_type."' AND b.member_no = a.member_no AND b.plan_code = a.plan_code AND b.trip_type = a.trip_type limit 1) AS cal_type
+				from hana_plan_member_tmp a where tmp_no = '".$_POST[ "param_opt_1"]."' order by no";
+
 		$result=mysql_query($sql, $conn);
 		while($row=mysql_fetch_array($result)) {
 		
@@ -100,6 +104,7 @@ if(chk_step_session($pageStepNo)) {
 					 'birth'=>$birth
 					, 'gender'=>$row['sex']
 					, 'cal_age'=>$row['age']
+					, 'cal_type'=>$row['cal_type']
 					, 'name'=>$row['name']
 					, 'name_eng_last'=>substr($row['name_eng'], $name_eng_idx+1, mb_strlen($row['name_eng'])-1)
 					, 'name_eng_first'=>substr($row['name_eng'], 0, $name_eng_idx)

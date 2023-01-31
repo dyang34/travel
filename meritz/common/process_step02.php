@@ -57,6 +57,7 @@ for($i=0;$i<count($_POST['cal_age']);$i++) {
 		exit;
 	} else {
 		$_SESSION["travel_step"]["1"]["member"][$i]['cal_age'] = $_POST['cal_age'][$i];
+		$_SESSION["travel_step"]["1"]["member"][$i]['cal_type'] = $_POST['cal_type'][$i];
 	}
 }
 
