@@ -37,6 +37,8 @@ if(empty($__SITE_META_DESC)) {
   <meta property="og:image" content="<?="https://".$_SERVER["HTTP_HOST"]."/travel/meritz/image/common/og_tag_img.jpg"?>" >
   <meta property="og:description" content="<?=$__SITE_META_DESC?>" />
 
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="<?="https://".$_SERVER['HTTP_HOST'].str_replace("/travel/meritz/","/travel/meritz/m/",$_SERVER['REQUEST_URI'])?>">
+
   <link rel="icon" type="image/png" sizes="32x32" href="/travel/meritz/favicon.ico?v=<?=time()?>">
 
   <link rel="stylesheet" type="text/css" href="/travel/meritz/css/style.css?v=<?=time()?>">

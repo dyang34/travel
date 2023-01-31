@@ -50,6 +50,9 @@ if($mNum<>'0') {
 		--bis-color-point: <?=_TOURSAFE_SUBSITE_COLOR?>;
 	}
 	</style>
+
+	<link rel="canonical" href="<?="https://".$_SERVER['HTTP_HOST'].str_replace("/travel/meritz/m/","/travel/meritz/",$_SERVER['REQUEST_URI'])?>">
+
 	<link rel="icon" type="image/png" sizes="32x32" href="/travel/meritz/favicon.ico?v=<?=time()?>">
 
 	<link rel="stylesheet" type="text/css" href="/travel/meritz/m/css/style.css?v=<?=time()?>">
