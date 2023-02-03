@@ -77,14 +77,11 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 			if ($cal_age >= 0 && $cal_age <= 14) {
 				$cal_type="1";
 			} elseif ($cal_age >= 15 && $cal_age <= 69) {
-/*				
 				if ($term_year < 15) {
 					$cal_type="1";	
 				} else {
 					$cal_type="2";
 				}
-*/				
-				$cal_type="2";
 			} elseif ($cal_age >= 70 && $cal_age <= 79) {
 				$cal_type="3";
 			} elseif ($cal_age >= 80) {
