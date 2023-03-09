@@ -246,7 +246,12 @@ require_once $SYS_ROOT_DIR."/travel/meritz/m/include/header.php";
 
 	// 달력 script
 	$(document).ready(function() {
-		var today = new Date();
+		let today = new Date();
+		let maxday = new Date();
+		
+		maxday.setMonth(maxday.getMonth()+6);
+		maxday.setDate(maxday.getDate()-1);
+
 		var tomorrow = new Date(Date.parse(today) + (1000 * 60 * 60 * 24));
 	
 		$("#start_date").datepicker({
@@ -260,7 +265,7 @@ require_once $SYS_ROOT_DIR."/travel/meritz/m/include/header.php";
 			monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
 			buttonText: "Select date",
 			minDate: today,
-			maxDate: "+6M",
+			maxDate: maxday,
 			onClose: function( selectedDate ) {  
 				$("#end_date").val("");
 				$("#end_date").datepicker("enable");
