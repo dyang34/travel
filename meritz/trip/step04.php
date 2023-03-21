@@ -80,7 +80,7 @@ if ($tripType=="2") {
 						</li>
 
 						<li class="title">
-							4. 여행지역이?<span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
+							4. 여행지역이 <span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
 						</li>
 						<li class="choice">
 							<span class="choiceChk first">
