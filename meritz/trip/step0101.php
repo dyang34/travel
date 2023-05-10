@@ -140,7 +140,7 @@ require_once $SYS_ROOT_DIR."/travel/meritz/include/leftmenu_trip.php";
 						<li class="type-dash">1. 해외 여행자 보험 상품은 출국직전까지 가입가능합니다.</li>
 						<li class="type-dash">2. 가입확인서는 카카오톡 또는 문자메세지로 보내 드립니다.</li>
 						<li class="type-dash">3. 궁금하신 사항은 유다이렉트 여행자보험 고객센터 1800-9010 (평일 09시~18시)로 연락바랍니다.</li>
-						<li class="type-dash">4. 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 메리츠화재 고객콜센터 82-2-1566-7711로 연락주시면 도움 받으실 수 있습니다.</li>
+						<li class="type-dash">4. 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 메리츠화재 우리말서비스 82-2-360-2407로 연락주시면 도움 받으실 수 있습니다.</li>
 					</ul>
 				</div>
 			</div>
