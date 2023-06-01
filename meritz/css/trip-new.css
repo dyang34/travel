@@ -1,0 +1,1165 @@
+.trip-wrap {
+  position: relative;
+  background-color: var(--mrz-color-light-silver);
+  width: 100%; height: 100vh;
+  font-family: var(--mrz-ffam-noto);
+}
+.trip-wrap #wrap {
+  position: relative;
+  background-color: var(--mrz-color-white);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .2);
+  font-size: 0px;
+}
+.head-wrap {
+  position: absolute; top: 0px; left: 50%; z-index: 2;
+  transform: translateX(-50%);
+  width: 1200px; height: 68px;
+  background-color: var(--mrz-color-red);
+}
+.head-wrap h1 {
+  margin: 0px 30px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-22); font-weight: 700;
+  color: var(--mrz-color-white); line-height: 68px;
+}
+.head-wrap .end-btn {
+  position: absolute; top: 0px; right: 2%; z-index: 3;
+}
+.head-wrap .end-btn a.link-end {
+  display: block;
+  color: var(--mrz-color-white);
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02); font-weight: 500;
+  line-height:68px;
+}
+.head-wrap .end-btn a i.icon-end {
+  display: inline-block;
+  background: url('../image/trip/icon-out.svg') no-repeat;
+  background-size:100%;
+  width: 12px; height: 12px;
+  margin-left: 5px;
+}
+.head-wrap .end-btn a.link-end:hover {
+  color: #40FFF4;
+}
+.type-dash {
+  text-indent: -16px;
+  padding-left: 16px;
+}
+/******************************************** Left Menu */
+.left-menu {
+  display: inline-block;
+  position: relative;
+  background-color: #f5ebe9;
+  width: 250px; height: 100vh;
+  vertical-align: top;
+}
+.left-menu > ul {
+  width: 100%;
+  margin-top: 68px;
+}
+.left-menu > ul > li {
+  position: relative;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-00); font-weight: 400;
+  color: #000;
+  padding: 21px 20px; padding-right: 0px;
+  border-bottom: 1px solid var(--mrz-color-light-gray);
+}
+.left-menu > ul > li strong {
+  font-weight: 700; margin-right: 7px;
+}
+.left-menu > ul > li.on {
+  background-color: #fdf7f5;
+}
+.left-menu > ul > li.on,
+.left-menu > ul > li.on strong {
+  color: var(--mrz-color-red);
+}
+.left-menu > ul > li.active {
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+}
+.left-menu > ul > li.active .on,
+.left-menu > ul > li.active .on strong {
+  color: var(--mrz-color-red);
+}
+.left-menu > ul > li.active a.xsmall {
+  position: absolute; top: 21px; right: 10px;
+  width: 50px;
+  border-radius: 20px;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+}
+.left-menu > ul > li.active .info-box {
+  padding: 9px 0 0 18px;
+}
+.left-menu > ul > li.active .info-box > ul > li.type-dot {
+  position: relative;
+  margin-top: 7px; padding: 0 10px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03); font-weight: 400; line-height: 140%;
+}
+.left-menu > ul > li.active .info-box > ul > li.type-dot::before {
+  content: "";
+  position: absolute; top: 8px; left: 0px;
+  width: 3px; height: 3px;
+  background-color: var(--mrz-color-black);
+  border-radius: 100%;
+}
+.left-menu > ul > li.active .info-box > ul > li.purpose {
+  padding-left: 12px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03); font-weight: 100; line-height: 140%;
+}
+.customer-wrap {
+  position: absolute; bottom: 30px; left: 0px; z-index: 1;
+}
+.customer-wrap > ul > li {
+  font-family: var(--mrz-ffam-noto);
+  margin-left: 20px;
+  width: calc(100% - 20px);
+  font-size: 0%;
+}
+.customer-wrap > ul > li:first-child {
+  display: flex;
+  flex-direction: row; justify-content: flex-start; align-items: center;
+}
+.customer-wrap > ul > li.text {
+  font-size: var(--mrz-fS-text-15); font-weight: 500;
+  margin-top: var(--mrz-row-10);
+  margin-bottom: 5px;
+}
+.customer-wrap > ul > li.tel {
+  font-size: var(--mrz-fS-title-38); font-weight: 700;
+  color: var(--mrz-color-red);
+}
+.customer-wrap > ul > li img {
+  display: inline-block;
+  width: 80px; height: auto;
+  font-size: 0%;
+}
+.customer-wrap > ul > li span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 9px; height: 9px;
+  margin: 18px 10px;
+}
+.customer-wrap > ul > li span:before {
+  content: "";
+  display: block;
+  position: absolute; top: 0px; left: 3px;
+  width: 2px; height: 10px;
+  background-color: var(--mrz-color-black);
+  transform: rotate(45deg);
+}
+.customer-wrap > ul > li span:after {
+  content: "";
+  display: block;
+  position: absolute; top: 0px; left: 3px;
+  width: 2px; height: 10px;
+  background-color: var(--mrz-color-black);
+  transform: rotate(-45deg);
+}
+
+/******************************************** Content Wrap */
+.cont-trip {
+  display: inline-block;
+  width: 900px; height: 100vh;
+  margin: 0 auto; margin-left: 50px;
+  vertical-align: top;
+}
+.cont-trip .step-wrap {  
+  margin-top: 68px;
+  height: calc(100% - 68px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.step-wrap::-webkit-scrollbar { 
+  width: 8px; /*스크롤바의 너비*/ 
+} 
+.step-wrap::-webkit-scrollbar-thumb { 
+  background-color: var(--mrz-color-deep-red); /*스크롤바의 색상*/
+  border-radius: 20px; /*스크롤바 라운드*/
+} 
+.step-wrap::-webkit-scrollbar-track { 
+  background-color: var(--mrz-color-light-silver); /*스크롤바 트랙 색상*/
+  border-radius: 20px; /*스크롤바 트랙 라운드*/
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1); /*스크롤바 트랙 안쪽 그림자*/
+}
+.cont-trip .step-wrap h1 {
+  position: relative;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-05); font-weight: 700;
+  margin-top: 29px;
+}
+.cont-trip .step-wrap h1 .button-right-area {
+  position: absolute; top: 0px; right: 65px;
+  width: 30%; margin: 0px;
+}
+.cont-trip .step-wrap h1 .button-right-area .gray {
+    width: 220px; height: 48px; line-height: 48px;
+    font-size: var(--mrz-fS-text-01);
+}
+
+/******************************************** 가입단계 step 01 */
+ul.Sign-up {
+  margin-top: var(--mrz-row-30);
+}
+ul.Sign-up > li {
+  display: inline-block;
+  width: 50%;
+  font-family: var(--mrz-ffam-noto);
+  font-size: 0%;
+  vertical-align: top;
+}
+ul.Sign-up > li strong {
+  display: block;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-title-22); font-weight: 500;
+}
+ul.Sign-up > li:nth-child(2n+2) {
+  width: 50%; /*calc(50% - 65px)*/
+}
+ul.Sign-up > li span {
+  font-size: 0%;
+  font-family: var(--mrz-ffam-noto);
+  margin-top: var(--mrz-row-20);
+}
+ul.Sign-up > li span.choiceChk {
+  height: 39px; line-height: 39px;
+}
+ul.Sign-up > li span.choiceChk.first {
+  margin-left: 3px;
+  border-radius: 5px 0 0 5px;
+}
+ul.Sign-up > li span.choiceChk.second {
+  border-radius: 0 5px 5px 0;
+}
+ul.Sign-up > li span.choiceChk.first label {
+  border-radius: 5px 0 0 5px;
+}
+
+ul.Sign-up > li span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+
+ul.Sign-up > li span.choiceChk.third label {
+  border-radius: 5px 5px 5px 5px;
+}
+
+ul.Sign-up > li span.choiceChk label {
+  width: 58px; height: 39px; line-height: 42px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+ ul.Sign-up.stage > li input {
+  width: 85%; height: 39px; line-height: 39px;
+  font-family: var(--mrz-ffam-noto);
+  margin-top: var(--mrz-row-20);
+}
+ul.Sign-up.stage > li .select-box {
+  width: 85%;
+  margin-top: var(--mrz-row-20);
+  height: 37px; line-height: 37px;
+}
+ul.Sign-up.stage > li .select-box select {
+  padding-left: 20px; line-height: 37px;
+}
+ul.Sign-up.stage > li .date_picker {
+  display: inline-block;
+  margin-top: var(--mrz-row-20);
+  height: 39px; line-height: 39px; width: 85%;
+}
+ul.Sign-up.stage > li .date_picker input {
+  width: 100%;
+  margin-top: 0px;
+  height: 37px; line-height: 37px;
+}
+ul.Sign-up.stage > li .hour {
+  display: inline-block;
+  width: 25%;
+  margin-left: 2%;
+}
+ul.Sign-up.stage > li.caption {
+  display: block;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+  margin-top: var(--mrz-row-20); margin-right: 5%;
+  width: 95%;
+}
+.cont-trip .step-wrap .caption .type-dash {
+  text-indent: -16px;
+  padding-left: 16px;
+  margin-top: 7px;
+  line-height: 140%;
+  word-break: keep-all;
+}
+.cont-trip .step-wrap .caption .capt {
+  padding-left: 16px;
+  margin-top: 0px;
+  line-height: 140%;
+  word-break: keep-all;
+}
+.cont-trip .step-wrap .caption .type-dash span {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+}
+.cont-trip .step-wrap .caption .type-dash span#btn-restr {
+  cursor: pointer;
+}
+.cont-trip .step-wrap .caption .type-dash b {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15); font-weight: 500;
+  margin-top: 0px;
+}
+.cont-trip .step-wrap .thtoknow {
+  margin-top: var(--mrz-row-50);
+  width: calc(100% - 65px);
+  border-top: 2px solid var(--mrz-color-black);
+  margin-right: 50px;
+}
+.trip-wrap #wrap .cont-trip .step-wrap .accordion {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-22); font-weight: 500;
+  text-align: left;
+  padding: 15px 0; padding-left: 32px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--mrz-color-light-gray);
+}
+.cont-trip .step-wrap .thtoknow .accordion i.icon-know {
+  position: absolute; top: 50%; left: 0px;
+  transform: translateY(-50%);
+  background: url(../image/trip/icon-know.png) no-repeat;
+  width: 24px; height: 24px;
+}
+.cont-trip .step-wrap .thtoknow .accordion span {
+  position: absolute; top: 50%; right: 20px;
+  transform: translateY(-50%);
+  background: url('../image/sub/icon-arrow-up.svg') no-repeat;
+  width: 15px; height: 9px;
+  transition: transform 0.4s ease;
+}
+.cont-trip .step-wrap .thtoknow .accordion.active span {
+  transform: rotate(180deg) translateY(50%);
+  transition: transform 0.4s ease;
+}
+.cont-trip .step-wrap .thtoknow .konw-box {
+  display: none;
+  background-color: var(--mrz-color-light-silver);
+  width: calc(100% - 40px);
+  padding: 20px 20px 30px;
+  overflow: hidden;
+}
+.cont-trip .step-wrap .thtoknow .konw-box > ul > li {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+  line-height: 160%;
+  margin-top: 7px;
+}
+
+/******************************************** 가입단계 step 01-2 */
+.cont-trip .step-wrap .self,
+.cont-trip .step-wrap .companion {
+  margin-top: var(--mrz-row-30);
+  width: 100%;
+}
+.trip-wrap #wrap .cont-trip .step-wrap .self > h2,
+.trip-wrap #wrap .cont-trip .step-wrap .companion > h2 {
+  position: relative;
+  display: inline-block;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-22); font-weight: 500;
+  text-align: left;
+  margin-top: 0;
+}
+h2 strong.wom  {
+  color: var(--mrz-color-red);
+}
+h2 strong.man {
+  color: var(--mrz-color-blue2);
+}
+.trip-wrap #wrap .cont-trip .step-wrap .companion > h2 a.modify {  
+  position: absolute; top: 3px; left: 330px;
+  width: 50px;
+  border-radius: 20px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03); font-weight: 100;
+}
+.cont-trip .step-wrap .self > ul.Sign-up.info,
+.cont-trip .step-wrap .companion > ul.Sign-up.info {
+  margin-top: var(--mrz-row-20);
+}
+.cont-trip .step-wrap .self > ul.Sign-up > li strong,
+.cont-trip .step-wrap .companion > ul.Sign-up > li strong {
+  display: block;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-text-15); font-weight: 400;
+}
+ul.Sign-up > li input {
+  margin-top: 5px; 
+  width: 85%; height: 39px; line-height: 39px;
+  font-family: var(--mrz-ffam-noto);
+}
+ul.Sign-up > li span.choiceChk {
+  margin-top: 5px;
+}
+ul.Sign-up > li span.choiceChk input {
+  margin-top: 0px;
+}
+ul.Sign-up > li span.choiceChk label {
+  line-height: 39px; min-height: 39px;
+}
+
+/******************************************** 가입단계 step 02 */
+.table-wrap {
+  width: calc(100% - 65px);
+  margin-top: var(--mrz-row-30);
+}
+.table-wrap .tab {
+  overflow: hidden;
+  background-color: var(--mrz-color-light-silver);
+}
+.table-wrap .tab button {
+  background-color: inherit;
+  display: block;
+  float: left;
+  width: 50%;
+  border: 1px solid var(--mrz-color-light-gray); border-right: 0px;
+  padding: 14px 0;
+  text-align: center; font-size: var(--mrz-fS-text-01); font-weight: 400;
+  transition: 0.3s;
+}
+.table-wrap .tab button.tablinks {
+  font-family: var(--mrz-ffam-noto); font-weight: 500;
+}
+.table-wrap .tab button.tablinks,
+.table-wrap .tab button.tablinks label {
+  font-family: var(--mrz-ffam-noto); font-weight: 500;
+  cursor: pointer;
+}
+.table-wrap .tab button.tablinks input[type=radio] {
+  position: absolute; opacity: 0; 
+  width: 0; height: 0;
+}
+.table-wrap .tab button.tablinks input[type=checkbox].checkbox+label, .table-wrap .tab button.tablinks input[type=radio].radiobox+label {
+  display: -ms-flexbox; display: flex;
+  -ms-flex-align: center; 
+  align-items: center;
+  margin: 5px 0;
+  position: relative;
+  cursor: pointer;
+}
+.table-wrap .tab button.tablinks label.radiobox {
+  display: block; position: relative;
+  width: 16px; height: 16px; margin: 0 auto; background-color: var(--mrz-color-white);
+  border: 2px solid var(--mrz-color-light-gray); border-radius: 100%;
+}
+
+.table-wrap .tab button:only-child {
+  width: 100%;
+}
+.table-wrap .tab button:nth-last-child(2), .table-wrap .tab button:nth-last-child(2)+button {
+  width: 50%;
+}
+.table-wrap .tab button:nth-last-child(3), .table-wrap .tab button:nth-last-child(3)~button {
+  width: 33.33%;
+}
+.table-wrap .tab button:nth-last-child(4), .table-wrap .tab button:nth-last-child(4)~button {
+  width: 25%;
+}
+
+.table-wrap .tab button:last-child {
+  border-right: 1px solid var(--mrz-color-light-gray);
+}
+.table-wrap .tab button:hover {
+  background-color: var(--mrz-color-light-gray);
+}
+.table-wrap .tab button.active {
+  background-color: var(--mrz-color-red);
+  border-color: var(--mrz-color-deep-red);
+  color: var(--mrz-color-white);
+}
+.table-wrap .tab button.active label {
+  color: var(--mrz-color-white);
+}
+.table-wrap .tab button.active label.control input {
+  background: var(--mrz-color-white);
+}
+.table-wrap .tab button.active label.radiobox {
+  border: 2px solid var(--mrz-color-white);
+}
+.table-wrap .tab button.active label.radiobox:after {
+  content: "";
+  position: absolute; top: 8px; left: 2px; transform: rotate(38deg);
+  width: 6px; height: 2px; background-color: var(--mrz-color-red);
+}
+.table-wrap .tab button.active label.radiobox:before {
+  content: "";
+  position: absolute; top: 7px; left: 5px; transform: rotate(314deg);
+  width: 10px; height: 2px; background-color: var(--mrz-color-red);
+}
+.table-wrap .tab button.active:first-child {
+  border-right: 1px solid var(--mrz-color-deep-red);
+}
+.table-wrap .tabcontent {
+  width: 100%;
+  font-family: var(--mrz-ffam-noto);
+  margin-top: var(--mrz-row-10);
+}
+.table-wrap .tabcontent .caption {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02);
+  padding-top: var(--mrz-row-10);
+}
+.table-wrap .tabcontent  table tr th,
+.table-wrap .tabcontent  table tr td {
+  font-family: var(--mrz-ffam-noto);
+}
+.table-wrap .tabcontent  table tr td.select {
+  background-color: #F8DFDF
+}
+
+/******************************************** 가입단계 step 03 */
+.cont-trip .step-wrap .step03 > ul.rep {
+  margin-top: var(--mrz-row-10);
+}
+.cont-trip .step-wrap .step03 > ul.rep li,
+.cont-trip .step-wrap .step03 > ul.accomp li {
+  position: relative;
+  margin-top: var(--mrz-row-20);
+  width: calc(50% - 65px);
+  margin-right: 65px;
+}
+.cont-trip .step-wrap .step03 > ul.rep li:nth-child(1),
+.cont-trip .step-wrap .step03 > ul.rep li:nth-child(2) {
+  margin-top: 0;
+}
+.cont-trip .step-wrap .step03 ul.rep li .input01.first-name {
+  float: left;
+  width: 45%;
+}
+.cont-trip .step-wrap .step03 > ul.rep li .input01.last-name {
+  float: left;
+  width: 53%;
+  margin-left: 2%;
+}
+.cont-trip .step-wrap .step03 > ul.rep li .input01.number,
+.cont-trip .step-wrap .step03 > ul.rep li .input01.email {
+  float: left;
+  width: 47%;
+  padding-right: 0px;
+}
+.cont-trip .step-wrap .step03 > ul.rep li .select-box {
+  float: left;
+  width: 29%; height: 39px; line-height: 39px;
+  margin-top: 5px;
+}
+.cont-trip .step-wrap .step03 > ul.rep li .select-box select {
+  line-height: 39px; padding-left: 1rem;
+}
+.cont-trip .step-wrap .step03 > ul.rep li .input01.tel {
+  float: left;
+  width: 30%;
+  padding-right: 0px;
+}
+.cont-trip .step-wrap ul.rep li span.number,
+.cont-trip .step-wrap ul.rep li span.tel,
+.cont-trip .step-wrap ul.rep li span.email {
+  float: left;
+  height: 39px; line-height: 39px;
+  text-align: center;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-15);
+  margin-top: 5px;
+}
+.cont-trip .step-wrap ul.rep li span.number,
+.cont-trip .step-wrap ul.rep li span.email {
+  width: 6%;
+}
+.cont-trip .step-wrap ul.rep li span.tel {
+  width: 5%;
+}
+.cont-trip .step-wrap ul.Sign-up.rep > li strong {
+  display: block;
+  font-size: var(--mrz-fS-text-15); font-weight: 400;
+}
+.cont-trip .step-wrap ul.Sign-up.rep > li strong span.caps {
+  font-family: 'Noto Sans KR', sans-serif; color: var(--mrz-color-blue);
+  font-weight: 400; font-size: var(--mrz-fS-text-02);
+  padding-left: 5px;
+}
+.cont-trip .step-wrap .step03 > ul.rep li strong > span.spanCaution {
+  font-family: 'Noto Sans KR', sans-serif; color: var(--mrz-color-red);
+  font-weight: 400; font-size: var(--mrz-fS-text-02);
+}
+ul.Sign-up.rep > li input {
+  margin-top: 5px; height: 39px; line-height: 39px;
+}
+ul.Sign-up.rep > li span.choiceChk {
+  margin-top: 5px;
+}
+ul.Sign-up.rep > li span.choiceChk input {
+  margin-top: 0px;
+}
+ul.Sign-up.rep > li span.choiceChk label {
+  line-height: 39px; min-height: 39px;
+}
+.cont-trip .step-wrap .step03 > ul.Sign-up.rep li p.caption {  
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03);
+  line-height: 160%;
+}
+.cont-trip .step-wrap .step03 > ul.Sign-up.rep li p.caption strong {
+  display: inline-block;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03); font-weight: 700;
+}
+.cont-trip .step-wrap .step03 > ul.Sign-up.rep li .nationality {
+  position: absolute; top: 21px; left: 130px;
+  width: 75%;
+  vertical-align: top;
+  margin-left: 2%;
+}
+.cont-trip .step-wrap .step03 > ul.Sign-up.rep li .nationality .caption {  
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-03);
+  line-height: 160%;
+  margin-top: var(--mrz-row-5);/* margin-left: -139px;*/
+}
+#noneDiv1, #noneDiv2, #noneDiv3 {
+  display: none;
+}
+
+
+/******************************************** 가입단계 step 04 */
+.cont-trip .step-wrap .disclaimer,
+.cont-trip .step-wrap .accord-wrap {
+  margin-top: var(--mrz-row-30);
+  width: calc(100% - 65px);
+}
+.cont-trip .step-wrap .accord-wrap {
+  margin-top: var(--mrz-row-30);
+  width: calc(100% - 65px);
+}
+.cont-trip .step-wrap .disclaimer > ul {
+  width: 100%; min-height: 39px;
+  overflow: hidden;
+}
+.cont-trip .step-wrap .disclaimer > ul > li {
+  float: right;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  width: calc(30% - 5px); min-height: 44px;
+  margin: 10px 0px 0px;
+}
+.cont-trip .step-wrap .disclaimer > ul > li.title {
+  float: left;
+  width: 68%; line-height: 140%;
+  text-indent: -14px;
+  padding-left: 14px;
+}
+.cont-trip .step-wrap .disclaimer > ul > li.title span.accent {
+  color: var(--mrz-color-red);
+}
+.cont-trip .step-wrap .disclaimer > ul > li.title span.fc-red,
+.cont-trip .step-wrap .disclaimer > ul > li.title span.fc-blue {
+  cursor: pointer;
+}
+.cont-trip .step-wrap .disclaimer > ul > li.choice {
+  font-size: 0%;
+  text-align: right;
+  padding-right: 5px;
+}
+.cont-trip .step-wrap .disclaimer .button-right-area,
+.cont-trip .step-wrap .accord-wrap .button-right-area {
+  width: 100%;
+}
+.cont-trip .step-wrap .disclaimer .button-right-area .gray,
+.cont-trip .step-wrap .accord-wrap .button-right-area .gray {
+  width: 220px; height: 48px; line-height: 48px;
+  font-size: var(--mrz-fS-text-01);
+}
+.disclaimer > ul > li.choice span.choiceChk,
+.accord-wrap .accorda ul li.choice span.choiceChk,
+.accord-wrap .accord ul li.choice span.choiceChk,
+.accord-wrap .panel ul li.choice span.choiceChk {
+  height: 39px; line-height: 39px;
+}
+.choice span.choiceChk.first,
+.choice span.choiceChk.first label {
+  border-radius: 5px 0 0 5px;
+}
+.choice span.choiceChk.second,
+.choice span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+.disclaimer > ul > li.choice span.choiceChk label,
+.accord-wrap .accorda ul li.choice span.choiceChk label,
+.accord-wrap .accord ul li.choice span.choiceChk label,
+.accord-wrap .panel ul li.choice span.choiceChk label {
+  width: 58px; height: 39px; line-height: 39px; min-height: 39px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+.accord-wrap .accorda ul li.choice span.choiceChk label,
+.accord-wrap .accord ul li.choice span.choiceChk label,
+.accord-wrap .panel ul li.choice span.choiceChk label {
+  width: 78px;
+}
+.accord-wrap .accorda,
+.accord-wrap .accord {
+  position: relative;
+  width: 100%; min-height: 58px;
+  border: 1px solid var(--mrz-color-light-gray); border-top: 0px;
+}
+.accord-wrap .btn-acc {
+  position: relative;
+}
+.accord-wrap .accorda:first-child,
+.accord-wrap .accord:first-child {
+  border-top: 1px solid var(--mrz-color-light-gray);
+}
+.accord-wrap .accorda ul li,
+.accord-wrap .accord ul li {
+  float: left;
+  font-size: 0%; line-height: 58px;
+  width: 25%; height: 58px;
+  font-family: var(--mrz-ffam-noto);
+  /*border-right: 1px solid var(--mrz-color-light-gray);*/
+  margin-right: -1px;
+}
+.accord-wrap .accorda ul li.title, 
+.accord-wrap .accord ul li.title {
+  width: 63%;
+  font-size: var(--mrz-fS-text-02);
+  padding-left: 2%;
+}
+.accord-wrap .accord ul li.title {
+  width: 73%;
+}
+.accord-wrap .accorda ul li.title a.red-line {
+  display: inline-block;
+  width: 170px; height: 20px; line-height: 20px; 
+  font-size: var(--mrz-fS-text-03);
+  margin-left: 10px;
+}
+.accord-wrap .accorda ul li.cont {
+  width: 10%;
+  font-size: var(--mrz-fS-text-02);
+  text-align: center;
+}
+.accord-wrap .btn-acc .cont {
+  position: absolute; top: 0; right: 25%; z-index: 1;
+  border-left: 1px solid #d8d8d8;
+  width: 82px; height: 58px; line-height: 58px;
+  margin-right: -1px;
+}
+.accord-wrap a.gray-line {
+  margin: 13px 15% 0;
+  width: 70%;
+  border-radius: 20px;
+  font-family: var(--mrz-ffam-noto);
+  line-height: 29px; font-size: var(--mrz-fS-text-03);
+  font-family: var(--mrz-ffam-noto);
+}
+.accord-wrap .accorda ul li.choice {  
+  text-align: center;
+  border-right: 0px;
+}
+.accord-wrap .accorda ul li.choice span.choiceChk, 
+.accord-wrap .accord ul li.choice span.choiceChk,
+.accord-wrap .panel ul li.choice span.choiceChk {
+  margin-top: 8px;
+}
+.accord-wrap .terms {
+  position: relative;
+  border: 1px solid var(--mrz-color-light-gray); border-top: 0px;
+  width: 100%;
+}
+.accord-wrap .terms .terms-list dt {
+  width: calc(100% - 2%); height: 58px; line-height:58px;
+  margin-left: 2%;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-text-02); font-weight: 400;
+  vertical-align: top;
+}
+.accord-wrap .terms .btn {
+  position: absolute; top: 12px; right: 25%;
+  width: 10%; height: 32px;
+}
+.accord-wrap .terms .btn a.button {
+  height: 32px; line-height: 32px; width: 70%;
+  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  margin: 0 auto 0;
+}
+.accord-wrap .terms .Choice {
+  position: absolute; top: 9px; right: 2px;
+  font-size: 0; width: 25%;
+  text-align: center;
+}
+.accord-wrap .terms .Choice span.choiceChk {
+  width: 78px;
+}
+.accord-wrap .terms .Choice span.choiceChk input {
+  height: 39px; line-height: 39px; width: 78px;
+}
+.accord-wrap .terms .Choice span.choiceChk.first label{
+  border-radius: 5px 0 0 5px;
+}
+.accord-wrap .terms .Choice span.choiceChk.second label {
+  border-radius: 0 5px 5px 0;
+}
+.accord-wrap .terms .Choice span.choiceChk label {
+  width: 78px;
+  height: 39px; line-height: 39px; min-height: 39px;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+.accord-wrap .terms .terms-list dd {
+  display: none;
+  background-color: var(--mrz-color-light-silver);
+}
+.terms-list dd > ul > li {
+  display: inline-block;
+  font-size: 0;
+  height: 58px; line-height: 58px;
+  border-top: 1px solid var(--mrz-color-light-gray);
+  vertical-align: top;
+}
+.terms-list dd > ul > li:nth-child(2n+1) {
+  width: calc(75% - 12px);
+  text-indent: -12px;
+  padding-left: 12px;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.terms-list dd > ul > li span {
+  margin-left: 2%;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-text-02); font-weight: 400; line-height: 59px;
+}
+.terms-list dd > ul > li.choice-acc {
+  width: 25%;
+  font-size: 0;
+  text-align: center;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice-acc span.choiceChk {
+  width: 78px;
+  margin: 0; margin-top: 9px;
+  background-color: var(--mrz-color-white);
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice-acc span.choiceChk input {
+  height: 39px; line-height: 39px; width: 100%;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice-acc span.choiceChk label {
+  height: 39px; line-height: 39px; min-height: 39px; width: 100%;
+  font-family: var(--mrz-ffam-noto); font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice-acc span.choiceChk.first {
+  border-radius: 5px 0 0 5px; overflow: hidden;
+}
+.accord-wrap .terms .terms-list dd > ul > li.choice-acc span.choiceChk.second {
+  border-radius: 0 5px 5px 0; overflow: hidden;
+}
+
+/*
+.accord-wrap .panel {
+  padding: 0;
+  background-color: var(--mrz-color-light-silver);
+  max-height: 0; width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accord-wrap .accorda .active+.panel,
+.accord-wrap .accord.active+.panel {
+  border: 1px solid var(--mrz-color-light-gray); border-top: 0px;
+}
+.accord-wrap .panel ul li {
+  float: left;
+  border-bottom: 1px solid var(--mrz-color-light-gray);
+  height: 58px; line-height: 58px;
+}
+.accord-wrap .panel ul li.title {
+  width: 75%;
+  border-right: 1px solid var(--mrz-color-light-gray);
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02);
+  margin-right: -1px;
+}
+.accord-wrap .panel ul li.title span {
+  display: inline-block;
+  position: relative;
+  width: 28px; height: 10px; line-height: 10px;
+}
+.accord-wrap .panel ul li.title span::before {
+  content: "-";
+  position: absolute; top: 50%; left: 20px;
+  transform: translateY(-50%);
+  width: 10px; height: 10px; line-height: 8px;
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-02); font-weight: 700;
+}
+.accord-wrap .panel ul li.choice {
+  width: 25%;
+  text-align: center;
+}
+*/
+
+/******************************************** 가입단계 step 05 */
+.total-wrap {
+  text-align: center;
+  margin-top: var(--mrz-row-50);
+  margin-bottom: 100px;
+}
+.total-wrap .title {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-04); font-weight: 400;
+}
+.total-wrap .total {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-text-01); font-weight: 400;
+  margin-top: 5px;
+}
+.total-wrap .total > strong {
+  font-family: var(--mrz-ffam-noto);
+  font-size: var(--mrz-fS-title-00); font-weight: 700;
+  color: var(--mrz-color-red);
+}
+
+/******************************************** 가입단계 완료 */
+.trip-finish {
+  position: relative;
+  width: 100%; height: 100vh;
+}
+.trip-finish .box-finish {
+  position: absolute; top: 53%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--mrz-color-snow);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .2);
+  width: 700px; height: 563px;
+}
+.box-finish i.icon-regi {
+  display: block;
+  background: url('../image/trip/icon-registration.png') no-repeat;
+  background-size: 100%;
+  width: 128px; height: 128px;
+  margin: 100px auto 0px;
+}
+.trip-wrap #wrap .box-finish h2 {
+  font-size: var(--mrz-fS-title-05); font-weight: 700;
+  letter-spacing: -.063rem;
+  text-align: center;
+  margin-top: var(--mrz-row-30);
+}
+.trip-wrap #wrap .box-finish p {
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  letter-spacing: -.063rem;
+  text-align: center;
+  margin-top: var(--mrz-row-10);
+}
+.box-finish .red {
+  width: 220px; height: 68px; line-height: 68px;
+  margin: 50px auto 0;
+}
+
+
+/******************************************** Button */
+.cont-trip .step-wrap .button-right-area {
+  width: calc(100% - 65px);
+  margin-bottom: 50px;
+}
+.cont-trip .step-wrap .button-right-area .red {
+  width: 220px; height: 68px; line-height: 68px;
+}
+.cont-trip .step-wrap .button-center-area a.bule-line {
+  width: 220px; height: 68px; line-height: 68px;
+  font-size: var(--mrz-fS-text-00);
+}
+.cont-trip .step-wrap .button-area {
+  width: calc(100% - 65px);
+  margin-top: var(--mrz-row-50);
+  margin-bottom: var(--mrz-row-50);
+  overflow: hidden;
+}
+.cont-trip .step-wrap .button-area > ul > li {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.cont-trip .step-wrap .button-area > ul > li:nth-child(2) {
+  text-align: right;
+}
+.cont-trip .step-wrap .button-area > ul > li a {
+  height: 68px; line-height: 68px;
+  font-size: var(--mrz-fS-text-00);
+}
+.cont-trip .step-wrap .button-area > ul > li a.gray {
+  width: 150px;
+}
+.cont-trip .step-wrap .button-area > ul > li a.red {
+  float: right;
+  width: 220px;
+}
+
+
+.ui-datepicker {
+  width: 315px;
+}
+
+
+/*********************************************************************************************
+						  반응형 해상도 관련 Style css
+*****************************/
+
+@media only screen and (max-width:1300px) and (min-width:1200px){
+  /********************************************************************** 1280 미만 해상도 */
+  .head-wrap {
+    width: 1100px;
+  }
+  .cont-trip {
+    width: 800px;
+  }
+  ul.Sign-up > li:nth-child(2n+2) {
+    width: 50%;
+  }
+  .date_picker {
+    width: 55%;
+  }
+  ul.Sign-up.stage > li .hour {
+    width: 28%;
+  }
+  .accord-wrap .btn-acc .cont {
+    width: 72px;
+  }
+}
+@media only screen and (max-width:1199px) and (min-width:1000px){
+  /********************************************************************** 1024 미만 해상도 */
+  .head-wrap {
+    width: 980px;
+  }
+  .cont-trip {
+    width: 680px;
+  }
+  ul.Sign-up > li:nth-child(2n+2) {
+    width: 50%;
+  }
+  .date_picker {
+    width: 55%;
+  }
+  ul.Sign-up.stage > li .hour {
+    width: 28%;
+  }
+  .accord-wrap .btn-acc .cont {
+    width: 121px;
+  }
+  .accord-wrap .accorda ul li.cont {
+    width: 20%;
+    font-size: var(--mrz-fS-text-02);
+    text-align: center;
+  }
+  .accord-wrap .accorda ul li.title {
+    width: 53%;
+  }
+  .accord-wrap .accord ul li.title {
+    width: 73%;
+  }
+  .accord-wrap .accorda ul li.cont {
+    width: 20%;
+  }
+  .accord-wrap .accorda ul li.choice span.choiceChk label, .accord-wrap .accord ul li.choice span.choiceChk label, .accord-wrap .panel ul li.choice span.choiceChk label {
+    width: 58px;
+  }
+}
+@media only screen and (max-width:999px) and (min-width:700px){
+  /********************************************************************** 1024 미만 해상도 */
+  .head-wrap {
+    width: 100%;
+  }
+  .left-menu {
+    width: 20%;
+  }
+  .left-menu > ul > li {
+    font-size: var(--mrz-fS-text-02);
+	padding: 10px 5%;
+  }
+  .left-menu > ul > li.active a.xsmall {
+    position: absolute; top: 6px; right: 10px;
+    width: 45px;
+  }
+  .left-menu > ul > li.active .info-box {
+    padding: 5px 0 0 10%;
+  }
+  .left-menu > ul > li.active .info-box > ul > li.type-dot {
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: var(--mrz-fS-text-03);
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .cont-trip {
+    width: 78%;
+	margin-left: 2%;
+  }
+  ul.Sign-up > li:nth-child(2n+2) {
+    width: 50%;
+  }
+  .date_picker {
+    width: 50%;
+  }
+  ul.Sign-up.stage > li .hour {
+    width: 33%;
+  }
+  .cont-trip .step-wrap h1 {
+    font-size: 1.45rem;
+    margin-top: var(--mrz-row-30);
+  }
+  .cont-trip .step-wrap .disclaimer, .cont-trip .step-wrap .accord-wrap {
+    margin-top: var(--mrz-row-10);
+    width: calc(100% - 65px);
+  }
+  .cont-trip .step-wrap .step03 > ul.Sign-up.rep li .nationality {
+    position: absolute; top: 15px; left: 117px;
+    width: 67%;
+  }
+  .accord-wrap .accorda ul li.title, .accord-wrap .accord ul li.title {
+    width: 53%;
+  }
+  .accord-wrap .accorda ul li.cont {
+    width: 20%;
+  }
+  .accord-wrap .terms .btn {
+    width: 20%;
+  }
+  .accord-wrap .terms .Choice span.choiceChk {
+    width: 52px;
+  }
+  .accord-wrap .terms .Choice span.choiceChk input {
+    width: 52px;
+  }
+  .accord-wrap .terms .Choice span.choiceChk.first {
+    margin-left: -2px;
+  }
+  .accord-wrap .terms .Choice span.choiceChk label {
+    width: 52px;
+	font-family: var(--mrz-ffam-noto);
+    font-size: var(--mrz-fS-text-02);
+  }
+  .accord-wrap .accorda ul li.choice span.choiceChk label, 
+  .accord-wrap .accord ul li.choice span.choiceChk label, 
+  .accord-wrap .panel ul li.choice span.choiceChk label {
+    width: 52px;
+  }
+  .accord-wrap .terms .terms-list dd > ul > li.choice span.choiceChk {
+    width: 52px;
+  }
+
+  .trip-finish .box-finish {
+    width: 80%;
+  }
+}

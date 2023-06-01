@@ -1,0 +1,724 @@
+
+/*********************************************************************************************
+              Mobile Style css
+                        *** 500미만 style ***
+*****************************/
+@media only screen and (max-width:1000px) and (min-width:280px){
+  /********************** Mobile 해상도 공통 css */
+ 
+
+  /********************** Main Area css */
+  .swiper-slide {
+    height: 220px;
+  }
+  .swiper-slide, .swiper-slide.visual1,
+  .swiper-slide, .swiper-slide.visual2,
+  .swiper-slide, .swiper-slide.visual3 {
+    background-position: center;
+  }
+  .swiper-slide .title {
+    position: absolute; top: 50%; left: 5%; right: 5%;
+	transform: translateY(-50%);
+  }
+  .swiper-slide strong {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+  .swiper .caution {
+	text-indent: -10px;
+	padding-left: 10px;
+	margin:10px 5% 0;
+  }
+  section#section01 {
+    position: relative;
+	padding-bottom: 110px;
+  }
+  section#section01 figure {
+    margin-top: var(--mrz-row-50);
+    width: 80%;
+  }
+  section#section01 .button-center-area {
+    position: absolute; bottom: 0px; left:0;
+	width: 90%;
+	margin:0 5%;
+	margin-top: var(--mrz-row-30);
+  }
+  section#section01 .button-center-area .button.red {
+    width: 100%;
+  }
+  section#section01 > ul {
+    width: 90%;
+	margin: 0 auto;
+	padding-top: var(--mrz-row-50);
+  }
+  section#section01 > ul > li {
+    text-align: left;
+    height: auto;
+  }
+  section#section01 > ul > li > figure {
+    width: 88px; height: 88px;
+  }
+  section#section01 ul > li > figure img {
+    width: 42px; height: 42px;
+  }
+  section#section01 ul > li > .inner {
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  section#section01 ul > li > figure+.inner {
+    width: calc(100% - 104px);
+  }
+  section#section01 ul > li > .inner h2 {
+    margin-top: 0;
+	font-size: 1.125rem;
+	line-height: 120%;
+  }
+  section#section01 ul > li > .inner p {
+    font-size: var(--mrz-fS-text-01);
+    padding-top: var(--mrz-row-10);
+	line-height: 120%;
+  }
+  section#section01 ul > li:nth-child(2) figure {
+    float: none;
+  }
+  section#section01 ul > li:nth-child(2) > figure+.inner {
+    float: none;
+    width: calc(100% - 104px);
+  }
+  section#section01 ul > li > .inner p:nth-child(2).type_dash {
+    padding-top: var(--mrz-row-10);
+  }
+  section#section02 {
+	width: 90%;
+	margin: 0 auto;
+  }
+  section#section02 h2 {
+    text-align: left;
+	margin-top: var(--mrz-row-50);
+  }
+  section#section02 ul > li {
+    float: left;
+    width: 100%;
+    margin-top: var(--mrz-row-30);
+    margin-left: 0%;
+  }
+  section#section02 ul > li:first-child {
+    margin-top: var(--mrz-row-10);
+  }
+  section#section02 ul > li a figure {
+    height: 220px;
+  }
+  section#section02 ul > li a figure img {
+	width: 100%;
+  }
+  section#section02 ul > li a:hover figure img {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  section#section02 ul > li a h3 {
+    margin-top: var(--mrz-row-10);
+  }
+  section#section02 ul > li a p {
+    margin-top: var(--mrz-row-5);
+    line-height: 120%;
+  }
+  section#section03 {
+    margin-top: var(--mrz-row-50);
+	width: 90%;
+	margin: 0 auto;
+  }
+  section#section03 h2 {
+    margin-top: var(--mrz-row-50);
+  }
+  section#section03 ul {
+    margin-top: var(--mrz-row-5);
+  }
+  section#section03 .box-attention {
+    padding: 30px 5%;
+  }
+  section#section03 .box-attention ul li {
+    font-size: var(--mrz-fS-text-01);
+    font-weight: 300;
+  }
+
+  .type_dot:before {
+    position: absolute; top: 8px;
+  }
+
+
+  /********************** 라이프 Area css */
+  .topImg {
+    height: 180px;
+  }
+  .topImg .title {
+    position: absolute; top: 30px; left: 50%;
+    transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	color: var(--mrz-color-red);
+  }
+  .topImg .title h2 {
+	margin-top: 0;
+  }
+  .topImg img {
+    height: 100%;
+	max-width: auto;
+  }
+  .travel-life, .insurance-life {
+    margin: var(--mrz-row-50) 5%;
+  }
+  .travel-life h2, .insurance-life h2 {
+	color: var(--mrz-color-red);
+	text-align: left;
+  }
+  .travel-life > ul > li, .insurance-life > ul > li {
+    width: 100%;
+    margin-top: var(--mrz-row-20);
+    margin-left: 0%;
+  }
+  .travel-life > ul > li h3, .insurance-life > ul > li h3 {
+    margin-top: var(--mrz-row-20);
+  }
+  .travel-life > ul > li p, .insurance-life > ul > li p {
+    margin-top: var(--mrz-row-10);
+  }
+  .view-wrap {
+    margin: var(--mrz-row-50) auto;
+    padding-bottom: var(--mrz-row-30);
+	width: 90%;
+  }
+  .view-wrap .titleArea > span.year-mth-day {
+    margin-top: var(--mrz-row-10);
+  }
+  .view-wrap .galleryArea {
+    width: 90%;
+    margin: var(--mrz-row-30) auto;
+  }
+  .view-wrap .contArea {
+    width: 90%;
+    margin: var(--mrz-row-30) auto 0;
+  }
+  .view-wrap .visitkorea > ul {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .view-wrap .visitkorea > ul li {
+    display: block;
+    width: 100%;
+  }
+  .view-wrap .visitkorea > ul li:last-child {
+    float: right;
+    width: 100%;
+    padding: 10px 0 0;
+  }
+  .life-view .button-center-area {
+    width: 90%;
+  }
+  .life-view .md-life {
+    margin: var(--mrz-row-80) auto 0;
+    width: 90%;
+  }
+  .life-view .md-life > ul li {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    overflow: hidden;
+  }
+  .life-view .md-life > ul li .swiper-container {
+    width: 100%;
+    height: 220px;
+}
+  .life-view .md-life > ul li .swiper-container .swiper-slide {
+    height: 180px;
+  }
+  .life-view .md-life > ul li figure {
+    width: 100%;
+    height: 180px;
+  }
+  
+  /********************** 보험료 계산/가입 Area css */
+  .signup-wrap {
+    margin: var(--mrz-row-50) auto 0;
+	width: 90%;
+  }
+  .signup-wrap .step-area .step-box-area {
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 23.5%;
+    height: 140px;
+    margin-left: 2%;
+  }  
+  .signup-wrap .step-area .step-box-area .step-01, .signup-wrap .step-area .step-box-area .step-02, .signup-wrap .step-area .step-box-area .step-03, .signup-wrap .step-area .step-box-area .step-04 {
+    text-align: center;
+  }
+  .signup-wrap .step-area .step-box-area i {
+    width: 49px; height: 49px;
+    margin: 10px; margin-bottom: 0px;
+  }
+  .signup-wrap .step-area .step-box-area .txt-area {
+    display: block;
+    margin-left: 0px;
+  }
+  .signup-wrap .step-area .step-box-area i+.txt-area {
+    width: 100%;
+  }
+  .signup-wrap .step-area .step-box-area .txt-area h3 {
+    font-size: var(--mrz-fS-title-04);
+    padding-top: var(--mrz-row-10);
+	text-align: center;
+  }
+  .signup-wrap .step-area .step-box-area .txt-area span {
+    display: block;
+    padding-top: var(--mrz-row-5);
+    font-size: var(--mrz-fS-text-02);
+	text-align: center; letter-spacing: -.135rem;
+	word-break: keep-all;
+  }
+  .signup-wrap .gray-box {
+    padding: 0px 5% 20px;
+    margin-top: var(--mrz-row-30);
+  }
+  .signup-wrap .gray-box > ul > li,
+  .signup-wrap .gray-box.info .addArea > ul > li {
+    float: left;
+    width: 100%;
+    margin-top: var(--mrz-row-30);
+    margin-left: 0%;
+  }
+  .signup-wrap .gray-box > ul > li,  
+  .signup-wrap .gray-box.info .addArea > ul > li {
+    float: left;
+    width: 100%;
+    margin-top: var(--mrz-row-20);
+    margin-left: 0%;
+  }
+  .signup-wrap .gray-box.info .addArea {
+    margin-top: var(--mrz-row-30);
+  }  
+  .signup-wrap .gray-box.info .addArea h4:first-child {
+  	margin-bottom: 0;
+  }
+  .signup-wrap .gray-box > ul> li.rep {
+    display: block;
+    height: 0px;
+  }
+  .signup-wrap .button-left-area .button {
+    width: 100%;
+  }
+  .tableArea .tab-box button {
+    width: 50%;
+  }
+  .tableArea .table-red .tooltip .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-300%);
+  }
+  .signup-wrap .button-center-area .red {
+    width: 59%;
+  }
+  .signup-wrap .button-center-area .gray {
+    width: 40%;
+    margin-right: 1%;
+  }
+  .gray-box > ul > li span.name, .gray-box > ul > li span.number, .gray-box > ul > li span.tel, .gray-box > ul > li span.email {
+    width: 5%;
+    font-size: var(--mrz-fS-text-02);
+    vertical-align: middle;
+  }
+  .gray-box > ul > li .yesChk input:checked+label {
+    margin-bottom: 55px;
+  }  
+  .gray-box.step02 > ul.step02 > li .nationality {
+    position: absolute;
+    top: 105px; left: 0px;
+    width: 100%;
+    vertical-align: top;
+    margin-left: 0%;
+  }
+  .gray-box.step03 ul > li:nth-child(2n+1) {
+    display: block;
+    width: 100%; height: auto;
+    line-height: 140%;
+    font-size: var(--mrz-fS-text-00);
+  }
+  .gray-box.step03 ul > li:nth-child(2n+2) {
+    display: inline-block;
+    width: 100%; height: auto;
+    text-align: right;
+	margin-top: var(--mrz-row-10);
+  }
+  .signup-wrap.step-03 .gray-box.step03 ul li {
+    height: auto;
+  }
+  .signup-wrap.step-03 .gray-box.step03 ul.disclaimer li:nth-child(2) {
+	margin-top: var(--mrz-row-10);
+  }
+  .signup-wrap.step-03 .gray-box.step03 ul li .yesChk input:checked+label {
+    margin-bottom: 0px;
+  }
+  .signup-wrap.step-03 .button-right-area .gray {
+    width: 100%;
+    font-size: var(--mrz-fS-text-00);
+  }
+  
+  .gray-box.step03 .term-box > ul > li span {
+    padding-left: 0%;
+  }
+  .gray-box.step03 .term-box > ul > li:nth-child(2n+1),
+  .gray-box.step03 .term-box > ul > li:nth-child(2n+2),
+  .gray-box.step03 .dropdown .dropdown-top > ul > li:nth-child(1) {
+    width: 100%;
+  }
+  .gray-box.step03 .term-box > ul > li:nth-child(2n+1) {
+    height: 100px; width: 90%;
+	padding: 0 5%;
+    border-bottom: 0px;
+  }
+  .gray-box.step03 .term-box > ul > li a.gray-line {
+    position: absolute; top: 55px; right: auto; left: 5%;
+    width: 90%; line-height: 28px;
+  }
+  .signup-wrap.step-03 .term-box > ul > li:nth-child(2n+2),
+  .signup-wrap.step-03 .term-box > ul > li .choice-round {
+    border-left: 0px;
+	height: 38px; line-height: 38px;
+	margin-top: 0px;
+  }
+  .gray-box.step03 .term-box > ul > li .choice-round {
+    height: 25px;
+    line-height: 25px;
+  }
+  .gray-box.step03 .term-box > ul > li .choice-round label {
+	display: inline-block;
+    line-height: 25px;
+  }
+  .gray-box.step03 .term-box > ul > li .choice-round span.box {
+    padding-left: 0px;
+    line-height: 25px;
+    margin-top: 0px;
+  }
+  .gray-box.step03 .term-box > ul > li.mb-height {
+	height: 130px;
+  }
+  .gray-box.step03 .term-box > ul > li.mb-height a.gray-line {
+    position: absolute; top: auto; bottom: 14px; right: 10px;
+  }
+  .gray-box.step03 .term-box > ul > li a.red-line {
+    position: absolute; top: 45px; left: 5%;
+	width: 90%;
+  }
+  .gray-box.step03 .dropdown .dropdown-top > ul > li {
+    border-left: 0px;
+	padding: 18px 0;
+  }
+  .gray-box.step03 .dropdown .dropdown-top > ul > li span {
+	display: block;
+	margin-right: 10%;
+	line-height: 140%;
+  }
+  .gray-box.step03 .dropdown .dropdown-top > ul > li > span:before {
+    top: 3px; left: auto; right: -7.5%;
+  }
+  .gray-box.step03 .dropdown .dropdown-top > ul > li:nth-child(1) {
+    border-bottom: 0px;
+  }
+  .gray-box.step03 .dropdown > a.gray-line {
+    position: absolute; top: 67px; right: 5%;
+    width: 90%; line-height: 28px;
+  }
+  .gray-box.step03 .dropdown .dropdown-chek {
+    position: absolute; top: 113px; right: auto; left: 19px;
+  }
+  .signup-wrap.step-03 .gray-box.step03 .dropdown ul li {
+	line-height: 140%; height: 40px; width: 100%;
+  }
+  .signup-wrap.step-03 .gray-box.step03 .dropdown ul li:nth-child(2n+1) {
+    border-bottom: 0px;
+  }
+  .gray-box.step03 .dropdown .dropdown-btm > ul > li span {
+    display: block;
+    padding-left: 5%;
+    line-height: 140%;
+	padding-top: 15px; padding-bottom: 8px;
+  }
+  .signup-wrap.step-03 .gray-box.step03 .dropdown .dropdown-btm > ul > li {
+	 height: 40px;
+  }
+  .gray-box.step03 .dropdown .dropdown-btm > ul > li .choice-round {
+    height: 25px; line-height: 140%;
+    margin-left: 5%;
+  }
+  .gray-box.step03 .dropdown .dropdown-btm > ul > li .choice-round label {
+    line-height: 25px;
+  }
+
+
+  /*
+  .signup-wrap.step-03 .gray-box.step03 > ul.agree > li {
+    display: flex;
+    width: 100%;
+    height: auto;
+    line-height: 140%;
+    padding-left: 0%;
+  }
+  .gray-box.step03 ul.agree > li .gray-line {
+    width: 40%; height: 40px; line-height: 40px;
+    font-size: var(--mrz-fS-text-02);
+	margin: var(--mrz-row-10) 0 var(--mrz-row-15);
+  }
+  .gray-box.step03 ul.agree > li .choiceChk {
+	width: 28%;
+	margin: var(--mrz-row-10) 0 var(--mrz-row-15);
+  }
+  .gray-box.step03 ul.agree > li .choiceChk.first, .gray-box.step03 ul.agree > li .choiceChk.second {
+	margin: var(--mrz-row-10) 0 var(--mrz-row-15);
+  }
+  .gray-box.step03 ul.agree > li .choiceChk.first {
+	 margin-left: 2%;
+  }
+  .gray-box.step03 ul.agree > li .choiceChk label {
+    width: 100%; height: 40px; line-height: 38px;
+    box-shadow: 0 0 0px 0 rgb(0 0 0 / 0%);
+    border: 1px solid var(--mrz-color-light-gray);
+  }
+  .gray-box.step03 ul.agree > li .choiceChk label {
+    width: 100%; height: 40px; line-height: 38px;
+    box-shadow: 0 0 0px 0 rgb(0 0 0 / 0%);
+    border: 1px solid var(--mrz-color-light-gray);
+  }
+  .gray-box > ul > li .choiceChk label {
+	    font-size: var(--mrz-fS-text-02);
+  }
+  */
+  
+  .signup-wrap.step-03 .gray-box.step03 > ul.agree > li:nth-child(2n+1) {
+	display: flex;
+    width: 95%; height: auto; line-height: 140%;
+    padding: 10px 0 0 5%;
+  }
+  .signup-wrap.step-03 .gray-box.step03 > ul.agree > li:nth-child(2n+2) {
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 5%;
+  }
+  .signup-wrap.step-03 .button-right-area {
+    margin-top: var(--mrz-row-20);
+  }
+
+  /********************** 가입내역 조회 Area css */
+  .search-wrap {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .search-wrap .box-area .history-search input.input01 {
+    display: inline-block;
+    width: 40%;
+    font-size: var(--mrz-fS-text-02);
+    padding-left: 5%;
+  }
+
+
+  /********************** FAQ Area css */
+  .faq-wrap {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .faq-wrap .box-search .search {
+    width: 100%;
+    height: 60px; line-height: 58px;
+    overflow: hidden;
+    margin-top: var(--mrz-row-30);
+  }
+  .searchint {
+    width: 84%; height: 60px; line-height: 58px;
+    border-radius: 30px 0 0 30px;
+    padding: 1px 3%; padding-left: 10%;
+  }
+  .faq-wrap h3 {
+    margin-top: var(--mrz-row-50);
+  }
+  .faq-cont .accordion {
+    width: 100%;
+    margin: var(--mrz-row-10) auto 0px;
+  }
+  .accordion .link {
+    padding-right: 10%;
+    text-indent: -6px;
+    padding-left: 30px;
+	font-size: var(--mrz-fS-text-01);
+  }
+  .accordion .link span {
+	font-size: 0;
+  }
+  .accordion .link span:before {
+    content: "Q";
+	position: absolute; top: 50%; left: 14px;
+	transform: translateY(-50%);
+	font-size: var(--mrz-fS-title-02); font-weight: bold; color: var(--mrz-color-red);
+  }
+  .accordion li i {
+    position: absolute; top: 50%; right: 4%;
+  }
+  .accd-cont {
+    padding: 30px 5%;
+  }
+  .accd-cont span {
+    line-height: 140%;
+  }
+  .accd-cont div.contArea {
+    line-height: 140%;
+    vertical-align: top;
+    padding-left: 5%;
+    width: 85%;
+  }
+  /*********************************************** 약관 start */
+  .terms-wrap {
+	width: 90%;
+	margin: 0 auto;
+  }
+
+}
+
+
+
+@media only screen and (max-width:359px) and (min-width:320px){
+  /********************** 해상도 320 css */
+  section#section02 ul > li a figure {
+    height: 200px;
+  }  
+  .gray-box.step02 > ul.step02 > li .nationality {
+    position: absolute; top: 126px; left: 0px;
+    width: 100%;
+    vertical-align: top;
+    margin-left: 0%;
+  }
+  footer ul.footer-menu > li {
+    padding: 0 2% 0 1%;
+	font-size: .65rem;
+  }
+}
+
+
+@media only screen and (max-width:374px) and (min-width:360px){
+  /********************** 해상도 360 css */
+  .signup-wrap .step-area .step-box-area .txt-area span {
+    width: 90%;
+	line-height: 120%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width:699px) and (min-width:500px) {  
+  /********************** 해상도 700 이상 태블릿 css */
+  .swiper-slide {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width:899px) and (min-width:700px) {  
+  /********************** 해상도 700 이상 태블릿 css */
+  #wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    height: 350px;
+  }
+  section#section01 figure {
+    margin-top: var(--mrz-row-50);
+    width: 60%;
+  }
+  section#section02 ul > li a figure {
+    height: 220px;
+  }
+  section#section02 ul > li a figure img {
+	width: 100%;
+  }
+
+  .topImg {
+    height: 240px;
+  }
+}
+
+
+@media only screen and (max-width:1000px) and (min-width:900px){
+  /********************************************************************** 900 미만 해상도 */
+  section#section01 figure {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: var(--mrz-row-50);
+  }
+  section#section01 > ul {
+    width: 70%;
+  }
+  section#section01 > ul > li > figure {
+    width: 150px;
+    height: 150px;
+  }
+  section#section01 ul > li > .inner {
+    margin-left: 5%;
+    vertical-align: top;
+  }
+  section#section01 ul > li > figure+.inner {
+    width: calc(100% - 198px);
+  }
+  section#section01 ul > li > .inner h2 {
+    margin-top: var(--mrz-row-30);
+  }
+  section#section01 ul > li:nth-child(2) > figure+.inner {
+    width: calc(100% - 198px);
+  }
+  section#section01 ul > li:nth-child(2) > .inner h2 {
+    margin-top: var(--mrz-row-20);
+  }
+  section#section01 ul > li > figure img {
+    width: 52px; height: 52px;
+  }
+  section#section01 ul > li:nth-child(3) > .inner h2 {
+    margin-top: var(--mrz-row-50);
+  }
+
+  .topImg {
+    height: 270px;
+  }
+  .travel-life > ul > li, .insurance-life > ul > li {
+    width: var(--mrz-width-third);
+    margin-top: var(--mrz-row-20);
+    margin-left: 2%;
+  }
+  .travel-life > ul > li h3, .insurance-life > ul > li h3 {
+    margin-top: var(--mrz-row-20);
+	font-size: var(--mrz-fS-title-04);
+  }
+  .swiper-slide {
+    height: 450px;
+  }
+  .life-view .md-life > ul li {
+    width: var(--mrz-width-second);
+    margin-left: 2%;
+  }
+  .signup-wrap .step-area .step-box-area {
+    width: 21.25%; height: 160px;
+    margin-left: 5%;
+  }
+  .signup-wrap .step-area .step-box-area i {
+    width: 69px; height: 69px;
+  }
+  .signup-wrap .gray-box {
+    margin-top: var(--mrz-row-30);
+  }
+  .gray-box.step02 > ul.step02 > li .nationality {
+    position: absolute;
+    top: 41px; left: 220px;
+    width: 42%;
+    vertical-align: top;
+    margin-left: 0%;
+  }
+  .signup-wrap .gray-box h4:first-child {
+    margin-top: var(--mrz-row-10);
+  }
+}

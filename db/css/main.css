@@ -1,0 +1,266 @@
+/******************************************************************
+           Main Style Css 
+***********************/
+/*********************************************** visual */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  margin-left: auto; margin-right: auto;
+}
+.swiper-slide {
+  position: relative;
+  width: 100%; height: 450px;
+  overflow: hidden;
+}
+.swiper-slide, .swiper-slide.visual1 {
+  background: url('/travel/db/image/main/main-visual-01.png?t') no-repeat;
+  background-size: cover;
+}
+.swiper-slide.visual2 {
+  background: url('/travel/db/image/main/main-visual-02.png?t') no-repeat;
+  background-size: cover;
+}
+.swiper-slide.visual3 {
+  background: url('/travel/db/image/main/main-visual-03.png?t') no-repeat;
+  background-size: cover;
+}
+.swiper-slide .title {
+  position: absolute; top: 130px; left: 130px;
+}
+.swiper-slide strong {
+  display: block;
+  font-size: var(--mrz-fS-title-00); font-weight: bold;
+  color: var(--mrz-color-white); line-height: 140%;
+  text-align: left;
+}
+.swiper .caution {
+  float: right;
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  color: var(--mrz-color-black);
+  margin-top: var(--mrz-row-10);
+}
+
+section#section01 {
+  text-align: center;
+}
+section#section01 figure {
+  margin: 0 auto;
+  margin-top: var(--mrz-row-80);
+  width: 551px;
+}
+section#section01 .button-center-area .button.red {
+  width: 385px;
+}
+
+section#section01 ul {
+  padding-top: var(--mrz-row-80);
+}
+section#section01 ul > li {
+  display: block;
+  margin-top: var(--mrz-row-30);
+  height: 280px;
+  overflow: hidden;
+}
+section#section01 ul > li:first-child {
+  margin-top: 0px;
+}
+section#section01 > ul > li > figure {
+  position: relative;
+  display: inline-block;
+  width: 280px; height: 280px;
+  margin-top: 0px;
+}
+section#section01 > ul > li > figure:after {
+  content: "";
+  position: absolute; top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background-color: var(--mrz-color-light-silver);
+}
+section#section01 ul > li > figure img {
+  position: absolute; top: 50%; left: 50%; z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 112px; height: 112px;
+}
+section#section01 ul > li > figure+.inner {
+  width: calc(100% - 436px);
+}
+section#section01 ul > li > .inner {
+  display: inline-block;
+  margin-left: var(--mrz-row-150);
+  vertical-align: top;
+}
+section#section01 ul > li > .inner h2 {
+  margin-top: var(--mrz-row-80);
+}
+section#section01 ul > li > .inner h2 span {
+  display: block;
+  line-height: 140%;
+  text-align: left;
+}
+section#section01 ul > li > .inner p {
+  font-size: var(--mrz-fS-text-01);
+  padding-top: var(--mrz-row-20);
+  text-align: left;
+}
+
+section#section01 ul > li:nth-child(2) figure {
+  float: right;
+}
+section#section01 ul > li:nth-child(2) > figure+.inner {
+  float: right;
+  width: calc(100% - 526px);
+}
+section#section01 ul > li > .inner p.type_dash {
+  padding-top: 7px;
+}
+section#section01 ul > li > .inner p:nth-child(2).type_dash {
+  padding-top: var(--mrz-row-20);
+}
+section#section01 ul > li > .inner p.type_dash:before {
+  content: "-";
+  display: inline;
+  padding-top: 7px;
+  margin-right: var(--mrz-row-5);
+}
+section#section01 ul > li > .inner p:nth-child(2).type_dash:before {
+  padding-top: var(--mrz-row-20);
+}
+
+section#section02 {
+  margin-top: var(--mrz-row-80);
+}
+section#section02 ul > li {
+  float: left;
+  width: 32%;
+  margin-top: var(--mrz-row-30);
+  margin-left: 2%;
+}
+section#section02 ul > li:first-child {
+  margin-left: 0%;
+}
+section#section02 ul > li a figure {
+  position: relative;
+  width: 100%; height: 220px;
+  overflow: hidden;
+}
+section#section02 ul > li a figure img {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease;
+}
+section#section02 ul > li a:hover figure img {
+  transform: scale(1.2) translate(-40%, -40%);
+  transition: transform 0.4s ease;
+}
+section#section02 ul > li a h3 {
+  margin-top: var(--mrz-row-30);
+  overflow: hidden;  text-overflow: ellipsis; white-space: nowrap;
+}
+section#section02 ul > li a p {
+  margin-top: var(--mrz-row-20);
+  font-size: var(--mrz-fS-text-01); font-weight: 400; line-height: 140%;
+  overflow: hidden;  text-overflow: ellipsis; word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 원하는 라인수 */
+  -webkit-box-orient: vertical;
+}
+
+section#section03 {
+  margin-top: var(--mrz-row-80);
+}
+section#section03 h2 {
+  text-align: left;
+}
+section#section03 ul {
+  margin-top: var(--mrz-row-20);
+}
+/** number 목록 */
+section#section03 ul > li.number {
+  position: relative;
+  padding-top: var(--mrz-row-10); padding-left: 18px;
+  font-size: var(--mrz-fS-text-01); font-weight: 400;
+}
+section#section03 ul > li.number:before {
+  content: "";
+  position: absolute; top: 11px; left: 0px;
+  font-size: var(--mrz-fS-text-01); font-weight: 400;
+}
+section#section03 ul > li.number.first:before {
+  content: "1.";
+}
+section#section03 ul > li.number.second:before {
+  content: "2.";
+}
+section#section03 ul > li.number.third:before {
+  content: "3.";
+}
+section#section03 ul > li.number.fourth:before {
+  content: "4.";
+}
+
+section#section03 .box-attention {
+  background-color: var(--mrz-color-light-silver);
+  display: block;
+  padding: 30px;
+  margin-top: var(--mrz-row-50);
+}
+section#section03 .box-attention ul {
+  margin-top: var(--mrz-row-20);
+}
+section#section03 .box-attention ul li {
+  font-size: var(--mrz-fS-text-01); font-weight: 500; line-height: 140%;
+  margin-top: 5px;
+}section#section03 .box-attention ul li.type_dot:before {
+  top: 10px;
+}
+section#section03 .box-attention ul li > ul,
+section#section03 .box-attention ul li > ul li > ul {
+  margin-top: 0px;
+}
+section#section03 .box-attention ul li > ul li,
+section#section03 .box-attention ul li > ul li > ul li {
+  margin-top: 0px;
+}
+.type_dot {
+  position: relative;
+  padding-left: 11px;
+}
+.type_dot:before {
+  content: "";
+  position: absolute; top: 14px; left: 0px;
+  width: 3px; height: 3px;
+  border-radius: 100%;
+  background-color: var(--mrz-color-black);
+}
+.type_dash {
+  position: relative;
+  line-height: 140%; font-weight: 100;
+  padding: 0px 0 0 13px;
+}
+.type_dash:before {
+  content: "-";
+  position: absolute; top: 0px; left: 0px;
+}
+.type_number {
+  text-indent: -14px;
+  padding-left: 14px;
+  line-height: 140%; font-weight: 100;
+}
+.type_number2 {
+  text-indent: -17px;
+  padding-left: 17px;
+  line-height: 140%; font-weight: 100;
+}

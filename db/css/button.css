@@ -1,0 +1,145 @@
+.button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  text-align:center; text-decoration: none;
+  cursor:pointer;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button:active {
+  -webkit-transform: translate(0px, 1px);
+          transform: translate(0px, 1px);
+  box-shadow:inset 0px -1px 0px 0px rgba(0,0,0,0.15);
+}
+
+.red,.red:focus {
+  background-color: var(--mrz-color-red);
+  text-align: center;
+  color: var(--mrz-color-white); 
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+}
+.red:hover {
+  background-color: var(--mrz-color-navy);
+  color: var(--mrz-color-white); 
+}
+.red:active {
+  background-color: var(--mrz-color-navy);
+  color: var(--mrz-color-white); 
+}
+.gray {
+  background-color: var(--mrz-color-light-gray);
+  text-align: center;
+  color: var(--mrz-color-black); 
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+}
+.gray:hover {
+  background-color: var(--mrz-color-navy);
+  color: var(--mrz-color-white); 
+}
+.gray-line {
+  background-color: var(--mrz-color-light-silver);
+  border: 1px solid var(--mrz-color-light-gray);
+  color: var(--mrz-color-black);
+}
+.gray-line:hover {
+  background-color: var(--mrz-color-red);
+  border: 1px solid var(--mrz-color-deep-red);
+  color: var(--mrz-color-white);
+}
+.bule-line {
+  background-color: var(--mrz-color-white);
+  border: 1px solid var(--mrz-color-blue);
+  border-radius: 5px;
+  color: var(--mrz-color-deep-blue);
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+}
+.bule-line:hover {
+  background-color: var(--mrz-color-blue);
+  color: var(--mrz-color-white);
+}
+.red-line {
+  background-color: var(--mrz-color-white);
+  border: 1px solid var(--mrz-color-red);
+  border-radius: 5px;
+  color: var(--mrz-color-red);
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+}
+.red-line:hover, 
+.red-line:active {
+  background-color: var(--mrz-color-red);
+  color: var(--mrz-color-white);
+} 
+.modify {
+  background-color: var(--mrz-color-white);
+  border: 1px solid var(--mrz-color-red);
+  border-radius: 5px;
+  color: var(--mrz-color-black);
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+}
+.modify:hover, 
+.modifye:active {
+  background-color: var(--mrz-color-red);
+  color: var(--mrz-color-white);
+}  
+.modifye:active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  box-shadow:inset 0px -1px 0px rgba(0,0,0,0.1);
+}
+.remove {
+  position: relative;
+  display: inline-block;
+  background-color: var(--mrz-color-white);
+  border: 1px solid var(--mrz-color-red);
+  border-radius: 30px;
+  color: var(--mrz-color-red);
+  font-size: var(--mrz-fS-title-03); font-weight: 400;
+  padding-left: 10px;
+}
+.remove:before {
+  content: "";
+  position: absolute; top: 50%; left: 18px;
+  width: 6px; height: 1px;
+  background-color: var(--mrz-color-red);
+}
+.remove:hover {
+  background-color: var(--mrz-color-red);
+  color: var(--mrz-color-white);
+}
+.remove:hover:before {
+  background-color: var(--mrz-color-white);
+}
+
+.large {
+  width: 385px; height: 60px; line-height: 60px;
+}
+.medium {
+  width: 100%; height: 48px; line-height: 48px;
+}
+.small {
+  width: 65px; height: 28px; line-height: 28px;
+  font-size: var(--mrz-fS-text-03);
+}
+.xsmall {
+  height: 23px; line-height: 23px;
+  font-size: var(--mrz-fS-text-03); font-weight: 100;
+  border-radius: 12px;
+}
+
+
+
+
+/*********************************************************************************************
+              Mobile Style css
+                        *** 500미만 style ***
+*****************************/
+@media only screen and (max-width:999px) and (min-width:700px){
+  /********************** tablet 해상도 공통 css */
+  .xsmall {
+    height: 18px; line-height: 18px;
+	font-size: var(--mrz-fS-text-03); font-weight: 100;
+  }
+}

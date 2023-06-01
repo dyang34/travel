@@ -1,0 +1,42 @@
+
+/******************************************************************
+           Hyun dai Style Css 
+***********************/
+ul.Sign-up.info > li .select-box {
+  width: 85%;
+  margin-top: 5px;
+  height: 37px; line-height: 37px;
+}
+ul.Sign-up.info > li .select-box select {
+  padding-left: 20px; line-height: 37px;
+}
+.table-wrap .tab button {
+  padding: 14px 0;
+  font-size: var(--mrz-fS-text-02); font-weight: 400; text-align: center; line-height: 1.2;
+}
+.table-wrap .tab button:nth-last-child(2), .table-wrap .tab button:nth-last-child(2)~button {
+  width: 50%;
+}
+.table-wrap .tab button:nth-last-child(3), .table-wrap .tab button:nth-last-child(3)~button {
+  width: 33.33%;
+}
+.table-wrap .tab button:nth-last-child(4), .table-wrap .tab button:nth-last-child(4)~button {
+  width: 25%;
+}
+.table-wrap .tab button:nth-last-child(5), .table-wrap .tab button:nth-last-child(5)~button {
+  width: 20%;
+}
+.table-wrap .tab button.tablinks label.radiobox {
+  margin-bottom: 5px;
+}
+.customer-wrap > ul > li img {
+  height: 38px; width: auto;
+}
+.customer-wrap > ul > li:first-child {
+  display: flex;
+  flex-direction: row; justify-content: flex-start; align-items: center;
+}
+.customer-wrap > ul > li span {
+  width: 9px; height: 9px;
+  margin: 0px 10px;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask-box" width="32" height="32" transform="translate(0 0)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon-arrow-prev" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="pass" d="M14.228.439.439,14.228a1.5,1.5,0,0,0,0,2.121L14.228,30.137a1.5,1.5,0,1,0,2.121-2.121L3.621,15.288,16.349,2.56A1.5,1.5,0,1,0,14.228.439" transform="translate(8 1.001)" fill="#fff"/>
+  </g>
+</svg>

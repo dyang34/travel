@@ -1,0 +1,241 @@
+
+/* modal */
+#modal, #agreement, #collective, #insurance, #privacy, #marketing, #specific, #sports, #hospitalize, #restrict {
+  display: none;
+  position: fixed; left: 0; top: 0; z-index: 12;
+  width: 100%; height: 100vh;
+}
+#modal .modal-bg,
+#agreement .modal-bg,
+#collective .modal-bg,
+#insurance .modal-bg,
+#privacy .modal-bg,
+#marketing .modal-bg,
+#specific .modal-bg,
+#sports .modal-bg,
+#hospitalize .modal-bg,
+#restrict .modal-bg {
+  background-color: rgba(0,0,0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#modal .modal-bg .modal-cont,
+#agreement .modal-bg .modal-cont,
+#collective .modal-bg .modal-cont,
+#restrict .modal-bg .modal-cont {
+  position: relative;
+  background-color: var(--mrz-color-white);
+  border-radius: 22px;
+  max-width: 600px; max-height: 650px;
+  display: block;
+  overflow: hidden;
+}
+#privacy .modal-bg .modal-cont {
+    position: relative;
+    background-color: var(--mrz-color-white);
+    border-radius: 22px;
+    max-width: 600px;
+    max-height: 370px;
+    display: block;
+    overflow: hidden;
+}
+#insurance .modal-bg .modal-cont {
+  position: relative;
+  background-color: var(--mrz-color-white);
+  border-radius: 22px;
+  max-width: 580px; max-height: 270px;
+  display: block;
+  overflow: hidden;
+}
+#insurance .modal-bg .modal-cont .content {
+  font-size: var(--mrz-fS-text-02); line-height: 140%;
+  overflow-y: hidden;
+  height: 220px;
+  margin: 80px 5% 50px;
+}
+#marketing .modal-bg .modal-cont {
+  position: relative;
+  background-color: var(--mrz-color-white);
+  border-radius: 22px;
+  max-width: 580px; max-height: 400px;
+  display: block;
+  overflow: hidden;
+}
+#marketing .modal-bg .modal-cont .content {
+  font-size: var(--mrz-fS-text-02); line-height: 140%;
+  overflow-y: hidden;
+  height: 350px;
+  margin: 80px 5% 50px;
+}
+#specific .modal-bg .modal-cont, 
+#sports .modal-bg .modal-cont,
+#hospitalize .modal-bg .modal-cont {
+  position: relative;
+  background-color: var(--mrz-color-white);
+  border-radius: 22px;
+  max-width: 580px; max-height: 270px;
+  display: block;
+  overflow: hidden;
+}
+#modal .modal-bg .modal-cont h2,
+#agreement .modal-bg .modal-cont h2,
+#collective .modal-bg .modal-cont h2,
+#insurance .modal-bg .modal-cont h2,
+#privacy .modal-bg .modal-cont h2,
+#marketing .modal-bg .modal-cont h2,
+#specific .modal-bg .modal-cont h2,
+#sports .modal-bg .modal-cont h2,
+#hospitalize .modal-bg .modal-cont h2,
+#restrict .modal-bg .modal-cont h2 {
+  background-color: var(--mrz-color-red);
+  height: 60px; width: 95%;
+  position: absolute; top: 0; left: 0;
+  margin-top: 0; padding-left: 5%;
+  text-align: left;
+  color: var(--mrz-color-white); line-height: 60px;
+  font-size: var(--mrz-fS-title-02);
+}
+.modal-cont .content {
+  font-size: var(--mrz-fS-text-02); line-height: 140%;
+  overflow-y: scroll;
+  height: 550px;
+  margin: 80px 1% 50px 5%;
+  padding-right: 3%;
+}
+.modal-cont .content > ul > li {
+  margin-top: var(--mrz-row-10);
+  line-height: 140%;
+}
+.modal-cont .content > ul > li strong {
+  display: block;
+  font-size: var(--mrz-fS-title-04); font-weight: bold;
+  margin-top: var(--mrz-row-30);
+}
+.modal-cont .content > ul > li:first-child strong {
+  margin-top: 0px;
+}
+.modal-cont .content > ul > li.type_number {
+  text-indent: -14px;
+  padding-left: 14px;
+  line-height: 140%;
+}
+.modal-cont .content > ul > li.type_dash {
+  text-indent: -8px;
+  padding-left: -8px;
+  line-height: 140%;
+}
+.modal-cont .content > ul > li > ul {
+  margin-top:5px;
+}
+.modal-cont .content > ul > li > ul.type {
+  margin-left: 15px;
+}
+.modal-cont .content > ul > li > ul.type li {
+  line-height: 150%;
+}
+.modal-cont .content > ul > li span.accent {
+  font-weight: 700;
+  color: var(--mrz-color-red);
+}
+.modal-cont .content > ul > li span.accent2 {
+  font-weight: 700;
+}
+.modal-cont .content > ul > li.fc-red {
+  color: var(--mrz-color-red)
+}
+.modal-cont .content .table-red {
+  width: 100%;
+  margin-top: var(--mrz-row-30);
+}
+/*
+.modal-cont .close {
+  position: absolute; top: 10px; right: 10px;
+  background-color: var(--mrz-color-white);
+  border-radius: 50%;
+  width: 36px; height: 36px; line-height: 36px;
+  text-align: center;
+}
+.modal-cont .close span {
+  position: relative;
+  display: block;
+  margin-top: 13px;
+}
+.modal-cont .close span:before {
+  content: "";
+  position: absolute; top: 3px; left: 10px;
+  width: 17px; height: 3px;
+  background-color: var(--mrz-color-red);
+  transform: rotate( 316deg );
+}
+.modal-cont .close span:after {
+  content: "";
+  position: absolute; top: 3px; left: 10px;
+  width: 17px; height: 3px;
+  background-color: var(--mrz-color-red);
+  transform: rotate( 45deg );
+}
+*/
+
+.modal-cont .close {
+  position: absolute; top: 10px; right: 10px;
+  border-radius: 50%;
+  width: 36px; height: 36px; line-height: 36px;
+  text-align: center; color: var(--mrz-color-white);
+  font-size: var(--mrz-fS-title-05); font-weight: 700;
+}
+.modal-cont .close span {
+  position: relative;
+  display: block;
+  margin-top: 13px;
+}
+.modal-cont .close span:before {
+  content: "";
+  position: absolute; top: 3px; left: 10px;
+  width: 17px; height: 3px;
+  background-color: var(--mrz-color-red);
+  transform: rotate( 316deg );
+}
+.modal-cont .close span:after {
+  content: "";
+  position: absolute; top: 3px; left: 10px;
+  width: 17px; height: 3px;
+  background-color: var(--mrz-color-red);
+  transform: rotate( 45deg );
+}
+
+.modal-cont .button-area {
+  text-align: left;
+  margin-top: var(--mrz-row-30);
+}
+.modal-cont .button-area a.btn-down {
+  display: block;
+  width: 220px; height: 38px; line-height: 38px;
+  padding: 0px;
+  text-align:center; text-decoration: none;
+  cursor:pointer;
+  background-color: var(--mrz-color-red);
+  text-align: center;
+  color: var(--mrz-color-white); 
+  font-size: var(--mrz-fS-text-02); font-weight: 400;
+}
+.modal-cont .button-area a.btn-down:hover {
+  background-color: var(--mrz-color-navy);
+  color: var(--mrz-color-white); 
+}
+
+
+.content::-webkit-scrollbar { 
+  width: 5px; /*스크롤바의 너비*/ 
+} 
+.content::-webkit-scrollbar-thumb { 
+  background-color: var(--mrz-color-red); /*스크롤바의 색상*/
+  border-radius: 10px; /*스크롤바 라운드*/
+} 
+.content::-webkit-scrollbar-track { 
+  background-color: var(--mrz-color-light-silver); /*스크롤바 트랙 색상*/
+  border-radius: 10px; /*스크롤바 트랙 라운드*/
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1); /*스크롤바 트랙 안쪽 그림자*/
+}
+
