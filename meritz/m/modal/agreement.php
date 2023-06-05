@@ -1,5 +1,5 @@
 <!-- /** 이용약관 Start -->
-<div id="modal-01">
+<div id="agreement">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>이용약관</h2>
@@ -267,17 +267,17 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod1").click(function(){
+  $("#btn-agre").click(function(){
     //$("#modal-01").css("display","block");
 		
-	$("#modal-01").fadeIn(200, function() {
+	$("#agreement").fadeIn(200, function() {
 	});
 	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
-    //$("#modal-01").css("display","none");
+    //$("#agreement").css("display","none");
 
-	$("#modal-01").fadeOut(200, function() {
+	$("#agreement").fadeOut(200, function() {
 	});
 	return false;
   });

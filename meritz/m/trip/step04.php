@@ -55,7 +55,7 @@ if ($tripType=="2") {
 					</li>
 
 					<li>
-						2. 최근 3개월 내에 <span id="btn-hosp" class="fc-red">입원, 수술, 질병확진[보기]</span>을 받은 사실이 있나요?
+						2. 최근 3개월 내에 <span id="btn-hosp" class="fc-red">입원, 수술, 질병확진[보기]</span>을 받은 사실이 있나요?
 					</li>
 					<li class="choice">
 						<span class="choiceChk first">
@@ -83,7 +83,7 @@ if ($tripType=="2") {
 					</li>
 
 					<li>
-						4. 여행지역이 <span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
+						4. 여행지역이 <span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
 					</li>
 					<li class="choice">
 						<span class="choiceChk first">

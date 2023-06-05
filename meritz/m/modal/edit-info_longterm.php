@@ -10,7 +10,7 @@
 ?>
 					<li>
 						<h3>1. 여행정보
-							<a href="/travel/meritz/m/trip/step0101.php" class="button small gray">수정</a>
+							<a href="/travel/meritz/m/trip_longterm/step0101.php" class="button small gray">수정</a>
 						</h3>
 						<p class="first">여행지 : <?=$_SESSION["travel_step"]["1"]["nation_search"]?></p>
 						<p>여행 목적 : <?=$trip_purpose_array[$_SESSION["travel_step"]["1"]["trip_purpose"]]?></p>
@@ -32,7 +32,7 @@
 ?>
 					<li>
 						<h3>2. 보험료 계산 결과
-							<a href="/travel/meritz/m/trip/step02.php" class="button small gray">수정</a>
+							<a href="/travel/meritz/m/trip_longterm/step02.php" class="button small gray">수정</a>
 						</h3>
 						<p class="first"><?=number_format($_SESSION["travel_step"]["2"]["sum_price"])?>원 (<?=$_SESSION["travel_step"]["2"]["plan_title"]?>)</p>
 					</li>
@@ -41,7 +41,7 @@
 ?>
 					<li>
 						<h3>3. 피보험자/계약자 정보
-							<a href="/travel/meritz/m/trip/step03.php" class="button small gray">수정</a>
+							<a href="/travel/meritz/m/trip_longterm/step03.php" class="button small gray">수정</a>
 						</h3>
 					</li>
 <?php
@@ -49,7 +49,7 @@
 ?>
 					<li>
 						<h3>4. 가입 동의
-							<a href="/travel/meritz/m/trip/step04.php" class="button small gray">수정</a>
+							<a href="/travel/meritz/m/trip_longterm/step04.php" class="button small gray">수정</a>
 						</h3>
 					</li>
 <?php

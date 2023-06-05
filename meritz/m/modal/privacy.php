@@ -1,5 +1,5 @@
 <!-- /** 개인정보수집 및 이용 Start -->
-<div id="modal-04">
+<div id="privacy">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>개인정보수집 및 이용</h2> 
@@ -31,10 +31,18 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod4").click(function(){
-    $("#modal-04").css("display","block");
+  $("#btn-priv").click(function(){
+    //$("#modal-04").css("display","block");
+		
+	$("#privacy").fadeIn(200, function() {
+	});
+	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
-    $("#modal-04").css("display","none");
+    //$("#modal-04").css("display","none");
+
+	$("#privacy").fadeOut(200, function() {
+	});
+	return false;
   });
 </script>

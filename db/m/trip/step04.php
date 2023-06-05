@@ -23,7 +23,7 @@ $tripType = $_SESSION["travel_step"]["1"]["trip_type"];
 	<div class="title-wrap clearfix">
 		<h3>4. 가입 동의</h3>
 		<div class="btn-right">
-			<a id="btn-mod" class="button small red-line">정보수정</a>
+			<a id="btn-mod" class="button small line-info">정보수정</a>
 		</div>
 	</div>
 	<!-- 제목영역 */ -->
@@ -55,7 +55,7 @@ if ($tripType=="2") {
 					</li>
 
 					<li>
-						2. 최근 3개월 내에 <span id="btn-hosp" class="fc-red">입원, 수술, 질병확진[보기]</span>을 받은 사실이 있나요?
+						2. 최근 3개월 내에 <span id="btn-hosp" class="fc-red">입원, 수술, 질병확진[보기]</span>을 받은 사실이 있나요?
 					</li>
 					<li class="choice">
 						<span class="choiceChk first">
@@ -83,7 +83,7 @@ if ($tripType=="2") {
 					</li>
 
 					<li>
-						4. 여행지역이 <span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
+						4. 여행지역이 <span id="btn-restr" class="fc-red">여행금지국가[보기]</span>인가요?
 					</li>
 					<li class="choice">
 						<span class="choiceChk first">
@@ -350,20 +350,6 @@ if ($tripType=="2") {
 	</form>
 </div>
 
-<?php 
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/agreement.php"; //이용약관	btn-agre
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/insurance.php"; //보험약관	btn-insu
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/collective.php"; //개인정보 처리 및 단체가입규약 동의	btn-colle
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/marketing.php"; //마케팅 활용 동의	btn-mark
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/privacy.php"; //개인정보수집 및 이용	btn-priv
-
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/hospitalize.php"; //입원, 수술, 질병확진 btn-hosp
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/specific.php"; //특정질병 btn-spec
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/sports.php"; //위험한 레포츠 btn-sport
-require_once $SYS_ROOT_DIR."/travel/db/m/modal/restrict.php"; //보험인수 제한 국가 안내 btn-restr
-?>
-
-<link rel="stylesheet" type="text/css" href="/travel/db/m/css/modal.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT']."/travel/db/m/css/modal.css")?>">
 <script type="text/javascript">
 	$('.terms-list dt').click(function() {
 
@@ -512,6 +498,21 @@ require_once $SYS_ROOT_DIR."/travel/db/m/modal/restrict.php"; //보험인수 제
 		*/
 	});	
 </script>
+
+
+<link rel="stylesheet" type="text/css" href="/travel/db/m/css/modal.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT']."/travel/db/m/css/modal.css")?>">
+<?php 
+//require_once $SYS_ROOT_DIR."/travel/db/m/modal/agreement.php";   //이용약관	btn-agre
+// require_once $SYS_ROOT_DIR."/travel/db/m/modal/insurance.php";  //보험약관	btn-insu
+// require_once $SYS_ROOT_DIR."/travel/db/m/modal/collective.php"; //개인정보 처리 및 단체가입규약 동의	btn-colle
+// require_once $SYS_ROOT_DIR."/travel/db/m/modal/marketing.php";  //마케팅 활용 동의	btn-mark
+// require_once $SYS_ROOT_DIR."/travel/db/m/modal/privacy.php";    //개인정보수집 및 이용	btn-priv
+
+//require_once $SYS_ROOT_DIR."/travel/db/m/modal/hospitalize.php"; //입원, 수술, 질병확진 btn-hosp
+//require_once $SYS_ROOT_DIR."/travel/db/m/modal/specific.php"; 	 //특정질병 btn-spec
+//require_once $SYS_ROOT_DIR."/travel/db/m/modal/sports.php"; 	 //위험한 레포츠 btn-sport
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/restrict.php"; 	 //보험인수 제한 국가 안내 btn-restr
+?>
 <?php
 require_once $SYS_ROOT_DIR."/travel/db/m/modal/edit-info.php";
 require_once $SYS_ROOT_DIR."/travel/db/m/include/footer.php";

@@ -1,5 +1,5 @@
 <!-- /** 단체규약 Start -->
-<div id="modal-02">
+<div id="collective">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>개인정보 처리 및 단체가입규약 동의</h2>
@@ -22,7 +22,7 @@
             ① 회사가 운영하는 서비스 이용약관에 동의한 회원은 이 협약의 당사자가 됩니다.
           </li>
           <li class="type_number">
-            2.	② 회원의 자격득실 등에 관하여는 이용약관에서 정하는 바에 따릅니다.
+            ② 회원의 자격득실 등에 관하여는 이용약관에서 정하는 바에 따릅니다.
           </li>
 		  
           <li>
@@ -136,7 +136,7 @@
           <li class="type_dash">
             - 개인정보 보유 및 이용 기간 : 목적 달성 시 즉시 폐기(관련 법령 규정이 있을 경우 해당 법령에 따라 보관)
           </li>
-          <li class="type_dash">
+          <li >
             ※ 동의 거부 시 서비스 이용이 불가합니다.
           </li>
 
@@ -207,17 +207,17 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod2").click(function(){
-    //$("#modal-02").css("display","block");
+  $("#btn-colle").click(function(){
+    //$("#collective").css("display","block");
 		
-	$("#modal-02").fadeIn(200, function() {
+	$("#collective").fadeIn(200, function() {
 	});
 	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
-    //$("#modal-02").css("display","none");
+    //$("#collective").css("display","none");
 
-	$("#modal-02").fadeOut(200, function() {
+	$("#collective").fadeOut(200, function() {
 	});
 	return false;
   });

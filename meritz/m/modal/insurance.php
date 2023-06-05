@@ -1,5 +1,5 @@
 <!-- /** 보험약관 Start -->
-<div id="modal-03">
+<div id="insurance">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>보험약관</h2>  
@@ -19,17 +19,17 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod3").click(function(){
+  $("#btn-insu").click(function(){
     //$("#modal-03").css("display","block");
 		
-	$("#modal-03").fadeIn(200, function() {
+	$("#insurance").fadeIn(200, function() {
 	});
 	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
     //$("#modal-03").css("display","none");
 
-	$("#modal-03").fadeOut(200, function() {
+	$("#insurance").fadeOut(200, function() {
 	});
 	return false;
   });
