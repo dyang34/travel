@@ -14,7 +14,7 @@
 }
 .trip-wrap .signUp-wrap span.choiceChk label {
   width: 100%; height: 38px; line-height: 38px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   text-align: center;
   margin: 0 -1px;
   cursor: pointer;
@@ -27,21 +27,21 @@
   margin: 0;
 }
 .trip-wrap > h2 {
-  font-size: var(--mrz-fS-title-05); font-weight: 700;
-  text-align: center; color: var(--mrz-color-white);
-  background-color: var(--mrz-color-red);
+  font-size: var(--font-size-21); font-weight: 700;
+  text-align: center; color: var(--color-white);
+  background-color: var(--color-point);
   height: 45px; line-height: 45px;
 }
 .trip-wrap .title-wrap {
   display: block;
   position: relative;
   width: 90%;
-  margin: var(--mrz-row-20) auto;
-  padding-bottom: var(--mrz-row-10);
-  border-bottom: 2px solid var(--mrz-color-black);
+  margin: 1.25rem auto;
+  padding-bottom: .625rem;
+  border-bottom: 2px solid var(--color-black);
 }
 .trip-wrap .title-wrap > h3 {
-  font-size: var(--mrz-fS-title-07); font-weight: 400;
+  font-size: var(--font-size-18); font-weight: 400;
   line-height: 28px;
 }
 .trip-wrap .title-wrap .btn-right {
@@ -49,17 +49,17 @@
   float: right;
   height: 28px;
 }
-.trip-wrap .title-wrap .btn-right a.red-line {
+.trip-wrap .title-wrap .btn-right a.line-info {
   border-radius: 14px;
   width: 68px;
 }
 
 .trip-wrap .signUp-wrap {
   width: 90%;
-  margin: var(--mrz-row-20) auto 0;
+  margin: 1.25rem auto 0;
 }
 .trip-wrap .signUp-wrap > h3.title {
-  font-size: var(--mrz-fS-title-04); font-weight: 700;
+  font-size: var(--font-size-22); font-weight: 700;
 }
 .trip-wrap .signUp-wrap > ul.stage-01 {
   width: 100%;
@@ -68,7 +68,7 @@
 .trip-wrap .signUp-wrap > ul.stage-01 > li {
   position: relative;
   width: 100%;
-  margin-top: var(--mrz-row-10);
+  margin-top: .625rem;
 }
 .trip-wrap .signUp-wrap > ul.stage-01 > li.first {
   float: left;
@@ -81,23 +81,21 @@
   margin-left: 2%;
 }
 
-.trip-wrap .signUp-wrap > ul.stage-01 > li a.alink {
-}
 .trip-wrap .signUp-wrap > ul.stage-01 > li a.alink > b {
-  color: var(--mrz-color-red);
+  color: var(--color-red);
   font-weight: 700;
 }
 ul.stage-01 > li strong {
   display: block;
-  margin-top: var(--mrz-row-20);
-  font-size: var(--mrz-fS-text-01); font-weight: 400;
+  margin-top: 1.25rem;
+  font-size: var(--font-size-15); font-weight: 400;
 }
 ul.stage-01 > li p.type-dash {
   text-indent: -10px;
   padding-left: 10px; padding-top: 7px;
   line-height: 140%; 
   letter-spacing: -0.0625rem;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
 }
 ul.stage-01 > li .capt {
   display: block;
@@ -105,10 +103,10 @@ ul.stage-01 > li .capt {
   padding-left: 24px; padding-top: 0px; 
   line-height: 140%; 
   letter-spacing: -0.0625rem;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
 }
 ul.stage-01 > li p.type-dash a.font-link {
-  color: var(--mrz-color-red); font-weight: 700;
+  color: var(--color-point); font-weight: 700;
   text-decoration: underline;
   padding: 0 3px;
 }
@@ -117,7 +115,7 @@ ul.stage-01 > li p.type-dash a.font-link {
 }
 ul.stage-01 > li span.choiceChk {
   height: 39px; line-height: 39px; width: 52px;
-  margin-top: var(--mrz-row-10);
+  margin-top: .625rem;
 }
 ul.stage-01 > li span.choiceChk.first label {
   border-radius: 5px 0 0 5px;
@@ -133,17 +131,17 @@ ul.stage-01 > li input {
 }
 ul.stage-01 > li input.input01 {
   width: 100%; height: 39px; line-height: 39px;
-  margin-top: var(--mrz-row-10);
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  margin-top: .625rem;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 ul.stage-01 > li .select-box {
   width: calc(100% - 2px); 
   height: 39px; line-height: 39px;
-  margin-top: var(--mrz-row-10);
+  margin-top: .625rem;
 }
 ul.stage-01 > li .select-box select {
   height: 37px; line-height: 37px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400; color: var(--mrz-color-black);
+  font-size: var(--font-size-14); font-weight: 400; color: var(--color-black);
   padding-left: 5%;
 }
 ul.stage-01 > li .date_picker {
@@ -151,10 +149,10 @@ ul.stage-01 > li .date_picker {
   display: inline-block;
   width: calc(100% - 2px);; height: 39px; line-height: 39px;
   box-sizing: border-box;
-  padding-right: 10%;  margin-top: var(--mrz-row-10);
-  border: 1px solid var(--mrz-color-light-gray);
+  padding-right: 10%;  margin-top: .625rem;
+  border: 1px solid var(--color-light-gray);
   border-radius: 3px;
-  background-color: var(--mrz-color-white);
+  background-color: var(--color-white);
   cursor: pointer;
   z-index: 2;
 }
@@ -170,7 +168,7 @@ ul.stage-01 > li .date_picker img {
 ul.stage-01 > li .date_picker input {
   width: 80%;
   height: 36px; line-height: 36px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 ul.stage-01 > li .select-box.hour {
   display: inline-block;
@@ -178,33 +176,33 @@ ul.stage-01 > li .select-box.hour {
   margin-left: 2%;
 }
 .trip-wrap .signUp-wrap .button-center {
-  margin: var(--mrz-row-30) auto 0;
+  margin: 1.875rem auto 0;
 }
-.trip-wrap .signUp-wrap .button-center a.red {
+.trip-wrap .signUp-wrap .button-center a.point {
   height: 48px; line-height: 48px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 .trip-wrap .signUp-wrap .know-wrap {
   width: 100%;
-  margin: var(--mrz-row-30) auto 0;
-  background-color: var(--mrz-color-light-silver);
+  margin: 1.875rem auto 0;
+  background-color: var(--color-light-silver);
 }
 .trip-wrap .signUp-wrap .know-wrap .cont {
   padding: 20px 5%;
 }
 .trip-wrap .signUp-wrap .know-wrap .cont > strong {
   display: block;
-  font-size: var(--mrz-fS-title-07); font-weight: 500;
-  margin-bottom: var(--mrz-row-10);
+  font-size: var(--font-size-18); font-weight: 500;
+  margin-bottom: .625rem;
 }
 .trip-wrap .signUp-wrap .know-wrap .cont p {
-  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height: 140%;
+  font-size: var(--font-size-14); font-weight: 400; line-height: 140%;
   padding-top: 7px;
 }
 .trip-wrap .signUp-wrap .know-wrap .cont p.type-dash {
   text-indent: -15px;
   padding-left: 15px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height: 140%;
+  font-size: var(--font-size-14); font-weight: 400; line-height: 140%;
 }
 
 
@@ -212,20 +210,20 @@ ul.stage-01 > li .select-box.hour {
 .trip-wrap .signUp-wrap .step {
   display: block;
   overflow: hidden;
-  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-20);
-  border-bottom: 2px solid var(--mrz-color-red);
+  margin-top: 1.25rem; padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--color-point);
 }
 .trip-wrap .signUp-wrap .step.last {
   padding-bottom: 0;
   border-bottom: 0px;
 }
 .trip-wrap .signUp-wrap .step > h4 {
-  font-size: var(--mrz-fS-title-07); font-weight: 700; line-height: 140%;
+  font-size: var(--font-size-18); font-weight: 700; line-height: 140%;
 }
 .trip-wrap .signUp-wrap .step > h4 a.button {
   float: right;
   width: 58px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 .trip-wrap .signUp-wrap .step > ul > li {
   float: left;
@@ -238,7 +236,7 @@ ul.stage-01 > li .select-box.hour {
 }
 .trip-wrap .signUp-wrap .step > ul > li strong {
   display: block;
-  font-size: var(--mrz-fS-text-02); font-weight: 500; line-height: 140%;
+  font-size: var(--font-size-14); font-weight: 500; line-height: 140%;
   margin: 10px 0 5px;
 }
 .trip-wrap .signUp-wrap .step > ul > li .input01 {
@@ -259,25 +257,25 @@ ul.stage-01 > li .select-box.hour {
 .trip-wrap .signUp-wrap .step .button-center .bule-line {
   border-radius: 28px;
   width: calc(100% - 2px);
-  font-size: var(--mrz-fS-text-02); font-weight: 500; line-height: 36px;
+  font-size: var(--font-size-14); font-weight: 500; line-height: 36px;
 }
 
 /******************************************** 가입단계 step 02 */
 .table-wrap {
   width: 100%;
-  margin-top: var(--mrz-row-30); margin-bottom: 100px;
+  margin-top: 1.875rem; margin-bottom: 100px;
 }
 .table-wrap .tab {
   overflow: hidden;
-  background-color: var(--mrz-color-light-silver);
+  background-color: var(--color-light-silver);
    height: 82px; line-height: 82px;
 }
 .table-wrap .tab button {
   background-color: inherit;
   float: left;
-  border: 1px solid var(--mrz-color-light-gray); border-right: 0px;
+  border: 1px solid var(--color-light-gray); border-right: 0px;
   padding: 0px 0; height: 82px; 
-  text-align: center; font-size: var(--mrz-fS-text-02); font-weight: 400;
+  text-align: center; font-size: var(--font-size-14); font-weight: 400;
   transition: 0.3s;
 }
 .table-wrap .tab button.tablinks {
@@ -298,8 +296,8 @@ ul.stage-01 > li .select-box.hour {
 }
 .table-wrap .tab button.tablinks label.radiobox {
   display: block; position: relative;
-  width: 12px; height: 12px; margin: 0 auto; background-color: var(--mrz-color-white);
-  border: 2px solid var(--mrz-color-light-gray); border-radius: 100%;
+  width: 12px; height: 12px; margin: 0 auto; background-color: var(--color-white);
+  border: 2px solid var(--color-light-gray); border-radius: 100%;
 }
 
 .table-wrap .tab button:only-child {
@@ -316,61 +314,61 @@ ul.stage-01 > li .select-box.hour {
 }
 
 .table-wrap .tab button:last-child {
-  border-right: 1px solid var(--mrz-color-light-gray);
+  border-right: 1px solid var(--color-light-gray);
 }
 .table-wrap .tab button:hover {
-  background-color: var(--mrz-color-light-gray);
+  background-color: var(--color-light-gray);
 }
 .table-wrap .tab button.active {
-  background-color: var(--mrz-color-red);
-  border-color: var(--mrz-color-deep-red);
-  color: var(--mrz-color-white);
+  background-color: var(--color-point);
+  border-color: var(--color-point-s2);
+  color: var(--color-white);
 }
 .table-wrap .tab button.active label {
-  color: var(--mrz-color-white);
+  color: var(--color-white);
 }
 .table-wrap .tab button.active label.control input {
-  background: var(--mrz-color-white);
+  background: var(--color-white);
 }
 .table-wrap .tab button.active label.radiobox {
-  border: 2px solid var(--mrz-color-white);
+  border: 2px solid var(--color-white);
 }
 .table-wrap .tab button.active label.radiobox:after {
   content: "";
   position: absolute; top: 6px; left: 2px; transform: rotate(38deg);
-  width: 4px; height: 2px; background-color: var(--mrz-color-red);
+  width: 4px; height: 2px; background-color: var(--color-point);
 }
 .table-wrap .tab button.active label.radiobox:before {
   content: "";
   position: absolute; top: 5px; left: 4px; transform: rotate(314deg);
-  width: 7px; height: 2px; background-color: var(--mrz-color-red);
+  width: 7px; height: 2px; background-color: var(--color-point);
 }
 .table-wrap .tab button.active:first-child {
-  border-right: 1px solid var(--mrz-color-deep-red);
+  border-right: 1px solid var(--color-point-s2);
 }
 
 .table-wrap .tab button.active:first-child {
-  border-right: 1px solid var(--mrz-color-deep-red);
+  border-right: 1px solid var(--color-point-s2);
 }
 .table-wrap .tabcontent {
   width: 100%;
-  font-family: var(--mrz-ffam-noto);
-  margin-top: var(--mrz-row-10);
+  font-family: var(--font-family-noto);
+  margin-top: .625rem;
 }
 .table-wrap .tabcontent .caption {
-  font-family: var(--mrz-ffam-noto);
-  font-size: var(--mrz-fS-text-02);
-  padding-top: var(--mrz-row-10);
+  font-family: var(--font-family-noto);
+  font-size: var(--font-size-14);
+  padding-top: .625rem;
 }
 .table-wrap .tabcontent  table tr th,
 .table-wrap .tabcontent  table tr td {
-  font-family: var(--mrz-ffam-noto);
+  font-family: var(--font-family-noto);
 }
 .table-wrap .tabcontent  table tr td.select {
-  background-color: #F8DFDF
+  background-color: var(--color-point-s1)
 }
 .trip-wrap .signUp-wrap .button-center {
-  margin: var(--mrz-row-30) auto 0;
+  margin: 1.875rem auto 0;
 }
 .trip-wrap .signUp-wrap .button-center > ul > li {
   float: left;
@@ -381,7 +379,7 @@ ul.stage-01 > li .select-box.hour {
   margin-left: 0%;
 }
 .trip-wrap .signUp-wrap .button-center > ul > li a {
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   height: 48px; line-height: 48px;
 }
 
@@ -393,12 +391,12 @@ ul.stage-01 > li .select-box.hour {
 .btn-box-area {
   display:flex; align-items:center; 
   width: 100%;
-  font-size: var(--mrz-fS-text-02); font-weight:300; letter-spacing:-.03em;
+  font-size: var(--font-size-14); font-weight:300; letter-spacing:-.03em;
 }
 .btn-box-area a {
   display:inline-block;
-  wight: 50%; height:58px; line-height:58px;
-  font-size: var(--mrz-fS-text-02); font-weight:300; letter-spacing:-.03em;
+  width: 50%; height:58px; line-height:58px;
+  font-size: var(--font-size-14); font-weight:300; letter-spacing:-.03em;
 }
 
 
@@ -424,7 +422,7 @@ ul.stage-01 > li .select-box.hour {
   margin-left: 0%;
 }
 .bottom-btn-wrap > ul > li a {
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   height: 48px; line-height: 48px;
 }
 */
@@ -433,22 +431,22 @@ ul.stage-01 > li .select-box.hour {
 /******************************************** 가입단계 step 03 */
 .trip-wrap .signUp-wrap .step03 {
   width: 100%;
-  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-20);
-  border-bottom: 2px solid var(--mrz-color-red);
+  margin-top: 1.25rem; padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--color-point);
 }
 .trip-wrap .signUp-wrap .step03 h3 {
-  font-size: var(--mrz-fS-title-07); font-weight: 700;
+  font-size: var(--font-size-18); font-weight: 700;
 }
 .trip-wrap .signUp-wrap .step03 h3 a.button {
   float: right;
   width: 58px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 .trip-wrap .signUp-wrap .step03 h3 strong.wom  {
-  color: var(--mrz-color-red);
+  color: var(--color-point);
 }
 .trip-wrap .signUp-wrap .step03 h3 strong.man {
-  color: var(--mrz-color-blue2);
+  color: var(--color-blue2);
 }
 .trip-wrap .signUp-wrap .step03  > ul > li {
   position: relative;
@@ -460,18 +458,18 @@ ul.stage-01 > li .select-box.hour {
 }
 .trip-wrap .signUp-wrap .step03  > ul > li strong {
   display: block;
-  font-size: var(--mrz-fS-text-02);
+  font-size: var(--font-size-14);
   font-weight: 500;
   line-height: 140%;
   margin: 10px 0 5px;
 }.trip-wrap .signUp-wrap .step03 > ul > li strong span.caps {
-  font-family: 'Noto Sans KR', sans-serif; color: var(--mrz-color-blue);
-  font-weight: 400; font-size: var(--mrz-fS-text-02);
+  font-family: 'Noto Sans KR', sans-serif; color: var(--color-blue);
+  font-weight: 400; font-size: var(--font-size-14);
   padding-left: 2%;
 }
 .trip-wrap .signUp-wrap .step03 > ul > li strong > span.spanCaution {
   font-family: 'Noto Sans KR', sans-serif;
-  color: var(--mrz-color-red);
+  color: var(--color-point);
   font-weight: 400;
 }
 .trip-wrap .signUp-wrap .step03  > ul > li.eng input {
@@ -493,7 +491,7 @@ ul.stage-01 > li .select-box.hour {
   display: inline-block;
   width: 6%;
   text-align: center;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   line-height: 39px;
   vertical-align: top;
 }
@@ -508,9 +506,9 @@ ul.stage-01 > li .select-box.hour {
   margin-left: 2%; margin-bottom: 10px;
 }
 .trip-wrap .signUp-wrap .step03  > ul > li .nationality .caption {  
-  font-size: var(--mrz-fS-text-03);
+  font-size: var(--font-size-12);
   line-height: 160%;
-  margin-top: var(--mrz-row-5); margin-left: -128px;
+  margin-top: .3125rem; margin-left: -128px;
 }
 #noneDiv1, #noneDiv2, #noneDiv3 {
   display: none;
@@ -530,7 +528,7 @@ ul.stage-01 > li .select-box.hour {
 .trip-wrap .signUp-wrap .step03  > ul > li.tel > span {
   display: inline-block;
   width: 7%; line-height: 39px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   text-align: center; vertical-align: top;
 }
 .trip-wrap .signUp-wrap .step03  > ul > li.email input {
@@ -540,41 +538,41 @@ ul.stage-01 > li .select-box.hour {
 .trip-wrap .signUp-wrap .step03  > ul > li.email > span {
   display: inline-block;
   width: 10%; line-height: 39px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   text-align: center; vertical-align: top;
 }
 
 /******************************************** 가입단계 step 04 */
 .trip-wrap .signUp-wrap .step04 {
   width: 100%;
-  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
-  border-bottom: 2px solid var(--mrz-color-red);
+  margin-top: 1.25rem; padding-bottom: 1.875rem;
+  border-bottom: 2px solid var(--color-point);
 }
 .trip-wrap .signUp-wrap .step04.last {
   padding-bottom: 0;
   border-bottom: 0px;
 }
 .trip-wrap .signUp-wrap .step04 h3 {
-  font-size: var(--mrz-fS-title-07); font-weight: 700;
+  font-size: var(--font-size-18); font-weight: 700;
 }
 .trip-wrap .signUp-wrap .step04  > ul > li {
   position: relative;
   width: 100%;
-  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height:140%;
-  margin-top: var(--mrz-row-20);
+  font-size: var(--font-size-14); font-weight: 400; line-height:140%;
+  margin-top: 1.25rem;
   text-indent: -14px;
   padding-left: 14px;
 }
 .trip-wrap .signUp-wrap .step04  > ul > li strong {
   display: block;
-  font-size: var(--mrz-fS-text-02); font-weight: 400; line-height:140%;
+  font-size: var(--font-size-14); font-weight: 400; line-height:140%;
   padding-left: 12px;
 }
 .trip-wrap .signUp-wrap .step04 > ul > li.choice {
   float: right;
   font-size: 0;
   text-align: right;
-  margin-top: var(--mrz-row-5);
+  margin-top: .3125rem;
   text-indent: -0px;
   padding-left: 0px;
 }
@@ -586,26 +584,26 @@ ul.stage-01 > li .select-box.hour {
   cursor: pointer;
 }
 .trip-wrap .signUp-wrap .step04 .btn-center {
-  margin-top: var(--mrz-row-5);
+  margin-top: .3125rem;
 }
 .trip-wrap .signUp-wrap .step04 .btn-center a.button {
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   height: 48px; line-height: 48px;
 }
 .trip-wrap .signUp-wrap .step04 .accord-wrap {
-  margin-top: var(--mrz-row-10);
+  margin-top: .625rem;
 }
 .accord-wrap .terms {
   position: relative;
-  border: 1px solid var(--mrz-color-light-gray); border-bottom: 0px;
+  border: 1px solid var(--color-light-gray); border-bottom: 0px;
 }
 .accord-wrap .terms:last-child {
-  border-bottom: 1px solid var(--mrz-color-light-gray);
+  border-bottom: 1px solid var(--color-light-gray);
 }
 .accord-wrap .terms > ul > li {
   float: left;
   width: 44%; height: 32px; line-height:32px;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   margin-left: 5%;
 }
 .accord-wrap .terms > ul > li.first {
@@ -615,7 +613,7 @@ ul.stage-01 > li .select-box.hour {
 .accord-wrap .terms > ul > li.first a.red-line {
   display: inline-block;
   width: 60%; height: 18px; line-height: 18px;
-  font-size: var(--mrz-fS-text-03);
+  font-size: var(--font-size-12);
   margin-left: 2%;
   border-radius: 5px;
 }
@@ -627,7 +625,7 @@ ul.stage-01 > li .select-box.hour {
 }
 .accord-wrap .terms > ul > li a.gray-line {
   height: 32px; line-height: 32px; width: 100px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
   border-radius: 5px;
 }
 .accord-wrap .terms > ul > li.second span.choiceChk,
@@ -641,14 +639,14 @@ ul.stage-01 > li .select-box.hour {
 .accord-wrap .terms > ul > li.second span.choiceChk label,
 .accord-wrap .terms .accord .choice span.choiceChk label {
   height: 32px; line-height: 32px; min-height: 32px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
   text-align: center; margin: 0 -1px;
   cursor: pointer;
 }
 .accord-wrap .terms .terms-list dt {
   width: calc(100% - 5%); height: 75px; line-height:32px;
   margin-left: 5%;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   vertical-align: top;
 }
 .accord-wrap .terms .terms-list dt span {
@@ -670,7 +668,7 @@ ul.stage-01 > li .select-box.hour {
 }
 .accord-wrap .terms .btn a.gray-line {
   height: 32px; line-height: 32px; width: 100px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
   border-radius: 5px;
 }
 .accord-wrap .terms .ChoiceAbs {
@@ -685,14 +683,14 @@ ul.stage-01 > li .select-box.hour {
 }
 .accord-wrap .terms .ChoiceAbs span.choiceChk label {
   height: 32px; line-height: 32px; min-height: 32px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400; 
+  font-size: var(--font-size-12); font-weight: 400; 
   text-align: center;
   margin: 0 -1px;
   cursor: pointer;
 }
 .accord-wrap .terms .terms-list dd {
   display: none;
-  background-color: var(--mrz-color-light-silver);
+  background-color: var(--color-light-silver);
   transition: 0.3s;
 }
 .terms-list dd > ul > li {
@@ -700,11 +698,11 @@ ul.stage-01 > li .select-box.hour {
   text-indent: -8%;  
   padding: 10px 0 0; padding-left: 8%;
   font-size: 0;
-  border-top: 1px solid var(--mrz-color-light-gray);
+  border-top: 1px solid var(--color-light-gray);
 }
 .terms-list dd > ul > li span {
   margin-left: 5%;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
 }
 .terms-list dd > ul > li.choice {
   display: flex;
@@ -723,7 +721,7 @@ ul.stage-01 > li .select-box.hour {
 }
 .accord-wrap .terms .terms-list dd > ul > li.choice span.choiceChk label {
   height: 32px; line-height: 32px; min-height: 32px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400; 
+  font-size: var(--font-size-12); font-weight: 400; 
   text-align: center;
   margin: 0 -1px;
   cursor: pointer;
@@ -732,14 +730,14 @@ ul.stage-01 > li .select-box.hour {
 /******************************************** 가입단계 step 05 */
 .trip-wrap .signUp-wrap .step05 {
   width: 100%;
-  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
+  margin-top: 1.25rem; padding-bottom: 1.875rem;
 }
 .step05 > ul {
   overflow: hidden;
 }
 .step05 > ul > li {
   float: left;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   line-height: 25px;
 }
 .step05 > ul > li strong {
@@ -753,32 +751,32 @@ ul.stage-01 > li .select-box.hour {
 }
 .step05 .box-wrap {
   width: calc(100% - 10%);
-  background-color: var(--mrz-color-light-silver);
+  background-color: var(--color-light-silver);
   padding: 30px 5%;
-  margin-top: var(--mrz-row-30);
+  margin-top: 1.875rem;
 }
 .step05 .box-wrap strong {
   display: block;
-  font-size: var(--mrz-fS-title-07); font-weight: 700;
-  color: var(--mrz-color-red);
+  font-size: var(--font-size-18); font-weight: 700;
+  color: var(--color-point);
   text-align: center;
 }
 .step05 .box-wrap p {
-  padding-top: var(--mrz-row-5);
-  font-size: var(--mrz-fS-title-07); font-weight: 400;
+  padding-top: .3125rem;
+  font-size: var(--font-size-18); font-weight: 400;
   text-align: center;
 }
 
 /******************************************** 가입단계 step 06 */
 .trip-wrap .signUp-wrap .step06 {
   width: 100%;
-  margin-top: var(--mrz-row-20); padding-bottom: var(--mrz-row-30);
+  margin-top: 1.25rem; padding-bottom: 1.875rem
 }
 .step06 i.icon-finish {
   position: relative;
   display: block;
   width: 150px; height: 150px;
-  background-color: var(--mrz-color-light-silver);
+  background-color: var(--color-light-silver);
   border-radius: 100%;
   margin: 0 auto;
 }
@@ -792,13 +790,13 @@ ul.stage-01 > li .select-box.hour {
 }
 .step06 strong {
   display: block;
-  font-size: var(--mrz-fS-title-05); font-weight: 700;
+  font-size: var(--font-size-21); font-weight: 700;
   text-align: center;
-  margin-top: var(--mrz-row-30);
+  margin-top: 1.875rem;
 }
 .step06 p {
-  padding-top: var(--mrz-row-5);
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  padding-top: .3125rem;
+  font-size: var(--font-size-14); font-weight: 400;
   text-align: center;
 }
 
@@ -808,7 +806,7 @@ ul.stage-01 > li .select-box.hour {
 .search_win_css{ position: absolute; z-index: 400; padding-top:2px; }
 .br_color {
     width: 100%;
-    border: 1px solid var(--mrz-color-red);
+    border: 1px solid var(--color-point);
     background-color: #FFF;
 	margin-top: -1px;
 }
@@ -816,14 +814,14 @@ ul.stage-01 > li .select-box.hour {
 .slist{ height:100%; overflow:auto; }
 .slist > li{ font-size:1em; padding:3px 0 3px 0; }
 .slist > li:hover {	background: #fef9e3; }
-.br_color{ width: 307px; border:1px solid var(--mrz-color-red); background-color:#FFF; }
+.br_color{ width: 307px; border:1px solid var(--color-point); background-color:#FFF; }
 .swin_close { text-align:right; width:97%; height:35px; padding:0 10px 0 0; }
 
 .winclose {
     width: 70px; height: 25px;
-    font-size: var(--mrz-fS-text-03); text-align: center;
-    background-color: var(--mrz-color-red);
-    border: 1px solid var(--mrz-color-red); border-radius: 8px;
+    font-size: var(--font-size-12); text-align: center;
+    background-color: var(--color-point);
+    border: 1px solid var(--color-point); border-radius: 8px;
     box-sizing: border-box; padding: 0px 0px 2px 0px;
 }
-.winclose > span { width:100%; height:100%; vertical-align:top; color: var(--mrz-color-white); }
+.winclose > span { width:100%; height:100%; vertical-align:top; color: var(--color-white); }

@@ -50,14 +50,14 @@ header .icon-list > span {
   display: block;
   width: 28px; height: 3px;
   margin-top: 5px;
-  background-color: var(--mrz-color-black);
+  background-color: var(--color-black);
   border-radius: 3px;
 }
 
 .sidenav {
   height: 100%; width: 0;
   position: fixed; top: 0; right: 0; z-index: 11;
-  background-color: var(--mrz-color-navy);
+  background-color: var(--color-navy);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -85,8 +85,8 @@ header .icon-list > span {
 .sidenav > ul > li a {
   display: block;
   line-height: 58px;
-  font-size: var(--mrz-fS-title-08);
-  color: var(--mrz-color-light-silver);
+  font-size: var(--font-size-17);
+  color: var(--color-light-silver);
   padding-left: 5%;
 }
 .sidenav a.closebtn {
@@ -105,14 +105,14 @@ header .icon-list > span {
 ***********************/
 footer {
   width:100%; 
-  background-color: var(--mrz-color-deep-gray);
+  background-color: var(--color-deep-gray);
   /* margin-top: var(--mrz-row-50); */
   margin-top: 50px; padding: 0  0 20px 0;
 }
 footer ul.menu {
   width:90%;
   margin: 0 auto;
-  border-bottom: 1px solid var(--mrz-color-white);
+  border-bottom: 1px solid rgba(255, 255, 255, .55);
   overflow: hidden;
   padding-bottom: 10px;
   display: flex;
@@ -123,18 +123,18 @@ footer ul.menu {
 footer ul.menu li {
   float: left;
   position: relative;
-  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
+  font-size: var(--font-size-12); font-weight: 700; line-height: 120%;
   padding:10px 5% 0px;
 }
 footer ul.menu li a {
-  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
-  color: var(--mrz-color-white);
+  font-size: var(--font-size-12); font-weight: 700; line-height: 120%;
+  color:var(--color-white);
 }
 footer ul.menu li:before {
   content: "";
   position: absolute; top: 12px; left: 0px;
   width: 1px; height: 11px;
-  background-color: var(--mrz-color-white);
+  background-color: var(--color-white);
 }
 footer ul.menu li.first {
   padding-left: 0px;
@@ -149,13 +149,13 @@ footer .address {
 }
 footer .address > ul > li {
   position: relative;
-  font-size: var(--mrz-fS-text-03); font-weight: 200; line-height: 120%;
-  color: var(--mrz-color-white);
+  font-size: var(--font-size-12); font-weight: 200; line-height: 120%;
+  color: var(--color-white);
 }
 footer .address > ul > li span {
   position: relative;
-  font-size: var(--mrz-fS-text-03); font-weight: 400; line-height: 120%;
-  color: var(--mrz-color-white);
+  font-size: var(--font-size-12); font-weight: 400; line-height: 120%;
+  color: var(--color-white);
   padding: 10px 3%;
   word-break: keep-all;
 }
@@ -166,14 +166,14 @@ footer .address > ul > li span:after {
   content: "";
   position: absolute; top: 14px; right: 0px;
   width: 1px; height: 11px;
-  background-color: var(--mrz-color-white);
+  background-color: var(--color-white);
 }
 footer .address > ul > li span:last-child:after  {
   position: absolute; top: 0px; right: 0px;
   width: 0px; height: 0px;
 }
 footer .address > ul > li.copyright {
-  font-size: var(--mrz-fS-text-03); font-weight: 700; line-height: 120%;
+  font-size: var(--font-size-12); font-weight: 700; line-height: 120%;
   margin: 10px 0 5px;
 }
 
@@ -189,25 +189,25 @@ footer .address > ul > li.copyright {
 .table-gray thead th,
 .table-gray tbody th,
 .table-gray tbody td {
-  border: 1px solid var(--mrz-color-light-gray);
+  border: 1px solid var(--color-light-gray);
   padding: 15px 20px; line-height: 140%;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   vertical-align: middle; letter-spacing: -.0313rem;
   word-break: keep-all;
 }
 .table-gray thead th {
-  background-color: var(--mrz-color-light-silver);
-  font-size: var(--mrz-fS-text-01); font-weight: 700;
+  background-color: var(--color-light-silver);
+  font-size: var(--font-size-15); font-weight: 700;
 }
 .table-gray tbody th {
-  background-color: var(--mrz-color-snow);
-  font-size: var(--mrz-fS-text-02); font-weight: 500;
+  background-color: var(--color-snow);
+  font-size: var(--font-size-14); font-weight: 500;
 }
 .table-gray tbody td {
-  background-color: var(--mrz-color-white);
+  background-color: var(--color-white);
 }
 .table-gray tbody td p {
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 .table-gray thead th span.Blank {
   display: block;
@@ -222,62 +222,63 @@ footer .address > ul > li.copyright {
 .table-deepGray thead th,
 .table-deepGray tbody th,
 .table-deepGray tbody td {
-  border: 1px solid var(--mrz-color-gray);
+  border: 1px solid var(--color-gray);
   padding: 10px 5%; line-height: 140%;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
   vertical-align: middle;
   letter-spacing: -.0313rem;
   word-break: keep-all;
 }
 .table-deepGray thead th {
-  background-color: var(--mrz-color-light-gray);
+  background-color: var(--color-light-gray);
   font-weight: 700;
 }
 .table-deepGray tbody th {
-  background-color: var(--mrz-color-light-gray);
+  background-color: var(--color-light-gray);
   font-weight: 700;
   text-align: left;
 }
 .table-deepGray tbody td {
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
 }
 .table-deepGray tbody td p {
-  font-size: var(--mrz-fS-text-03);
+  font-size: var(--font-size-12);
 }
-/************************************* red style */
-.table-red {
+
+/************************************* point style */
+.table-point {
   width:100%;
   border-collapse: collapse;
   border-spacing: 0px;
 }
-.table-red thead th,
-.table-red tbody th,
-.table-red tbody td {
-  border: 1px solid var(--mrz-color-light-gray);
+.table-point thead th,
+.table-point tbody th,
+.table-point tbody td {
+  border: 1px solid var(--color-light-gray);
   padding: 15px 2%; line-height: 140%;
   vertical-align: middle;
   letter-spacing: -.0313rem;
-  text-align: center; font-size: var(--mrz-fS-text-03);
+  text-align: center; font-size: var(--font-size-12);
 }
-.table-red thead th {
-  background-color: var(--mrz-color-red);
-  font-size: var(--mrz-fS-text-02); font-weight: 700;
-  border: 1px solid var(--mrz-color-deep-red);
-  color: var(--mrz-color-white);
+.table-point thead th {
+  background-color: var(--color-point);
+  font-size: var(--font-size-14); font-weight: 700;
+  border: 1px solid var(--color-point-s2);
+  color: var(--color-white);
   word-break: keep-all;
 }
-.table-red thead th.coral {
-  background-color: var(--mrz-color-coral);
-  border-right-color: var(--mrz-color-red);
-  border-bottom-color: var(--mrz-color-red);
+.table-point thead th.coral {
+  background-color: var(--color-point);
+  border-right-color: var(--color-point-s2);
+  border-bottom-color: var(--color-point-s2);
 }
-.table-red thead th span {
+.table-point thead th span {
   display: block;
-  color: var(--mrz-color-white); line-height: 120%;
+  color: var(--color-white); line-height: 120%;
 }
-.table-red tbody th {
-  background-color: var(--mrz-color-snow);
-  font-size: var(--mrz-fS-text-03); font-weight: 700;
+.table-point tbody th {
+  background-color: var(--color-snow);
+  font-size: var(--font-size-12); font-weight: 700;
   word-break: keep-all;
 }
 .tooltip {
@@ -290,17 +291,17 @@ footer .address > ul > li.copyright {
   display: inline-block;
   width: 16px; height: 16px;
   border-radius: 100%;
-  background-color: var(--mrz-color-blue);
-  color: var(--mrz-color-white);
+  background-color: var(--color-blue);
+  color: var(--color-white);
   font-size: .75rem; line-height: 16px;
 }
 .tooltip .tooltip-content {
   visibility: hidden;
   position: absolute; bottom: 180%; left: 50%; z-index: 1;
   width: 240px;
-  background-color: var(--mrz-color-blue);
-  color: var(--mrz-color-white); text-align: center; line-height: 140%;
-  font-size: var(--mrz-fS-text-02); font-weight: 100;
+  background-color: var(--color-blue);
+  color: var(--color-white); text-align: center; line-height: 140%;
+  font-size: var(--font-size-14); font-weight: 100;
   margin-left: -50px;
   padding: 15px 10px;
 }
@@ -310,17 +311,145 @@ footer .address > ul > li.copyright {
   margin-left: -90px;
   border-width: 10px;
   border-style: solid;
-  border-color: var(--mrz-color-blue) transparent transparent transparent;
+  border-color: var(--color-blue) transparent transparent transparent;
 }
 .tooltip:hover .tooltip-content { visibility: visible; }
-.table-red tbody td p.type_dash {
+.table-point tbody td p.type_dash {
   position: relative;
   padding: 0px 0 0 13px;
 }
-.table-red tbody td p.type_dash:before {
+.table-point tbody td p.type_dash:before {
   content: "-";
   position: absolute; top: 0px; left: 0px;
 }
+
+
+
+/*********************************************************************************************
+						  UI Datepicker Style css
+*****************************/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: solid rgba(255, 255, 255, .55)!important;
+  border-width: 1px 0 0 1px!important;
+}
+.ui-datepicker .ui-datepicker-title,
+.ui-datepicker .ui-datepicker-title > span {
+  color: var(--color-white);
+}
+.ui-datepicker td {
+  border: 1px solid #CCC !important;
+  padding: 0 !important
+}
+.ui-datepicker-calendar thead tr th {
+  border: 1px solid #CCC !important;
+  background: linear-gradient(20deg, #e2e2e2, #eeeeee) !important;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  font-size: var(--font-size-12); color: var(--color-black);
+  text-transform: uppercase !important;
+  border: solid rgba(255, 255, 255, .55) !important;
+  border-width: 1px 0 0 1px !important;
+  width: 100%; height: 22px; line-height: 22px;
+}
+.ui-widget-header {
+  background: #2d2d2d !important;
+  border: 0 !important
+}
+.ui-datepicker .ui-datepicker-title select {
+  background: #2d2d2d !important;
+  color: var(--color-white) !important;
+  font-size: 15px !important;
+}
+.ui-widget-header .ui-icon {
+  background-image: none !important;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin-top: 4px !important;
+}
+#ui-datepicker-div {
+  padding: 0;
+  width: 275px !important;
+  z-index: 2;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: linear-gradient(20deg, #e2e2e2, #eeeeee) !important;
+}
+.ui-state-default {
+  font-size: var(--font-size-12);
+  font-weight: bold !important;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 12px 0 !important;
+  text-align: center !important;
+}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  width: 33% !important;
+  padding-left: 22px !important;
+}
+.ui-datepicker th {
+  padding: 0 0 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus,
+.ui-button:hover, .ui-button:focus, .ui-state-active, .ui-widget-content .ui-state-active {
+  background: var(--color-point) !important;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, .35), inset 0px 0px 20px rgba(255, 255, 255, .35) !important;
+  color: var(--color-white) !important;
+}
+.ui-datepicker .ui-datepicker-next span {
+  margin-left: -3px;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  top: 1px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span {
+  margin-left: -14px;
+}
+.ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
+  background: rgba(255, 255, 255, .10) !important;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .75), inset 0px 0px 5px rgba(255, 255, 255, .25) !important;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next,
+.ui-datepicker-prev.ui-state-hover.ui-datepicker-prev-hover,
+.ui-datepicker-next.ui-state-hover.ui-datepicker-next-hover {
+  width: 37px; height: 37px;
+}
+.ui-datepicker table {
+  margin: 0 !important;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+  border: 0 !important;
+}
+
+/*Right Arrow*/
+.ui-datepicker .ui-datepicker-next span {
+  width: 0!important; height: 0!important;
+  border-left: 10px solid white!important;
+  border-right: 8px solid transparent!important;
+  border-bottom: 8px solid transparent!important;
+  border-top: 8px solid transparent!important;
+}
+
+/*Left Arrow*/
+.ui-datepicker .ui-datepicker-prev span {
+  width: 0!important; height: 0!important;
+  border-right: 10px solid white!important;
+  border-left: 8px solid transparent!important;
+  border-bottom: 8px solid transparent!important;
+  border-top: 8px solid transparent!important;
+}
+
+
+
 
 /*********************************************************************************************
 						  반응형 해상도 관련 Style css

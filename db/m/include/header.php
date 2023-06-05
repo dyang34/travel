@@ -45,22 +45,14 @@ if($mNum<>'0') {
 
 	<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
 
-	<style>
-		:root {
-		--color-point: <?=_TOURSAFE_SUBSITE_COLOR?>;
-		--color-point-s1: <?=_TOURSAFE_SUBSITE_COLOR_S1?>;
-		--color-point-s2: <?=_TOURSAFE_SUBSITE_COLOR_S2?>;
-		}
-	</style>
-
 	<link rel="canonical" href="<?="https://".$_SERVER['HTTP_HOST'].str_replace("/travel/db/m/","/travel/db/",$_SERVER['REQUEST_URI'])?>">
 
 	<link rel="icon" type="image/png" sizes="32x32" href="/travel/db/favicon.ico?v=<?=time()?>">
 
+	<link rel="stylesheet" type="text/css" href="/travel/db/css/jquery-ui.css?v=<?=time()?>">
 	<link rel="stylesheet" type="text/css" href="/travel/db/m/css/style.css?v=<?=time()?>">
 	<link rel="stylesheet" type="text/css" href="/travel/db/m/css/basic.css?v=<?=time()?>">
 	<link rel="stylesheet" type="text/css" href="/travel/db/m/css/button.css?v=<?=time()?>">
-	<link rel="stylesheet" type="text/css" href="/travel/db/css/jquery-ui.css?v=<?=time()?>">
 
 <? if($mNum==0): ?>
   <link rel="stylesheet" href="/travel/db/m/css/swiper-bundle.min.css?v=<?=time()?>">
@@ -78,6 +70,19 @@ if($mNum<>'0') {
 	<script type="text/javascript" src="/travel/db/js/placeholders.min.js?v=<?=time()?>"></script> 
 	<script type="text/javascript" src="/travel/db/m/js/common.js?v=<?=time()?>"></script> 
 
+<?php	
+	if(defined('_TOURSAFE_SUBSITE_COLOR') && defined('_TOURSAFE_SUBSITE_COLOR_S1') && defined('_TOURSAFE_SUBSITE_COLOR_S2')) {
+?>		
+	<style>
+		:root {
+		--color-point: <?=_TOURSAFE_SUBSITE_COLOR?>;
+		--color-point-s1: <?=_TOURSAFE_SUBSITE_COLOR_S1?>;
+		--color-point-s2: <?=_TOURSAFE_SUBSITE_COLOR_S2?>;
+		}
+	</style>
+<?php
+	}
+?>
 <?/* https://wickedmagic.tistory.com/537 */?>
 
 <!-- Google Tag Manager -->

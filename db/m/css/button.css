@@ -18,84 +18,126 @@
           transform: translate(0px, 0px);
 }
 
-.red {
-  background-color: var(--mrz-color-red);
+/* point start */
+.point {
+  background-color: var(--color-point);
+  text-align: center; color: var(--color-white); 
+  font-size: var(--font-size-16); font-weight: 400;
+}
+.point:hover {
+  color: var(--color-white); 
+}
+.point:active {
+  background-color: var(--color-black);
+  color: var(--color-white); 
+}
+.point-line {
+  background-color: var(--color-white);
   text-align: center;
-  color: var(--mrz-color-white); 
-  font-size: var(--mrz-fS-text-00); font-weight: 400;
+  color: var(--color-point); font-size: var(--font-size-16); font-weight: 400;
+  border: 1px solid var(--color-point);
+}
+.point-line:hover {
+  color: var(--color-point);
+}
+.point-line:active {
+  background-color: var(--color-point);
+  color: var(--color-white); 
+}
+/* point end */
+.line-info {
+  background-color: var(--color-point-s2);
+  text-align: center;
+  color: var(--color-white); font-size: var(--font-size-16); font-weight: 400;
+  border: 1px solid var(--color-point-s2);
+}
+.line-info:hover, 
+.line-info:focus {
+  color: var(--color-white);
+}
+.line-info:active {
+  background-color: var(--color-point);
+  color: var(--color-white); 
+}
+
+.red {
+  background-color: var(--color-red);
+  text-align: center;
+  color: var(--color-white); 
+  font-size: var(--font-size-16); font-weight: 400;
 }
 .red:hover {
-  color: var(--mrz-color-white); 
+  color: var(--color-white); 
 }
 .red:active {
-  background-color: var(--mrz-color-navy);
-  color: var(--mrz-color-white); 
+  background-color: var(--color-black);
+  color: var(--color-white); 
 }
 .red-line {
-  background-color: var(--mrz-color-white);
+  background-color: var(--color-white);
   text-align: center;
-  color: var(--mrz-color-black); font-size: var(--mrz-fS-text-00); font-weight: 400;
-  border: 1px solid var(--mrz-color-red);
+  color: var(--color-black); font-size: var(--font-size-16); font-weight: 400;
+  border: 1px solid var(--color-red);
 }
 .red-line:hover {
-  color: var(--mrz-color-black);
+  color: var(--color-black);
 }
 .red-line:active {
-  background-color: var(--mrz-color-red);
-  color: var(--mrz-color-white); 
+  background-color: var(--color-red);
+  color: var(--color-white); 
 }
 .gray-line {
-  background-color: var(--mrz-color-white);
-  border: 1px solid var(--mrz-color-light-gray);
-  color: var(--mrz-color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  color: var(--color-black);
   border-radius: 5px;
 }
 .gray-line:hover {
-  color: var(--mrz-color-black);
+  color: var(--color-black);
 }
 .gray-line:active {
-  background-color: var(--mrz-color-red);
-  border: 1px solid var(--mrz-color-deep-red);
-  color: var(--mrz-color-white);
+  background-color: var(--color-point);
+  border: 1px solid var(--color-point-s2);
+  color: var(--color-white);
 }
 .gray {
-  background-color: var(--mrz-color-light-gray);
+  background-color: var(--color-light-gray);
   text-align: center;
-  color: var(--mrz-color-black); 
-  font-size: var(--mrz-fS-title-03); font-weight: 400;
+  color: var(--color-black); 
+  font-size: var(--font-size-24); font-weight: 400;
 }
 .gray:hover {
-  color: var(--mrz-color-black); 
+  color: var(--color-black); 
 }
 
 .bule-line {
-  background-color: var(--mrz-color-white);
-  border: 1px solid var(--mrz-color-blue);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blue);
   border-radius: 5px;
-  color: var(--mrz-color-deep-blue);
-  font-size: var(--mrz-fS-title-03); font-weight: 400;
+  color: var(--color-deep-blue);
+  font-size: var(--font-size-24); font-weight: 400;
 }
 .bule-line:hover {
-  color: var(--mrz-color-deep-blue); 
+  color: var(--color-deep-blue); 
 }
 .remove {
   position: relative;
   display: inline-block;
-  background-color: var(--mrz-color-white);
-  border: 1px solid var(--mrz-color-red);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-red);
   border-radius: 30px;
-  color: var(--mrz-color-red);
-  font-size: var(--mrz-fS-title-03); font-weight: 400;
+  color: var(--color-red);
+  font-size: var(--font-size-24); font-weight: 400;
   padding-left: 10px;
 }
 .remove:hover {
-  color: var(--mrz-color-red);
+  color: var(--color-red);
 }
 .remove:before {
   content: "";
   position: absolute; top: 50%; left: 18px;
   width: 6px; height: 1px;
-  background-color: var(--mrz-color-red);
+  background-color: var(--color-red);
 }
 
 .large {
@@ -106,5 +148,5 @@
 }
 .small {
   width: 100px; height: 28px; line-height: 28px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
 }

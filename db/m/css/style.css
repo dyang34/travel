@@ -6,7 +6,7 @@
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0; padding: 0; border: 0;
-	font-size: 100%; font: inherit; font-family: 'Noto Sans KR', 'Malgun Gothic', "맑은고딕", "Noto Sans KR", Dotum, sans-serif; line-height: 110%; letter-spacing: -.0313rem; color: var(--mrz-color-black);
+	font-size: 100%; font: inherit; font-family: 'Noto Sans KR', 'Malgun Gothic', "맑은고딕", "Noto Sans KR", Dotum, sans-serif; line-height: 110%; letter-spacing: -.0313rem; color: #1e1e1e;
 	vertical-align: baseline;
 }
 html, body {
@@ -73,7 +73,7 @@ strong {
   font-weight: 700; line-height: 140%;
 }
 p {
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 
 /* form elements */
@@ -117,19 +117,19 @@ select {
 
 
 h2 {
-  font-size: var(--mrz-fS-title-02); font-weight: 700;
+  font-size: var(--font-size-26); font-weight: 700;
   line-height: 140%;
 }
 h3 {
-  font-size: var(--mrz-fS-title-03); font-weight: 700;
+  font-size: var(--font-size-24); font-weight: 700;
   line-height: 140%;
 }
 h4 {
-  font-size: var(--mrz-fS-title-04); font-weight: 700;
+  font-size: var(--font-size-22); font-weight: 700;
   line-height: 140%;
 }
 p {
-  font-size: var(--mrz-fS-text-01); font-weight: 400;
+  font-size: var(--font-size-15); font-weight: 400;
   line-height: 140%;
 }
 
@@ -137,27 +137,27 @@ p {
   margin-top: 0px !important;
 }
 .mgT10 {
-  margin-top: var(--mrz-row-10) !important;
+  margin-top: .625rem !important;
 }
 .mgT30 {
-  margin-top: var(--mrz-row-30) !important;
+  margin-top: 1.875rem !important;
 }
 
 .pdT5 {
-  padding-top: var(--mrz-row-5) !important;
+  padding-top: .3125rem !important;
 }
 .pdT10 {
-  padding-top: var(--mrz-row-10) !important;
+  padding-top: .625rem !important;
 }
 
 .fc-red {
-  color: var(--mrz-color-red);
+  color: var(--color-red);
 }
 .fc-blue {
-  color: var(--mrz-color-blue);
+  color: var(--color-blue);
 }
 .fc-gray {
-  color: var(--mrz-color-gray);
+  color: var(--color-gray);
 }
 
 
@@ -192,14 +192,14 @@ input {
   border-radius: 0;
 }
 input:focus {
-  border-color: var(--mrz-color-red);
+  border-color: var(--color-point);
 }
 .input01 {
   width: 100%; height: 39px; line-height: 39px;
-  border:1px solid var(--mrz-color-light-gray); border-radius: 3px;
-  background-color: var(--mrz-color-white);
+  border:1px solid var(--color-light-gray); border-radius: 3px;
+  background-color: var(--color-white);
   padding:0 5%;
-  font-size: var(--mrz-fS-text-02); font-weight: 400;
+  font-size: var(--font-size-14); font-weight: 400;
 }
 
 
@@ -223,15 +223,15 @@ input:focus {
   min-height: 37px;
   height: 37px; line-height: 37px; width: 100px;
   z-index: 2;
-  border: 1px solid var(--mrz-color-red);
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  border: 1px solid var(--color-point);
+  font-size: var(--font-size-12); font-weight: 400;
 }
 .choiceChk.man label {
-  border-color: var(--mrz-color-light-gray);
+  border-color: var(--color-light-gray);
   border-right: 0px;
 }
 .choiceChk.wom label {
-  border-color: var(--mrz-color-light-gray);
+  border-color: var(--color-light-gray);
   border-left: 0px;
 }
 .yesChk label,
@@ -239,23 +239,23 @@ input:focus {
   position: relative;
   display: block;
   width: 100px; height: 38px; min-height: 38px; line-height: 38px;
-  font-size: var(--mrz-fS-text-03); font-weight: 400;
+  font-size: var(--font-size-12); font-weight: 400;
   z-index: 2;
 }
 .choiceChk input:checked+label,
 .yesChk input:checked+label,
 .noChk input:checked+label {
-  background-color: var(--mrz-color-red);
-  color: var(--mrz-color-white);
+  background-color: var(--color-point);
+  color: var(--color-white);
   z-index: 1;
 }
 .choiceChk.man input:checked+label {
-  border-color: var(--mrz-color-blue2);
-  background-color: var(--mrz-color-blue2);
+  border-color: var(--color-point);
+  background-color: var(--color-point);
 }
 .choiceChk.wom input:checked+label {
-  border-color: var(--mrz-color-red);
-  background-color: var(--mrz-color-red);
+  border-color: var(--color-point);
+  background-color: var(--color-point);
 }
 
 
@@ -283,23 +283,23 @@ select {
 }
 select:focus, select:active {
   outline: 0;
-  border-color: var(--mrz-color-red);
+  border-color: var(--color-red);
 }
 .select-box {
   position: relative;
   display: inline-block;
   vertical-align: top;
   width: 100%; height: 39px; line-height: 39px;
-  background-color: var(--mrz-color-white);
-  border-radius: 3px; border: 1px solid var(--mrz-color-light-gray);
-  font-size: var(--mrz-fS-text-02); font-weight: 400; color: var(--mrz-color-black);
+  background-color: var(--color-white);
+  border-radius: 3px; border: 1px solid var(--color-light-gray);
+  font-size: var(--font-size-14); font-weight: 400; color: var(--color-black);
   cursor: pointer;
 }
 .select-box:before {
   content: '';
   width: 35px;
   position: absolute; top: 0px; right: 0px; bottom: 0px;
-  background: var(--mrz-color-snow);
+  background: var(--color-snow);
   border-radius: 0 5px 5px 0;
   pointer-events: none;
 }
@@ -312,7 +312,7 @@ select:focus, select:active {
   pointer-events: none;
 }
 .select-box:hover {
-  border: 1px solid var(--mrz-color-red);
+  border: 1px solid var(--color-point);
 }
 .select-box:hover:after {
   background: url('../image/sub/icon-arrow-hover.svg') no-repeat;
@@ -325,69 +325,78 @@ select:focus, select:active {
 /******************************************************************
            root Style Css 
 ***********************/
+/**************************************  db용 root css */
 :root {
+  /* common color style */
+  --color-point:    #22abe1;
+  --color-point-s1: #d9f4ff;
+  --color-point-s2: #0285b9;
+
   /* color style */
-  --mrz-color-black: #000;
-  --mrz-color-white: #fff;
-  --mrz-color-light-black: #595959;
-  --mrz-color-deep-gray: #212121;
-  --mrz-color-gray: #898989;
-  --mrz-color-light-gray: #D3D3D3;
-  --mrz-color-silver: #aaa;
-  --mrz-color-light-silver: #EFEFEF;
-  --mrz-color-snow: #F8F8F8;
-  --mrz-color-deep-red: #BC1601;
-  --mrz-color-red: #EF3B24;
-  --mrz-color-coral: #FF8855;
-  --mrz-color-light-red: #FEE5DD;
-  --mrz-color-blue: #5692CE;
-  --mrz-color-blue2: #0066FF;
-  --mrz-color-deep-blue: #2C55A2;
-  --mrz-color-navy: #041E42;
+  --color-black: #050505;
+  --color-white: #fff;
+  --color-deep-gray: #212121;
+  --color-light-black: #595959;
+  --color-gray: #898989;
+  --color-silver: #aaa;
+  --color-light-gray: #D3D3D3;
+  --color-light-silver: #EFEFEF;
+  --color-snow: #F8F8F8;
+
+  --color-deep-red:  #BC1601;
+  --color-red:       #EF3B24;
+  --color-coral:     #FF8855;
+  --color-light-red: #FEE5DD;
+
+  --color-light-blue: #5692CE;
+  --color-blue:       #0066FF;
+  --color-deep-blue:  #2C55A2;
+  --color-navy:       #041E42;
 
   /* widht */
-  --mrz-width-first: 100%;
-  --mrz-width-second: 49%;
-  --mrz-width-third: 32%;
+  --width-first: 100%;
+  --width-second: 49%;
+  --width-third: 32%;
   
   /* font family style */
-  --mrz-ffam-noto: 'Noto Sans KR', sans-serif;
-  --mrz-ffam-nanuSQ: 'NanumSquare', sans-serif;
+  --font-family-noto: 'Noto Sans KR', sans-serif;
+  --font-family-nanmSq: 'NanumSquare', sans-serif;
 
   /* font size style */
-  --mrz-fS-txt-00: 0rem;
+  --font-size-0: 0rem;
 
-  --mrz-fS-title-01: 2rem;
-  --mrz-fS-title-02: 1.6em;
-  --mrz-fS-title-03: 1.5em;
-  --mrz-fS-title-04: 1.4em;
-  --mrz-fS-title-05: 1.3em;
-  --mrz-fS-title-06: 1.25em;
-  --mrz-fS-title-07: 1.125em;
-  --mrz-fS-title-08: 1.05em;
+  --font-size-32: 2rem;   /* -fS-title-01 */
+  --font-size-26: 1.6em;  /* -fS-title-02 */
+  --font-size-24: 1.5em;  /* -fS-title-03 */
+  --font-size-22: 1.375em;   /* -fS-title-04 */
+  --font-size-21: 1.3em;   /* -fS-title-05 */
+  --font-size-20: 1.25em;  /* -fS-title-06 */
+  --font-size-18: 1.125em; /* -fS-title-07 */
+  --font-size-17: 1.0625em;  /* -fS-title-08 */
 
-  --mrz-fS-text-00: 1rem;
-  --mrz-fS-text-01: .95rem;
-  --mrz-fS-text-02: .875rem;
-  --mrz-fS-text-03: .75rem;
-  --mrz-fS-text-04: .65rem;
+  --font-size-16: 1rem;    /* -fS-text-00 */
+  --font-size-15: .95rem;  /* -fS-text-01 */
+  --font-size-14: .875rem; /* -fS-text-02 */
+  --font-size-12: .75rem;  /* -fS-text-03 */
+  --font-size-11: .65rem;  /* -fS-text-04 */
 
   /* Height Row size style */
-  --mrz-row-150: 150px;
-  --mrz-row-100: 100px;
-  --mrz-row-80: 80px;
-  --mrz-row-50: 50px;
-  --mrz-row-40: 40px;
-  --mrz-row-35: 35px;
-  --mrz-row-30: 30px;
-  --mrz-row-20: 20px;
-  --mrz-row-15: 15px;
-  --mrz-row-10: 10px;
-  --mrz-row-5: 5px;
-  --mrz-col-10: 10px;
-  --mrz-col-20: 20px;
-  --mrz-col-50: 50px;
+  --row-150: 150px;
+  --row-100: 100px;
+  --row-80: 80px;
+  --row-50: 50px;
+  --row-40: 40px;
+  --row-35: 35px;
+  --row-30: 30px;
+  --row-20: 20px;
+  --row-15: 15px;
+  --row-10: 10px;
+  --row-5: 5px;
+  --col-10: 10px;
+  --col-20: 20px;
+  --col-50: 50px;
 }
+
 
 
 /*********************************************************************************************
