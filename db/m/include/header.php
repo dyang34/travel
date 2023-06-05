@@ -71,7 +71,7 @@ if($mNum<>'0') {
 	<script type="text/javascript" src="/travel/db/m/js/common.js?v=<?=time()?>"></script> 
 
 <?php	
-	if(defined('_TOURSAFE_SUBSITE_COLOR') && defined('_TOURSAFE_SUBSITE_COLOR_S1') && defined('_TOURSAFE_SUBSITE_COLOR_S2')) {
+if(defined('_TOURSAFE_SUBSITE_COLOR') && defined('_TOURSAFE_SUBSITE_COLOR_S1') && defined('_TOURSAFE_SUBSITE_COLOR_S2')) {
 ?>		
 	<style>
 		:root {
@@ -81,7 +81,7 @@ if($mNum<>'0') {
 		}
 	</style>
 <?php
-	}
+}
 ?>
 <?/* https://wickedmagic.tistory.com/537 */?>
 
