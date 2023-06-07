@@ -28,7 +28,7 @@ if (count($_SESSION['travel_step'][1]['member']) > 1) {
 	<div class="title-wrap clearfix">
 		<h3>1. 여행정보</h3>
 		<div class="btn-right">
-			<a id="btn-mod" class="button small red-line">정보수정</a>
+			<a id="btn-mod" class="button small line-info">정보수정</a>
 		</div>
 	</div>
 	<!-- 제목영역 */ -->
@@ -155,7 +155,7 @@ if (count($_SESSION['travel_step'][1]['member']) > 1) {
 				</div>
 			</div>
 			<div class="button-center">
-				<a href="#" class="button red" name="btnNext">계산하기</a>
+				<a href="#" class="button point" name="btnNext">계산하기</a>
 			</div>
 		</div>
 	</form>

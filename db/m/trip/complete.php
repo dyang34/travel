@@ -32,7 +32,7 @@ $apply_no = getApplyNo($row_check["company_type"],$row_check["regdate"],$row_che
 		</div>
 
 		<div class="button-center">
-			<a href="../" class="button red">확인</a>
+			<a href="../" class="button point">확인</a>
 		</div>
 	</div>
 </div>

@@ -215,7 +215,7 @@ $url = $site_ssl."://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 	<div class="title-wrap clearfix">
 		<h3>5. 보험료 결제</h3>
 		<div class="btn-right">
-			<a id="btn-mod" class="button small red-line">정보수정</a>
+			<a id="btn-mod" class="button small line-info">정보수정</a>
 		</div>
 	</div>
 	<!-- 제목영역 */ -->
@@ -225,7 +225,7 @@ $url = $site_ssl."://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 <input type="hidden" name="PayUrl"> 
 <input type="hidden" id="pay_method" name="pay_method" value="CARD" readonly>
 <input type="hidden" name="ordr_idxx" value="<?=$o_num?>" maxlength="40"/>
-<input type="hidden" name="good_name" value="유다이렉트(메리츠) 여행자보험"/>
+<input type="hidden" name="good_name" value="유다이렉트(DB손해보험(주)) 여행자보험"/>
 <input type="hidden" name="good_mny" value="<?=$_SESSION["travel_step"]["2"]["sum_price"]?>" maxlength="9"/>
 <input type="hidden" name="buyr_name" value="<?=stripslashes($_SESSION["travel_step"]["1"]["member"][0]["name"])?>"/>
 <input type="hidden" name="buyr_mail" value="" maxlength="30">
@@ -337,7 +337,7 @@ if(!$fg_bill_try) {
 }
 ?>
 					<li style="<?=$fg_bill_try?"width:100%;":""?>">
-						<a href="#" class="button red" name="btnNext">카드결제</a>
+						<a href="#" class="button point" name="btnNext">카드결제</a>
 <?/*						
 						<input name="" type="button" class="btnBig m_block" value="카드 결제하기" onclick="alert('2020년 상반기 보안 프로토콜 업데이트에 따라서\n최신 버전이 아닌 브라우저에서는 결제 오류가\n발생 할 수 있습니다.\n최신버전의 브라우저를 사용해 주시기 바랍니다.');kcp_AJAX();"/>
 */?>						

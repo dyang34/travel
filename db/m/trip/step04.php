@@ -278,20 +278,23 @@ if ($tripType=="2") {
 												<label for="chk3_3_n">동의안함</label>
 											</span>
 										</li>
-										
-										<li>
+
+										<!-- 마케팅 활용 start -->
+										<li style="display:none;">
 											<span>- 마케팅 활용을 위한 개인정보 수집 및 이용 동의 (선택)</span>
 										</li>
-										<li class="choice">
+										<li class="choice" style="display:none;">
 											<span class="choiceChk first">
-												<input type="radio" id="check_type_marketing_y" name="check_type_marketing" class="cls_chk cls_chk3" value="Y" <?=$_SESSION["travel_step"][4]["check_type_marketing"]=="Y"?"checked='checked'":""?>>
+												<input type="radio" id="check_type_marketing_y" name="check_type_marketing" class="cls_chk_T cls_chk3_T" value="Y" <?=$_SESSION["travel_step"][4]["check_type_marketing"]=="Y"?"checked='checked'":""?>>
 												<label for="check_type_marketing_y">동의</label>
 											</span>
 											<span class="choiceChk second">
-												<input type="radio" id="check_type_marketing_n" name="check_type_marketing" class="cls_chk cls_chk3" value="N" <?=$_SESSION["travel_step"][4]["check_type_marketing"]!="Y"?"checked='checked'":""?>>
+												<input type="radio" id="check_type_marketing_n" name="check_type_marketing" class="cls_chk_T cls_chk3_T" value="N" <?=$_SESSION["travel_step"][4]["check_type_marketing"]!="Y"?"checked='checked'":""?>>
 												<label for="check_type_marketing_n">동의안함</label>
 											</span>
 										</li>
+										<!-- 마케팅 활용 start -->
+
 									</ul>
 								</dd>
 							</dl>
@@ -306,11 +309,11 @@ if ($tripType=="2") {
 <?php
 if ($tripType=="2") {
 ?>
-								<a href="/travel/db/files/overseas.pdf" class="button red-line" target="_blank">해외여행보험약관 다운로드</a>
+								<a href="/travel/db/files/overseas.pdf" class="button point-line" target="_blank">해외여행보험약관 다운로드</a>
 <?php
 } else {
 ?>
-								<a href="/travel/db/files/domestic.pdf" class="button red-line" target="_blank">국내여행보험약관 다운로드</a>
+								<a href="/travel/db/files/domestic.pdf" class="button point-line" target="_blank">국내여행보험약관 다운로드</a>
 <?php	
 }
 ?>
@@ -342,7 +345,7 @@ if ($tripType=="2") {
 						<a href="#" class="button gray" name="btnBack">이전</a>
 					</li>
 					<li>
-						<a href="#" class="button red" name="btnNext">최종 확인 및 결제</a>
+						<a href="#" class="button point" name="btnNext">최종 확인 및 결제</a>
 					</li>
 				</ul>
 			</div>
@@ -502,15 +505,15 @@ if ($tripType=="2") {
 
 <link rel="stylesheet" type="text/css" href="/travel/db/m/css/modal.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT']."/travel/db/m/css/modal.css")?>">
 <?php 
-//require_once $SYS_ROOT_DIR."/travel/db/m/modal/agreement.php";   //이용약관	btn-agre
-// require_once $SYS_ROOT_DIR."/travel/db/m/modal/insurance.php";  //보험약관	btn-insu
-// require_once $SYS_ROOT_DIR."/travel/db/m/modal/collective.php"; //개인정보 처리 및 단체가입규약 동의	btn-colle
-// require_once $SYS_ROOT_DIR."/travel/db/m/modal/marketing.php";  //마케팅 활용 동의	btn-mark
-// require_once $SYS_ROOT_DIR."/travel/db/m/modal/privacy.php";    //개인정보수집 및 이용	btn-priv
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/agreement.php";   //이용약관	btn-agre
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/insurance.php";  //보험약관	btn-insu
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/collective.php"; //개인정보 처리 및 단체가입규약 동의	btn-colle
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/marketing.php";  //마케팅 활용 동의	btn-mark
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/privacy.php";    //개인정보수집 및 이용	btn-priv
 
-//require_once $SYS_ROOT_DIR."/travel/db/m/modal/hospitalize.php"; //입원, 수술, 질병확진 btn-hosp
-//require_once $SYS_ROOT_DIR."/travel/db/m/modal/specific.php"; 	 //특정질병 btn-spec
-//require_once $SYS_ROOT_DIR."/travel/db/m/modal/sports.php"; 	 //위험한 레포츠 btn-sport
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/hospitalize.php"; //입원, 수술, 질병확진 btn-hosp
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/specific.php"; 	 //특정질병 btn-spec
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/sports.php"; 	 //위험한 레포츠 btn-sport
 require_once $SYS_ROOT_DIR."/travel/db/m/modal/restrict.php"; 	 //보험인수 제한 국가 안내 btn-restr
 ?>
 <?php

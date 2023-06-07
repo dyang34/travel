@@ -23,7 +23,7 @@ $arrMember = $_SESSION["travel_step"]["1"]["member"];
 	<div class="title-wrap clearfix">
 		<h3>3. 피보험자 계역 정보</h3>
 		<div class="btn-right">
-			<a id="btn-mod" class="button small red-line">정보수정</a>
+			<a id="btn-mod" class="button small line-info">정보수정</a>
 		</div>
 	</div>
 	<!-- 제목영역 */ -->
@@ -116,7 +116,7 @@ for($i=0;$i<count($arrMember);$i++) {
 						<a href="#" class="button gray" name="btnBack">이전</a>
 					</li>
 					<li>
-						<a href="#" class="button red" name="btnNext">다음</a>
+						<a href="#" class="button point" name="btnNext">다음</a>
 					</li>
 				</ul>
 			</div>

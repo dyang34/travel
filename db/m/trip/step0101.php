@@ -23,11 +23,15 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 			<li class="first">
 				<strong>여행종류</strong>
 
-				<span class="choiceChk first">
+				<div class="cho-chk">
+					<span>해외</span>
+				</div>
+
+				<span class="choiceChk first" style="display:none;">
 					<input type="radio" id="trvTypeChk1" name="trip_type" value="2" <?=$_SESSION["travel_step"]["1"]["trip_type"]!="1"?"checked='checked'":""?>>
 					<label for="trvTypeChk1">해외</label>
 				</span>
-				<span class="choiceChk second">
+				<span class="choiceChk second" style="display:none;">
 					<input type="radio" id="trvTypeChk2" name="trip_type" value="1" <?=$_SESSION["travel_step"]["1"]["trip_type"]=="1"?"checked='checked'":""?>>
 					<label for="trvTypeChk2">국내</label>
 				</span>
@@ -128,16 +132,60 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 		</ul>
 
 		<div class="button-center">
-			<a href="#" class="button red" name="btnNext">다음</a>
+			<a href="#" class="button point" name="btnNext">다음</a>
 		</div>
 
 		<div class="know-wrap">
-			<div class="cont">
+			<!--div class="cont">
 				<strong>가입전 알아두실 사항</strong>
 				<p class="type-dash">1. 해외 여행자 보험 상품은 출국직전까지 가입 가능합니다.</p>
 				<p class="type-dash">2. 가입확인서는 카카오톡 또는 문자 메세지로 보내 드립니다.</p>
 				<p class="type-dash">3. 궁금하신 사항은 유라이프 여행자보험 고객센터1800-9010(평일 09시~18시)로 연락바랍니다.</p>
 				<p class="type-dash">4. 해외여행 중 현지에서 사고 발생 시 24시간 한국어 안내가 지원되는 메리츠화재 우리말서비스 82-2-360-2407로 연락주시면 도움 받으실 수 있습니다.</p>
+			</div-->
+			<div class="cont">
+				<strong>알아두실 사항</strong>
+				<ul>
+					<li><strong>보험취급자</strong></li>
+					<li class="type-dash">- 본 보험의 모집인은 보험대리점 비아이에스㈜ 입니다.</li>
+
+					<li><strong>단체보험 계약</strong></li>
+					<li class="type-dash">- 본 보험계약은 유라이프파이낸셜㈜를 계약자, 유라이프파이낸셜㈜ 회원 중 가입 고객을 피보험자, 유라이프파이낸셜㈜ 회원 중 가입 고객 및 법정상속인을 보험수익자로 하는 단체계약입니다.</li>
+					<li class="type-dash">- 본 보험계약은 단체형으로 운영하여 청약철회 및 품질보증해지 대상이 아닙니다.</li>
+
+					<li><strong>만기환급금</strong></li>
+					<li class="">본 상품은 순수보장성 상품으로 만기시 만기환급금이 없으며 또한 보험계약대출제도가 없습니다.</li>
+
+					<li><strong>예금자보호 안내</strong></li>
+					<li class="">이 보험계약은 예금자보호법에 따라, 예금보험공사가 보호하되, 보호 한도는 본 보험회사에 있는 귀하의 모든 예금보호 대상 금융상품의 해약환급금(또는 만기 시 보험금이나 사고보험금)에 기타 지급금을 합하여 1인당 "최고 5천만원"이며, 5천만원을 초과하는 나머지 금액은 보호하지 않습니다. 다만, 보험계약자 및 보험료 납부자가 법인인 보험계약은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+
+					<li><strong>보험계약을 할 때</strong></li>
+					<li class="">보험계약시에는 보험상품명, 보험기간, 보험료, 보험료납입기간, 피보험자 등을 반드시 확인하시고, 자세한 상품내용은 반드시 보험약관을 확인하시기 바랍니다.</li>
+
+					<li><strong>가입자의 계약 전 알릴 의무</strong></li>
+					<li class="">계약자 또는 피보험자는 보험계약 청약 시 청약서(질문서를 포함합니다)의 질문사항에 대하여 알고 있는 내용을 반드시 사실대로 알려야 합니다. 그렇지 않은 경우 보험금의 지급이 거절되거나 보험계약이 해지될 수 있습니다.</li>
+
+					<li><strong>가입자의 계약 후 알릴 의무</strong></li>
+					<li class="">계약자 또는 피보험자는 보험계약을 맺은 후 보험약관에 정한 계약 후 알릴 의무사항이 발생하였을 경우 지체 없이 회사에 알려야 합니다. 그렇지 않을 경우 보험금 지급이 거절될 수 있습니다.</li>
+
+					<li><strong>해지환급금이 납입보험료보다 적거나 없는 이유</strong></li>
+					<li class="">해지환급금이란 보험계약이 중도에 해지될 경우에 지급되는 금액을 말하는 것으로 보험은 은행의 저축과 달리 위험보장과 저축을 겸비한 제도로 계약자가 납입한 보험료 중 일부는 불의의 사고를 당한 다른 가입자에게 지급되는 보험금으로, 또 다른 일부는 보험회사 운영에 필요한 경비로 사용되므로 중도해지 시 지급되는 해지환급금은 납입한 보험료보다 적거나 없을 수도 있습니다.</li>
+
+					<li><strong>계약해지 후 다른 보험 계약 시 유의사항</strong></li>
+					<li class="">보험계약자가 기존에 체결했던 보험계약을 해지하고 다른 보험계약을 체결하면 보험인수가 거절되거나 보험료가 인상되거나 보장내용이 달라질 수 있습니다.</li>
+
+					<li><strong>모집질서 확립 및 신고센터 안내</strong></li>
+					<li class="type-dash">- 보험계약과 관련된 보험질서 문란행위는 보험업법에 의해 처벌받을 수 있습니다.</li>
+					<li class="type-dash">- 금융감독원 보험 모집질서 위반행위 신고센터 : 전화 1332 / 인터넷 www.fss.or.kr</li>
+					<li class="type-dash">- 사고접수, 보험처리 등 보험계약 관련 문의(DB손해보험) : 전화 1588-0100 / 인터넷 www.idbins.com</li>
+
+					<li><strong>보험상담 및 분쟁의 해결에 관한 사항</strong></li>
+					<li class="">가입하신 보험에 관하여 상담이 필요하거나 불만사항이 있을 때에는 DB손해보험</li>
+					<li class="">(TEL : 1588-0100 / 인터넷 www.idbins.com)으로 연락 주시면 신속히 해결해 드리겠습니다. 또한, 저희 회사의 처리결과에 이의가 있으시면 금융감독원 민원상담전화 국번 없이 1332, 인터넷 www.fss.or.kr에 민원 또는 분쟁조정 등을 신청하실 수 있습니다.</li>
+
+					<li><strong>금융감독원 보험 범죄 신고센터 안내</strong></li>
+					<li class="type-dash">- 보험범죄는 형법 제347조(사기)에 의거 10년 이하의 징역이나 2천만원 이하의 벌금에 처해지며, 보험범죄를 교사한 경우에도 동일한 처벌을 받을 수 있습니다. 금융감독원 민원상담전화 국번 없이 1332, 인터넷 www.fss.or.kr</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -483,6 +531,6 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 	} //function end
 </script>
 <?php
-require_once $SYS_ROOT_DIR."/travel/db/m//modal/restrict.php";
+require_once $SYS_ROOT_DIR."/travel/db/m/modal/restrict.php";
 require_once $SYS_ROOT_DIR."/travel/db/m/include/footer.php";
 ?>
