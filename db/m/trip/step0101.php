@@ -85,15 +85,17 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 					</select>
 				</div>
 			</li>
-
+		</ul>
+		<ul class="stage-01 sec-col clearfix inb">
 			<li>
 				<strong>출발일 (출국일)</strong>
 				<div class="date_picker">
 					<input type="text" class="input" name="start_date" id="start_date" value="<?=$_SESSION["travel_step"]["1"]["start_date"]?>" readonly>
 				</div>
 				<input type="hidden" name="start_hour" value="00" />
-<?/*				
-
+			</li>
+			<li>
+				<strong>출발시각</strong>
 				<div class="select-box hour">
 					<select name="start_hour" id="start_hour">
 					<? for ($i=0;$i<24;$i++) { 
@@ -103,15 +105,17 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 						<? } ?>
 					</select>
 				</div>
-*/?>				
 			</li>
+			
 			<li>
 				<strong>도착일 (입국일)</strong>
 				<div class="date_picker">
 					<input type="text" class="input" name="end_date" id="end_date" value="<?=$_SESSION["travel_step"]["1"]["end_date"]?>" readonly>
 				</div>
 				<input type="hidden" name="end_hour" value="24" />
-<?/*				
+			</li>
+			<li>
+				<strong>도착시각</strong>
 				<div class="select-box hour">
 					<select name="end_hour" id="end_hour">
 						<? for ($i=1;$i<25;$i++) {
@@ -127,9 +131,9 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 						<? } ?>
 					</select>
 				</div>
-*/?>
 			</li>
 		</ul>
+
 
 		<div class="button-center">
 			<a href="#" class="button point" name="btnNext">다음</a>
