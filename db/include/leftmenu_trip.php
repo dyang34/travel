@@ -96,7 +96,7 @@ if ($pageStepNo <= 4) {
 <?php
           } else {
 ?>
-            <img src="/travel/db/image/common/logo-meritz-row.png" alt="메리츠화재 로고">
+            <img src="/travel/db/image/common/logo-meritz-row.png" alt="DB손보(주) 로고">
 <?php
           }
 ?>				

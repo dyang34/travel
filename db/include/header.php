@@ -7,7 +7,7 @@ if(is_mobile_agent()) {
 }
 
 if(empty($__SITE_META_TITLE)) {
-  $__SITE_META_TITLE = "메리츠화재 - 여행자를 위한 간편보험 가입";
+  $__SITE_META_TITLE = "DB손보(주) - 여행자를 위한 간편보험 가입";
 }
 
 if($__SITE_META_TITLE_FIX) {
@@ -30,7 +30,7 @@ if(empty($__SITE_META_DESC)) {
   <meta name="title" content="<?=$__SITE_META_TITLE?>" />
   <meta name="description" content="<?=$__SITE_META_DESC?>" />
   <meta name="author" content="비아이에스">
-  <meta name="keywords" content="여행자보험, 여행자보험추천, 여행자보험비교, 국내여행자보험, 여행보험, 해외여행자보험, 해외여행보험, 여행, 해외여행, 국내여행, 휴가, 출장, 유학, 유학생보험, 유학보험, 메리츠화재">
+  <meta name="keywords" content="여행자보험, 여행자보험추천, 여행자보험비교, 국내여행자보험, 여행보험, 해외여행자보험, 해외여행보험, 여행, 해외여행, 국내여행, 휴가, 출장, 유학, 유학생보험, 유학보험, DB손보(주)">
 
   <meta property="og:title" content="<?=$__SITE_META_TITLE?>" >
   <meta property="og:url" content="<?="https://".$_SERVER["HTTP_HOST"]?>">
@@ -107,7 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php
           } else {
 ?>
-            <img src="/travel/db/image/common/logo-meritz-row.png" alt="메리츠화재 로고">
+            <img src="/travel/db/image/common/logo-meritz-row.png" alt="DB손보(주) 로고">
 <?php
           }
 ?>
