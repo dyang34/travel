@@ -309,7 +309,7 @@ if ($tripType=="2") {
 <?php
 if ($tripType=="2") {
 ?>
-								<a href="/travel/db/files/overseas.pdf" class="button point-line" target="_blank">해외여행보험약관 다운로드</a>
+								<a href="/travel/db/files/db.overseas.pdf" class="button point-line" target="_blank">해외여행보험약관 다운로드</a>
 <?php
 } else {
 ?>
