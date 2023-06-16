@@ -1,5 +1,5 @@
 <!-- /** 개인정보수집 및 이용 Start -->
-<div id="modal-04">
+<div id="privacy">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>개인정보수집 및 이용</h2> 
@@ -9,7 +9,7 @@
             <strong>㈜유라이프파이낸셜 귀중</strong>
           </li>
           <li>
-            본인은 귀사가 유라이프파이낸셜 보험토탈케어서비스 회원가입을 위하여 본인의 개인정보를 수집/이용하는 것에 동의합니다
+          본인은 유라이프파이낸셜 보험토탈케어서비스를 통해 유라이프커뮤니케이션즈가 체결한 회원가입을 위하여 본인의 개인정보를 수집/이용하는 것에 동의합니다.
           </li>
           <li class="type_dash">
             - 수집하는 개인정보 항목 : (회원가입) 성명, 생년월일 / (보험료 산출) 성별, 출발일, 귀국일
@@ -31,10 +31,18 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod4").click(function(){
-    $("#modal-04").css("display","block");
+  $("#btn-priv").click(function(){
+    //$("#modal-04").css("display","block");
+		
+	$("#privacy").fadeIn(200, function() {
+	});
+	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
-    $("#modal-04").css("display","none");
+    //$("#modal-04").css("display","none");
+
+	$("#privacy").fadeOut(200, function() {
+	});
+	return false;
   });
 </script>
