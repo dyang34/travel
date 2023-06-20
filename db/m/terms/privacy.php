@@ -65,7 +65,7 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
       <strong>8. 개인(신용)정보를 제공받는 자</strong>
     </li>
     <li>
-      DB손해보험㈜, 보험대리점 ㈜비아이에스, ㈜유라이프파이낸셜, 한국신용정보원, SK플래닛㈜
+      DB손해보험㈜, 보험대리점 ㈜비아이에스, 한국신용정보원, SK플래닛㈜
     </li>
 
     <li>

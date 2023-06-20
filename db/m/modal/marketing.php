@@ -1,5 +1,5 @@
 <!-- /** 마케팅 활용 동의 Start -->
-<div id="modal-05">
+<div id="marketing">
   <div class="modal-bg">
     <div class="modal-cont">
       <h2>마케팅 활용 동의</h2> 
@@ -44,17 +44,17 @@
 
 <script>
   // Layer-Popup Active
-  $("#btn-mod5").click(function(){
+  $("#btn-mark").click(function(){
     //$("#modal-05").css("display","block");
 		
-	$("#modal-05").fadeIn(200, function() {
+	$("#marketing").fadeIn(200, function() {
 	});
 	return false;	// return false 를 해야 화면 상단으로 이동되는 현상이 막힘.
   });
   $(".close").click(function(){
     //$("#modal-05").css("display","none");
 
-	$("#modal-05").fadeOut(200, function() {
+	$("#marketing").fadeOut(200, function() {
 	});
 	return false;
   });

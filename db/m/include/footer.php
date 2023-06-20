@@ -14,7 +14,7 @@
 				<div class="address">
 					<ul>
 						<li>
-							<span>주소 : 서울특별시 중구 광희동2가 266 성우빌딩 10F</span>
+							<span>주소 : 서울특별시 중구 퇴계로 324 성우빌딩 10F</span>
 							<span>대표 : 김성일</span>
 						</li>
 						<li>
