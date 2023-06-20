@@ -34,7 +34,7 @@
 .point-line {
   background-color: var(--color-white);
   text-align: center;
-  color: var(--color-point); font-size: var(--font-size-16); font-weight: 400;
+  color: var(--color-point-s2); font-size: var(--font-size-16); font-weight: 400;
   border: 1px solid var(--color-point);
 }
 .point-line:hover {

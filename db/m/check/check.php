@@ -21,7 +21,7 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 				</li>
 			</ul>
 			<div class="button-center">
-				<a class="button red" href="javascript:void(0);" onclick="check_form();" >인증번호 받기</a>
+				<a class="button point" href="javascript:void(0);" onclick="check_form();" >인증번호 받기</a>
 			</div>
 
 			<div class="numberhidden" id="r_hp" style="display:none;">
@@ -31,7 +31,7 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 						<input type="tel" name="phone_c" id="phone_c" class="input01"placeholder="인증번호"  maxlength='6'>
 					</li>
 					<li>
-						<a href="javascript:void(0);" onclick="check_phone();" class="button red">인증 확인</a>
+						<a href="javascript:void(0);" onclick="check_phone();" class="button point">인증 확인</a>
 					</li>
 				</ul>
 			</div>

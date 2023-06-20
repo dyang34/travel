@@ -132,6 +132,12 @@
   margin: 80px 2% 30px 5%;
   padding-right: 5%;
 }
+#hospitalize .modal-bg .modal-cont .content {
+  height: 150px;
+}
+#privacy .modal-bg .modal-cont .content {
+  height: 260px;
+}
 .modal-cont .content > ul > li {
   margin-top: .625rem;
   line-height: 140%;
@@ -155,6 +161,9 @@
   text-indent: -8px;
   padding-left: -8px;
   line-height: 140%;
+}
+#collective .modal-bg .modal-cont .content > ul > li > h3 {
+  margin-top: 3.125rem;
 }
 
 .modal-cont .content > ul > li a.text-link {

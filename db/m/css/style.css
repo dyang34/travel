@@ -150,6 +150,9 @@ p {
   padding-top: .625rem !important;
 }
 
+.fc-point {
+  color: var(--color-point);
+}
 .fc-red {
   color: var(--color-red);
 }
@@ -306,7 +309,9 @@ select:focus, select:active {
 .select-box:after {
   content: '';
   position: absolute; top: 0; right: 12px; bottom: 0;
-  background: url('../image/sub/icon-arrow.svg') no-repeat; background-size: 100%;
+  background: var(--color-black);
+  -webkit-mask: url('../image/sub/icon-arrow.svg') no-repeat; mask: url('../image/sub/icon-arrow.svg') no-repeat;
+  -webkit-mask-size: cover; mask-size: cover;
   width: 10px; height: 10px;
   margin: auto;
   pointer-events: none;
@@ -315,8 +320,7 @@ select:focus, select:active {
   border: 1px solid var(--color-point);
 }
 .select-box:hover:after {
-  background: url('../image/sub/icon-arrow-hover.svg') no-repeat;
-  background-size: 100%;
+  background: var(--color-point);
 }
 
 
@@ -366,19 +370,19 @@ select:focus, select:active {
   --font-size-0: 0rem;
 
   --font-size-32: 2rem;   /* -fS-title-01 */
-  --font-size-26: 1.6em;  /* -fS-title-02 */
-  --font-size-24: 1.5em;  /* -fS-title-03 */
-  --font-size-22: 1.375em;   /* -fS-title-04 */
-  --font-size-21: 1.3em;   /* -fS-title-05 */
-  --font-size-20: 1.25em;  /* -fS-title-06 */
-  --font-size-18: 1.125em; /* -fS-title-07 */
-  --font-size-17: 1.0625em;  /* -fS-title-08 */
+  --font-size-26: 1.85em;  /* -fS-title-02 */
+  --font-size-24: 1.6em;  /* -fS-title-03 */
+  --font-size-22: 1.5em;   /* -fS-title-04 */
+  --font-size-21: 1.375em;   /* -fS-title-05 */
+  --font-size-20: 1.3em;  /* -fS-title-06 */
+  --font-size-18: 1.25em; /* -fS-title-07 */
+  --font-size-17: 1.125em;  /* -fS-title-08 */
 
-  --font-size-16: 1rem;    /* -fS-text-00 */
-  --font-size-15: .95rem;  /* -fS-text-01 */
-  --font-size-14: .875rem; /* -fS-text-02 */
-  --font-size-12: .75rem;  /* -fS-text-03 */
-  --font-size-11: .65rem;  /* -fS-text-04 */
+  --font-size-16: 1.0625em;    /* -fS-text-00 */
+  --font-size-15: 1rem;  /* -fS-text-01 */
+  --font-size-14: .95rem; /* -fS-text-02 */
+  --font-size-12: .875rem;  /* -fS-text-03 */
+  --font-size-11: .75rem;  /* -fS-text-04 */
 
   /* Height Row size style */
   --row-150: 150px;

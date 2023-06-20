@@ -105,7 +105,7 @@ while($row=mysql_fetch_array($result)) {
 	}
 ?>
 	<div class="button-center">
-		<a href="../" class="button red">확인</div>
+		<a href="../" class="button point">확인</div>
 	</div>
 </div>
 <?php

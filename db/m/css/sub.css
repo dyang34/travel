@@ -243,8 +243,9 @@
 .search-wrap .box-gray > h3,
 .search-wrap .box-gray .numberhidden h3 {
   font-size: var(--font-size-17); font-weight: 700;
-  text-align: left;
+  text-align: center;
   margin: 1.875rem 5% 0;
+  word-break: keep-all;
 }
 .search-wrap > h3.title {
   font-size: var(--font-size-17); font-weight: 700;
@@ -276,7 +277,7 @@
   width: 90%;
   margin: 20px auto;
 }
-.search-wrap .box-gray > .button-center .red {
+.search-wrap .box-gray > .button-center .point {
   height: 48px; line-height: 48px;
 }
 .search-wrap .box-gray ul.reception {
@@ -292,7 +293,7 @@
 .search-wrap .box-gray ul.reception li:last-child {
   margin-left: 0;
 }
-.search-wrap .box-gray ul.reception li a.button.red {
+.search-wrap .box-gray ul.reception li a.button.point {
   height: 39px; line-height: 39px;
   border-radius: 3px;
   font-size: var(--font-size-14);
@@ -307,7 +308,7 @@
 .search-wrap > .button-center {
   margin: 1.875rem auto;
 }
-.search-wrap > .button-center .red {
+.search-wrap > .button-center .point {
   height: 48px; line-height: 48px; width: 100%;
 }
 

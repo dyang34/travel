@@ -2,7 +2,7 @@
 				<ul class="menu">
 					<li class="first"><a href="/travel/db/m/terms/agreement.php" class="">이용약관</a></li>
 					<li><a href="/travel/db/m/terms/privacy.php" class="">개인정보취급방침</a></li>
-					<li><a href="/travel/db/files/overseas.pdf" target="_blank" class="">해외여행보험약관</a></li>
+					<li><a href="/travel/db/files/db.overseas.pdf" target="_blank" class="">해외여행보험약관</a></li>
 <?php
 	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
 ?>
@@ -15,10 +15,10 @@
 					<ul>
 						<li>
 							<span>주소 : 서울특별시 중구 광희동2가 266 성우빌딩 10F</span>
-							<span>대표 : 김정훈</span>
+							<span>대표 : 김성일</span>
 						</li>
 						<li>
-							<span>사업자등록번호 : 118-88-00158</span>
+							<span>사업자등록번호 : 636-87-00912</span>
 							<span>이메일 : <a href="mailto:help@udirect.co.kr">help@udirect.co.kr</a></span>
 						</li>
 						<li>
