@@ -154,7 +154,7 @@ require_once $SYS_ROOT_DIR."/travel/db/m/include/header.php";
 					<li class="type-dash">- 본 보험의 모집인은 보험대리점 ㈜비아이에스 입니다.</li>
 
 					<li><strong>단체보험 계약</strong></li>
-					<li class="type-dash">- 본 보험계약은 유라이프커뮤니케이션즈㈜를 계약자, ㈜비아이에스 회원 중 가입 고객을 피보험자, ㈜비아이에스 회원 중 가입 고객 및 법정상속인을 보험수익자로 하는 단체계약입니다.</li>
+					<li class="type-dash">- 본 보험계약은 ㈜유라이프커뮤니케이션즈를 계약자, ㈜유라이프커뮤니케이션즈 회원 중 가입 고객을 피보험자, ㈜유라이프커뮤니케이션즈 회원 중 가입 고객 및 법정상속인을 보험수익자로 하는 단체계약입니다.</li>
 					<li class="type-dash">- 본 보험계약은 단체형으로 운영하여 청약철회 및 품질보증해지 대상이 아닙니다.</li>
 
 					<li><strong>만기환급금</strong></li>
