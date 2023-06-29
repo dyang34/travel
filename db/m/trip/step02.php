@@ -54,7 +54,7 @@ $cur_date=date("Y-m-d");
 $cal_type_array=array();
 $arrMember = array();
 
-$sql="select * from plan_code_type_hana where company_type=2 and title <> '' and member_no='".$site_config_type_member_no."' and trip_type='".$tripType."' order by no asc";
+$sql="select * from plan_code_type_hana where company_type=4 and title <> '' and member_no='".$site_config_type_member_no."' and trip_type='".$tripType."' order by no asc";
 $result=mysql_query($sql, $conn);
 
 $arrPlanTypeList = array();
@@ -111,7 +111,7 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 $cal_type_query=implode( ',', array_unique($cal_type_array) );
 
 // 고급형(3), 표준형(2), 실속형(1)
-$sql="select plan_title, left(MIN(plan_type),1) as plan_type_src from plan_code_hana where company_type=2 and member_no='".$site_config_member_no
+$sql="select plan_title, left(MIN(plan_type),1) as plan_type_src from plan_code_hana where company_type=4 and member_no='".$site_config_member_no
 	."' and trip_type='".$tripType
 	."' and cal_type in (".$cal_type_query.") group by plan_title order by plan_type desc";
 $result=mysql_query($sql, $conn);
@@ -123,7 +123,7 @@ while($row=mysql_fetch_assoc($result)) {
 
 for($i=0;$i<count($arrPlanList);$i++) {
 
-	$sql="select * from plan_code_hana where company_type=2 and member_no='".$site_config_member_no."' and trip_type='".$tripType."' 
+	$sql="select * from plan_code_hana where company_type=4 and member_no='".$site_config_member_no."' and trip_type='".$tripType."' 
 			and plan_type like '%".$arrPlanList[$i]["plan_type_src"]."%' order by cal_type asc";
 
 	$rs_plan_list_detail=mysql_query($sql, $conn);
@@ -140,7 +140,7 @@ for($i=0;$i<count($arrPlanList);$i++) {
 		$sql_price="select price from plan_code_price_hana a
 			left join plan_code_hana b
 			on a.plan_code = b.plan_code and a.company_type = b.company_type and a.member_no = b.member_no and a.trip_type = b.trip_type
-			where a.company_type=2 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
+			where a.company_type=4 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
 			and a.plan_type like '%".$arrPlanList[$i]["plan_type_src"]."%' and b.cal_type = '".$arrMember[$i_member]["cal_type"]."' 
 			and sex = '".$arrMember[$i_member]["gender"]."' and age = '".$arrMember[$i_member]["cal_age"]."' and term_day >= '".$term_day."' 
 			order by term_day asc limit 1";
@@ -198,7 +198,7 @@ for($i=0;$i<count($arrPlanList);$i++) {
 <?php
 		for($i_cal_type=0;$i_cal_type<count($arrPlanList[$i]['plan_list']);$i_cal_type++) {
 ?>
-						<col width="17%">
+						<col width="13%">
 <?php
 		}
 ?>
