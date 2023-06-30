@@ -1,0 +1,480 @@
+
+/********************************************************************
+              header area
+********************************************************************/
+header {
+  position: absolute;  z-index: 3;
+  background-color: rgba(0, 0, 0, .58);
+  width: 100%; height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, .38);
+}
+.head-wrap {
+  position: relative;
+  width: 1200px; height: 80px;
+  margin: 0 auto;
+}
+.head-wrap > h1 {
+  position: absolute; top: 50%; left: 0;
+  transform: translate(0,-50%);
+  width: 250px; height: auto;
+}
+.head-wrap nav {
+  display: flex;
+  justify-content: flex-end; align-items: center;
+}
+.head-wrap nav > .dropdown, .head-wrap nav > a {
+  position: relative;
+  font-size: var(--font-size-18); font-weight: 700;
+  color: var(--color-white); line-height: 80px;
+  padding: 0 40px;
+}
+.head-wrap nav  > a:after {
+  content: "";
+  position: absolute; top: 50%; right: 0px;
+  transform: translate(0,-50%);
+  width: 1px; height: 14px;
+  background-color: rgba(255, 255, 255, .38);
+}
+.head-wrap nav  > a:last-child:after {
+  width: 0; height: 0;
+  padding-right: 0;
+}
+.head-wrap nav  > a:hover {
+  color: var(--color-yellow);
+}
+.head-wrap nav  > a.active {
+  color: var(--color-yellow);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute; left: 0; z-index: 1;
+  background-color: rgba(0,0,0, .75);
+  width: 100%;  
+  border: 1px solid rgba(255, 255, 255, .38); border-bottom: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-menu a {
+  font-size: var(--font-size-15); font-weight: 500; color: var(--color-white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, .38);
+}
+.dropdown-menu a:hover {
+  color: #35e5f5;
+}
+.dropdown-menu a:active {
+  background-color: #35e5f5;
+  color: var(--color-fontColor);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/********************************************************************
+              Sub Visual area style css
+********************************************************************/
+.sub-visual {
+  position: relative;
+  width: 100%; height: 450px;
+  background-size: cover;
+}
+.sub-visual.check {
+  background: url('../img/sub/sub-visual-check.png?euni') no-repeat;
+}
+.sub-visual.life {
+  background: url('../img/sub/sub-visual-life.png?euni') no-repeat;
+}
+.sub-visual.service {
+  background: url('../img/sub/sub-visual-faq.png?euni') no-repeat;
+}
+.sub-visual.terms {
+  background: url('../img/sub/sub-visual-terms.png?eu') no-repeat;
+}
+.sub-visual .inner {
+  position: relative;
+  width: 100%; height: calc(100% - 80px);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column; align-items: center; justify-content: center;
+}
+.sub-visual .inner:before {
+  content: "";
+  position: absolute; top: 80px; left: 0;
+  background-color: rgba(0, 0, 0, .58);
+  width: 100%; height: calc(100% - 80px);
+}
+.sub-visual .inner > h2 {
+  position: relative; z-index: 2;
+  font-size: var(--font-size-58); font-weight: 700; line-height: 1.4;
+  color: var(--color-yellow);
+}
+.sub-visual .inner > p {
+  position: relative; z-index: 2;
+  font-size: var(--font-size-38); font-weight: 700; line-height: 1.4;
+  color: var(--color-white);
+}
+
+
+/********************************************************************
+              Footer area style css
+********************************************************************/
+footer {
+  width: 100%; height: auto;
+  background-color: var(--color-dark-gray);
+}
+footer .inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; padding-bottom: 30px;
+}
+footer .inner .menu-box {
+  height: 76px;
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+footer .inner .menu-box > ul li {
+  display: inline-block;
+}
+footer .inner .menu-box > ul li a {
+  position: relative;
+  display: block;
+  padding: 0 15px 0 20px; line-height: 76px;
+  font-size: var(--font-size-15); font-weight: 500;
+  color: var(--color-white);
+}
+footer .inner .menu-box > ul li a:before {
+  content: "";
+  display: block;
+  position: absolute; top: 50%; left: 0;
+  transform: translate(0%, -50%);
+  width: 4px; height: 4px;
+  background-color: var(--color-white); border-radius: 100%;
+}
+footer .inner .menu-box > ul li:first-child a {
+  padding-left: 0px;
+}
+footer .inner .menu-box > ul li:first-child a:before {
+  width: 0px; height: 0px;
+  background-color: transparent;
+}
+footer .inner .address-box {
+  margin-top: 30px;
+  width: 100%;
+}
+footer .inner .address-box > ul li {
+  display: block;
+}
+footer .inner .address-box > ul li span {
+  position: relative;
+  display: inline-block;
+  padding: 0 25px; margin-bottom: 10px;
+  font-size: var(--font-size-15); font-weight: 400;
+  color: var(--color-light-silver);
+}
+footer .inner .address-box > ul li span:before {
+  content: "";
+  display: block;
+  position: absolute; top: 50%; left: 0;
+  transform: translate(0%, -50%);
+  width: 3px; height: 3px;
+  background-color: var(--color-white); border-radius: 100%;
+}
+footer .inner .address-box > ul li span:first-child:before {
+  width: 0px; height: 0px;
+  background-color: transparent;
+}
+footer .inner .address-box > ul li span:first-child {
+  padding-left: 0;
+}
+footer .inner .address-box > ul li.copyright {
+  font-size: var(--font-size-12); font-weight: 300;
+  color: var(--color-white); letter-spacing: 0;
+  margin-bottom: 7px;
+}
+footer .inner .logo-wrap {
+  position: absolute; top: 138px; right: 0px;
+}
+
+
+/********************************************************************
+              Top buttom style css
+********************************************************************/
+.btn-top-wrap {
+  position: absolute; bottom: 195px; right: 20px;
+  display: none;
+  width: 72px; height: 72px;
+  border-radius: 100%; background-color: rgba(0, 0, 0, .95);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0, .75);
+  cursor: pointer;
+}
+.btn-top-wrap > div {
+  display: flex;
+  justify-content: center; align-items: center;
+  width: 100%; height: 100%;
+}
+.btn-top-wrap > div i.icon-top {
+  display: block;
+  width: 26px; height: 26px;
+  background-color: var(--color-white); background-size: 100%;
+  -webkit-mask: url('../img/common/icon-top.svg?euni') no-repeat center;
+          mask: url('../img/common/icon-top.svg?euni') no-repeat center;
+  -webkit-mask-size: cover; mask-size: cover;
+}
+
+
+/********************************************************************
+              Common area style css
+********************************************************************/
+.content-wrap {
+  width: 1200px; height: auto;
+  margin: 0 auto 100px;
+}
+.button-wrap {
+  display: flex;
+  justify-content: space-between; align-items: center;
+}
+.button-wrap.center {
+  display: flex;
+  justify-content: center; align-items: center;
+}
+
+/* 스크롤바 설정*/
+html::-webkit-scrollbar {
+  width: 8px;
+}
+/* 스크롤바 막대 설정*/
+html::-webkit-scrollbar-thumb {
+    background: #424242; border: 1px solid var(--color-black);
+    border-radius: 4px;
+}
+/* 스크롤바 뒷 배경 설정*/
+html::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+
+/********************************************************************
+              etc area style css
+********************************************************************/
+.type-dash {
+  text-indent: -10px;
+  padding-left: 10px;
+}
+.type-dot {
+  position: relative;
+  padding-left: 12px;
+}
+.type-dot:before {
+  content: "";
+  position: absolute; top: 6px; left: 0;
+  width: 4px; height: 4px;
+  border-radius: 100%;
+  background-color: var(--color-black);
+}
+.type-number {
+  text-indent: -10px;
+  padding-left: 10px;
+}
+.type-num-circle {
+  text-indent: -14px;
+  padding-left: 14px;
+}
+
+
+
+/*********************************************************************************************
+						  UI Datepicker Style css
+*****************************/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: solid rgba(255, 255, 255, .55)!important;
+  border-width: 1px 0 0 1px!important;
+}
+.ui-datepicker td {
+  border: 1px solid #CCC !important;
+  padding: 0 !important
+}
+.ui-datepicker-calendar thead tr th {
+  border: 1px solid #CCC !important;
+  background: linear-gradient(20deg, #e2e2e2, #eeeeee) !important;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  font-size: var(--font-size-12); color: var(--color-black);
+  text-transform: uppercase !important;
+  border: solid rgba(255, 255, 255, .55) !important;
+  border-width: 1px 0 0 1px !important;
+  width: 100%; height: 22px; line-height: 22px;
+}
+.ui-widget-header {
+  background: #2d2d2d !important;
+  border: 0 !important
+}
+.ui-datepicker .ui-datepicker-title select {
+  background: #2d2d2d !important;
+  color: var(--color-white) !important;
+  font-size: 15px !important;
+}
+.ui-widget-header .ui-icon {
+  background-image: none !important;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin-top: 4px !important;
+}
+#ui-datepicker-div {
+  padding: 0;
+  width: 275px !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: linear-gradient(20deg, #e2e2e2, #eeeeee) !important;
+}
+.ui-state-default {
+  font-size: var(--font-size-12);
+  font-weight: bold !important;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 12px 0 !important;
+  text-align: center !important;
+}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  width: 33% !important;
+  padding-left: 22px !important;
+}
+.ui-datepicker th {
+  padding: 0 0 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus,
+.ui-button:hover, .ui-button:focus {
+  background: #1EB7AD !important;
+  box-shadow: inset 0px 0px 10px #32DACF, inset 0px 0px 20px #35e5f5 !important;
+  color: var(--color-white) !important;
+}
+.ui-datepicker .ui-datepicker-next span {
+  margin-left: -3px;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  top: 1px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span {
+  margin-left: -14px;
+}
+.ui-datepicker .ui-datepicker-next.ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev.ui-datepicker-prev-hover {
+  background: rgba(255, 255, 255, .10) !important;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .75), inset 0px 0px 5px rgba(255, 255, 255, .25) !important;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next,
+.ui-datepicker-prev.ui-state-hover.ui-datepicker-prev-hover,
+.ui-datepicker-next.ui-state-hover.ui-datepicker-next-hover {
+  width: 37px; height: 37px;
+}
+.ui-datepicker table {
+  margin: 0 !important;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+  border: 0 !important;
+}
+
+/*Right Arrow*/
+.ui-datepicker .ui-datepicker-next span {
+  width: 0!important; height: 0!important;
+  border-left: 10px solid white!important;
+  border-right: 8px solid transparent!important;
+  border-bottom: 8px solid transparent!important;
+  border-top: 8px solid transparent!important;
+}
+
+/*Left Arrow*/
+.ui-datepicker .ui-datepicker-prev span {
+  width: 0!important; height: 0!important;
+  border-right: 10px solid white!important;
+  border-left: 8px solid transparent!important;
+  border-bottom: 8px solid transparent!important;
+  border-top: 8px solid transparent!important;
+}
+
+
+/********************************************************************
+              해상도별 style css
+********************************************************************/
+@media only screen and (max-width:1300px) and (min-width:700px){
+  .head-wrap {
+    width: 90%;
+  }
+  .head-wrap nav > a {
+    font-size: var(--font-size-15);
+    line-height: 80px;
+    padding: 0 2rem;
+  }
+  footer .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.875rem;
+  }
+  footer .inner .address-box > ul li span {
+    padding: 0 .65rem;
+    margin-bottom: .55rem;
+    font-size: var(--font-size-13);
+  }
+  footer .inner .logo-wrap {
+    top: 150px;
+  }
+  footer .inner .logo-wrap img {
+    width: 180px;
+  }
+  .btn-top-wrap {
+    bottom: 190px; right: 20px;
+    width: 70px; height: 70px;
+  }
+  .btn-top-wrap > div i.icon-top {
+    width: 26px; height: 26px;
+  }
+  .sub-visual {
+    position: relative;
+    width: 100%; height: 300px;
+  }
+  .sub-visual.service {
+    background-position-x: -190px;
+    background-size: cover;
+  }
+  .sub-visual .inner > p {
+    font-size: var(--font-size-22);
+  }
+  .content-wrap {
+    width: 90%;
+  }
+  .btn-top-wrap {
+    position: fixed; z-index: 9;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sub-visual.service {
+    background-position-x: 10%;
+    background-size: cover;
+  }
+  .sub-visual.terms {
+    background-position-x: 10%;
+    background-size: cover;
+  }
+  .btn-top-wrap {
+    bottom: 180px;
+    width: 80px; height: 80px;
+  }
+  .btn-top-wrap > div i.icon-top {
+    width: 32px; height: 32px;
+  }
+}

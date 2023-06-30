@@ -240,12 +240,12 @@
   line-height: 1;
 }
 .swiper-button-prev:after {
-  background: url('/travel/db/image/main/icon-Arrow-next.svg') no-repeat;
+  background: url('/travel/meritz/image/main/icon-Arrow-next.svg') no-repeat;
   background-size: 100%;
   transform: rotate( 180deg );
 }
 .swiper-button-next:after {
-  background: url('/travel/db/image/main/icon-Arrow-next.svg') no-repeat;
+  background: url('/travel/meritz/image/main/icon-Arrow-next.svg') no-repeat;
   background-size: 100%;
 }
 

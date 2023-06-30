@@ -1,0 +1,589 @@
+ 
+/********************************************************************
+              Modal style css
+********************************************************************/
+.mask_background {
+  position:absolute; left:0; top:0; z-index:10;
+  background-color:rgba(0,0,0,0.5);
+  display:none;
+}
+.modal {
+  position: fixed; left:0; top:0; z-index: 10;
+  width: 100%; height: 100%;
+  transform: scale(0);
+}
+.modal .modal-bg {
+  display:flex; 
+  align-items: center;  justify-content: center; 
+  height: 100%;
+  background: rgba(0, 0, 0, .35);
+}
+.modal .modal-bg .modal-cont {
+  position:relative;
+  display: inline-block;
+  padding: 0px; max-width: 500px;
+  font-family: var(--font-family-noto);
+  background: var(--color-white);
+}
+.modal .modal-bg .modal-cont .title-wrap {
+  display: flex;
+  justify-content: flex-start; align-items: center;
+  background-color: var(--color-point);
+  height: 50px;
+}
+.modal .modal-bg .modal-cont .title-wrap > h2 {
+  font-size: var(--font-size-22); font-weight: 700;
+  color: var(--color-white);
+  padding-left: 20px;
+}
+.modal .modal-bg .modal-cont .title-wrap .md-close {
+  position: absolute; top: 0px; right: 0px;
+  margin: 15px; padding: 0px;
+  background: transparent;
+  width: 20px; height: 20px;
+}
+.modal .modal-bg .modal-cont .title-wrap .md-close:before,
+.modal .modal-bg .modal-cont .title-wrap .md-close:after {
+  content: "";
+  position: absolute; top: 1px; right: 8px;
+  display: block;
+  width: 3px; height: 17px;
+  background-color: var(--color-white);
+}
+.modal .modal-bg .modal-cont .title-wrap .md-close:before {
+  transform: rotate( -45deg );
+}
+.modal .modal-bg .modal-cont .title-wrap .md-close:after {
+  transform: rotate( 45deg );
+}
+
+/**************************************************** 상품안내 style css */
+.modal.product .modal-bg .modal-cont {
+  width: 750px; max-width: 750px; height: 670px;
+}
+.modal.product .modal-bg .modal-cont i {
+  font-size: 0;
+}
+.prod-bnnr {
+  display: flex;
+  flex-wrap: nowrap; flex-direction: row; justify-content: space-between; align-items: center;
+  background-color: var(--color-snow);
+  padding: 50px 80px;
+  width: calc(100% - 160px);
+}
+.prod-bnnr .box-list {
+  display: flex;
+  flex-direction: column; flex-wrap: nowrap; align-items: center; justify-content: flex-start;
+  width: 130px;
+}
+.prod-bnnr .box-list > .circle {
+  display: flex;
+  align-items: center; justify-content: center;
+  width: 130px; height: 130px;
+  background-color: var(--color-white); border-radius: 100%;
+}
+.prod-bnnr .box-list > .circle > i {
+  display: flex;
+  justify-content: center; align-items: center;
+}
+.prod-bnnr .box-list > .circle > i.icon-browser {
+  width: 59px; height: 78px;
+  background: url('/travel/meritz/img/trip/icon-browser.svg') no-repeat;
+  background-size: 100%;
+}
+.prod-bnnr .box-list > .circle > i.icon-inde {
+  width: 72px; height: 74px;
+  background: url('/travel/meritz/img/trip/icon-inde.svg') no-repeat;
+  background-size: 100%;
+}
+.prod-bnnr .box-list > .circle > i.icon-simple {
+  width: 74px; height: 74px;
+  background: url('/travel/meritz/img/trip/icon-simple.svg') no-repeat;
+  background-size: 100%;
+}
+.prod-bnnr .box-list > strong {
+  margin-top: 15px;
+  font-size: var(--font-size-18); font-weight: 700;
+  color: var(--color-fontColor);
+}
+.modal.product .modal-bg .modal-cont  > h3 {
+  margin: 30px 30px 0;
+}
+.modal.product .modal-bg .modal-cont .bnnr-box {
+  display: flex;
+  flex-direction: row; flex-wrap: nowrap; justify-content: space-between;
+  padding: 10px 30px 0;  
+}
+.bnnr-box .round-box {
+  width: 220px; height: 170px;
+}
+.bnnr-box .round-box:nth-child(1) {
+  background: linear-gradient(90deg, #18B6FA 0%, #74E8D3 100%); border-radius: 20px;
+}
+.bnnr-box .round-box:nth-child(2) {
+  background: linear-gradient(90deg, #3AA1FF 0%, #73DFF6 100%); border-radius: 20px;
+}
+.bnnr-box .round-box:nth-child(3) {
+  background: linear-gradient(90deg, rgba(71,128,246,1) 0%, rgba(107,158,255,1) 100%); border-radius: 20px;
+}
+.bnnr-box .round-box .title {
+  display: flex;
+  flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: flex-start;
+  padding: 20px; padding-bottom: 0;
+}
+.bnnr-box .round-box .title i {
+  display: flex;
+  justify-content: center; align-items: center;
+  width: 45px; height: 45px;
+  background-color: rgba(255, 255, 255, .48); border-radius: 15px;
+  margin-right: 15px;
+}
+.bnnr-box .round-box .title i:before {
+  content: "";
+  display: block;
+  width: 26px; height: 26px;
+}
+.bnnr-box .round-box .title i.icon-medical:before {
+  background: url('../img/trip/icon-medical.svg?en') no-repeat;
+  background-size: 100%;
+}
+.bnnr-box .round-box .title i.icon-actual:before {
+  background: url('../img/trip/icon-actual.svg?en') no-repeat;
+  background-size: 100%;
+}
+.bnnr-box .round-box .title i.icon-language:before {
+  background: url('../img/trip/icon-language.svg?en') no-repeat;
+  background-size: 100%;
+}
+.bnnr-box .round-box .title > strong {
+  max-width: 120px;
+  font-size: var(--font-size-18); font-weight: 700;
+  color: var(--color-white); line-height: 1.2;
+  word-break: keep-all;
+}
+.bnnr-box .round-box > p {
+  font-size: var(--font-size-13); font-weight: 400;
+  color: var(--color-white);
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+  word-break: keep-all;
+}
+.modal .modal-bg .modal-cont .bottom-box {
+  display: flex;
+  flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;
+  margin: 50px 30px 0;
+}
+.modal .modal-bg .modal-cont .bottom-box .text {
+  font-size: var(--font-size-15); font-weight: 400;
+  color: var(--color-fontGray);
+}
+.modal .modal-bg .modal-cont .bottom-box .img {
+  height: 38px;
+}
+.modal .modal-bg .modal-cont .bottom-box .img img {
+  width: auto; height: 100%;
+}
+
+
+/**************************************************** 알아두실 사항 style css */
+.modal.know .modal-bg .modal-cont {
+  width: 750px; max-width: 750px; height: 670px;
+}
+.modal.know .modal-bg .modal-cont i {
+  font-size: 0;
+}
+.modal.know .modal-bg .modal-cont .cont-box-wrap {
+  width: 94%; height: 570px;
+  margin: 30px auto 0;
+  overflow-y: auto;
+}
+.modal.know .modal-bg .modal-cont .cont-box-wrap .ncsrl-box {
+  margin-right: 10px;
+}
+.ncsrl-box > h3, .notes-box > h3 {
+  font-size: var(--font-size-20); font-weight: 700;
+}
+.ncsrl-box > p {
+  font-size: var(--font-size-15); font-weight: 300; color: var(--color-fontColor);
+  line-height: 1.3;
+  text-indent: -15px;
+  padding-left: 15px;
+  word-break: keep-all;
+}
+.modal.know .modal-bg .modal-cont .cont-box-wrap .notes-box {
+  margin-top: 30px; margin-right: 10px;
+  padding: 20px;
+  background-color: var(--color-light-silver);
+}
+.notes-box > ul {
+  margin-top: 7px;
+}
+.notes-box > ul > li {
+  font-size: var(--font-size-15); font-weight: 300;
+  color: var(--color-fontColor); line-height: 1.4;
+  word-break: keep-all;
+}
+.notes-box > ul > li.type-dot {
+  position: relative;
+  padding-left: 10px;  margin-top: 7px;
+}
+.notes-box > ul > li.type-dot:before {
+  content: "";
+  position: absolute; top: 7px; left: 0;
+  width: 3px; height: 3px;
+  border-radius: 100%;
+  background-color: var(--color-fontColor);
+}
+.notes-box > ul > li.type-dot > ul li {
+  text-indent: -8px;
+  padding-left: 8px; margin-top: 4px;
+  color: var(--color-fontColor);
+}
+.notes-box > ul > li.type-dot > ul li.type-number {
+  text-indent: -15px;
+  padding-left: 15px; margin-top: 4px;
+  color: var(--color-fontColor);
+}
+.notes-box > ul > li.type-dot > ul li > ul li {
+  text-indent: -18px;
+  padding-left: 18px; margin-top: 4px;
+}
+
+
+/**************************************************** 알아두실 사항 style css */
+.modal.restrict .modal-bg .modal-cont {
+  width: 600px; max-width: 600px; height: 600px;
+}
+.modal.restrict .modal-bg .modal-cont i {
+  font-size: 0;
+}
+.modal.restrict .modal-bg .modal-cont .cont-box-wrap {
+  width: 94%; height: 500px;
+  margin: 30px auto 0;
+  overflow-y: auto;
+}
+.cont-box-wrap .restrict-box {
+  display: flex;
+  flex-direction: column; flex-wrap: nowrap; align-items: flex-start;
+}
+.cont-box-wrap .restrict-box > strong {
+  font-size: var(--font-size-18); font-weight: 700;
+  margin-top: 30px;
+}
+.cont-box-wrap .restrict-box > strong:first-child {
+  margin-top: 0;
+}
+.cont-box-wrap .restrict-box > p {
+  font-size: var(--font-size-13); font-weight: 300; line-height: 1.4;
+   margin-top: 5px ;
+}
+.cont-box-wrap .restrict-box > p.caution {
+  color: var(--color-red);
+  text-indent: -8px;
+  padding-left: 8px; margin-right: 10px;
+  word-break: keep-all;
+}
+
+
+/**************************************************** 입원수술질병확진 style css */
+.modal.disease .modal-bg .modal-cont {
+  width: 580px; max-width: 580px; height: 200px;
+}
+.modal.disease .modal-bg .modal-cont .cont-box-wrap {
+  width: 94%;
+  margin: 30px auto 0;
+}
+.modal.disease .modal-bg .modal-cont .cont-box-wrap > p {
+  font-size: var(--font-size-15); font-weight: 300; line-height: 1.4;
+  word-break: keep-all;
+}
+
+
+/**************************************************** 이용약관 style css */
+.modal.terms .modal-bg .modal-cont {
+  width: 700px; max-width: 700px; height: 680px;
+}
+.modal.terms2 .modal-bg .modal-cont {
+  width: 500px; max-width: 500px; height: 350px;
+}
+.modal.terms .modal-bg .modal-cont .cont-box-wrap {
+  width: 94%; height: 575px;
+  margin: 30px auto 0;
+  overflow-y: auto;
+}
+.modal.terms2 .modal-bg .modal-cont .cont-box-wrap {
+  width: 94%;
+  margin: 30px auto 0;
+}
+.modal.terms .modal-bg .modal-cont .cont-box-wrap > h3 {
+  font-size: var(--font-size-18); font-weight: 700;
+  margin-top: 50px;
+}
+.modal.terms .modal-bg .modal-cont .cont-box-wrap > h3.first {
+  margin-top: 0;
+}
+.modal.terms2 .modal-bg .modal-cont .cont-box-wrap > p {
+  font-size: var(--font-size-15); font-weight: 300; line-height: 1.4;
+  word-break: keep-all;
+}
+.cont-box-wrap > .terms-list {
+  margin: 20px 0; margin-right: 20px;
+}
+.cont-box-wrap.group > .terms-list.first {
+  margin: 0; margin-right: 20px;
+}
+.cont-box-wrap > .terms-list:first-child {
+  margin-top: 0;
+}
+.cont-box-wrap > .terms-list > ul li {
+  font-size: var(--font-size-15); font-weight: 300;
+  color: var(--color-fontColor); line-height: 1.4;
+  word-break: keep-all;
+  padding-top: 5px;
+}
+.cont-box-wrap > .terms-list > ul li > strong {
+  display: block;
+  font-weight: 700;
+}
+.cont-box-wrap > .terms-list > ul li.type-circle {
+  text-indent: -18px;
+  padding-left: 18px;
+}
+.cont-box-wrap > .terms-list > ul li > ul li {
+  padding-left: 17px;
+}
+.cont-box-wrap > .terms-list > .type-number {
+  text-indent: -15px;
+  padding-left: 15px;
+}
+.cont-box-wrap > .terms-list > .type-dash {
+  text-indent: -10px;
+  padding-left: 10px;
+}
+
+
+
+/**************************************************** 스크롤바 style css */
+/* 스크롤바 설정*/
+.cont-box-wrap::-webkit-scrollbar {
+  width: 8px;
+}
+/* 스크롤바 막대 설정*/
+.cont-box-wrap::-webkit-scrollbar-thumb {
+  background: var(--color-point); border: 1px solid var(--color-navy);
+  border-radius: 4px;
+}
+/* 스크롤바 뒷 배경 설정*/
+.cont-box-wrap::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, .05);
+} 
+
+
+
+
+/**************************************************** animation style */
+/********************************************* One */
+.modal.one {
+	transform: scale(1);
+}
+.modal.one.out {
+	transform: scale(0);
+}
+.modal.one .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: none;
+}
+
+/********************************************* Two */
+.modal.two {
+	transform: scaleY(0.01) scaleX(0);
+	animation: unfoldIn 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.two .modal-bg .modal-cont {
+	transform: scale(0);
+	animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.two.out {
+	transform: scale(1);
+	animation: unfoldOut 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.two.out .modal-bg .modal-cont {
+	transform: scale(0);
+	animation: zoomOut 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+@keyframes unfoldIn{
+	0% {transform: scaleY(0.005) scaleX(0);}
+	50% {transform: scaleY(0.005) scaleX(1);}
+	100% {transform: scaleY(1) scaleX(1);}
+}
+@keyframes unfoldOut{
+	0% {transform: scaleY(1) scaleX(1);}
+	50% {transform: scaleY(0.005) scaleX(1);}
+	100% {transform: scaleY(0.005) scaleX(0);}
+}
+@keyframes zoomIn {
+	0% {transform: scale(0);}
+	100% {transform: scale(1); }
+}
+@keyframes zoomOut {
+	0% {transform: scale(1);}
+	100% {transform: scale(0); }
+}
+
+/********************************************* Three */
+.modal.three {
+	transform: scale(1);
+}
+.modal.three .modal-bg, #enrl-cnfr-modal.three .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.three .modal-bg .modal-cont {
+	opacity: 0;
+	animation: scaleUp 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.three.out {
+	animation: quickScaleDown 0s .5s linear forwards;
+}
+.modal.three.out .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: fadeOut 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.three.out .modal-bg .modal-cont {
+	opacity: 0;
+	animation: scaleDown 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+@keyframes fadeIn {
+	0% {background: rgba(0,0,0,0)}
+	100% {background: rgba(0,0,0,0.7)}
+}
+@keyframes fadeOut {
+	0% {background: rgba(0,0,0,0.7)}
+	100% {background: rgba(0,0,0,0)}
+}
+@keyframes scaleUp {
+	0% {transform: scale(0.5) translatey(1000px); opacity:0}
+	100% {transform: scale(1) translatey(0px); opacity:1}
+}
+@keyframes scaleDown {
+	0% {transform: scale(1) translatey(0px); opacity:1}
+	100% {transform: scale(0.5) translatey(1000px); opacity:0}
+}
+@keyframes quickScaleDown {
+	0% {transform: scale(1);}
+	99.9% {transform: scale(1); }
+	100% {transform: scale(0); }
+}
+
+/********************************************* Four */
+.modal.four {
+	transform: scale(1);
+}
+.modal.four .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.four .modal-bg .modal-cont {
+	transform: translatex(-1500px);
+	animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.four {
+	animation: quickScaleDown 0s .5s linear forwards;
+}
+.modal.out.four .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: fadeOut 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.four .modal-bg .modal-cont {
+	animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+
+@keyframes roadRunnerIn {
+	0% {transform: translatex(-1500px) skew(30deg) scalex(1.3); }
+	70% {transform: translatex(30px) skew(0deg) scalex(0.9);}
+	100% {transform: translatex(0px) skew(0deg) scalex(1);}
+}
+@keyframes roadRunnerOut {
+	0% {transform: translatex(0px) skew(0deg) scalex(1); }
+	70% {transform: translatex(-30px) skew(-5deg) scalex(0.9);}
+	100% {transform: translatex(1500px) skew(30deg) scalex(1.3);}
+}
+
+/**************************************************** five */
+.modal.five {
+	transform: scale(1);
+}
+.modal.five .modal-bg {
+	background: rgba(0,0,0,0);
+	animation: fadeIn 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.five .modal-bg .modal-cont {
+	border-radius: 75px;
+	height: 75px;
+	width: 75px;
+	overflow: hidden;
+	animation: bondJamesBond 1.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.five .modal-bg .modal-cont p {
+	opacity:0;
+	animation: modalContentFadeIn 0.5s 1.4s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.five .modal-bg .modal-cont .close {
+	opacity:0;
+	animation: closeFadeIn 0.5s 1.4s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.five {
+	animation: slowFade 0.5s 1.5s linear forwards;
+}
+.modal.out.five .modal-bg {
+	background: rgba(0,0,0,0.7);
+	animation: fadeToRed 2s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.five .modal-bg .modal-cont {
+	border-radius: 3px;
+	height: 200px;
+	width: 450px;
+	animation: killShot 1s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.five .modal-bg .modal-cont p {
+	animation: modalContentFadeOut 0.5s 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+.modal.out.five .modal-bg .modal-cont .close {
+	animation: closeFadeOut 0.5s 0.5s cubic-bezier(0.165, 0.85, 0.44, 1) forwards;
+}
+@keyframes slowFade {
+	0% {opacity: 1;}
+	99.9% {opacity:0; transform: scale(1);}
+	100% {transform: scale(0);}
+}
+@keyframes fadeToRed {
+	0% {box-shadow: inset 0 0 0 rgba(201,24,24,0.8);}
+	100% {box-shadow: inset 0 2000px 0 rgba(201,24,24,0.8);}
+}
+@keyframes bondJamesBond {
+	0% {transform: translatex(1000px);}
+	80% {transform: translatex(0px); border-radius: 75px;height:75px;width:75px}
+	90% {border-radius: 3px; height: 220px; width: 450px;}
+	100% {border-radius: 3px; height: 200px; width: 450px;}
+}
+@keyframes killShot {
+	0% {transform: translatey(0) rotate(0deg); opacity:1;}
+	100% {transform: translatey(300px) rotate(45deg); opacity:0;}
+}
+
+@keyframes modalContentFadeIn {
+	0% {opacity: 0; top: -20px;}
+	100% {opacity: 1; top: 0px;}
+}
+@keyframes modalContentFadeOut {
+	0% {opacity: 1; top: 0px;}
+	100% {opacity: 0; top: -20px;}
+}
+@keyframes closeFadeIn {
+	0% {opacity: 0; top: -20px;}
+	100% {opacity: 1; top: 0px;}
+}
+@keyframes closeFadeOut {
+	0% {opacity: 1; top: 0px;}
+	100% {opacity: 0; top: -20px;}
+}

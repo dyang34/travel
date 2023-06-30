@@ -25,15 +25,15 @@
   overflow: hidden;
 }
 .swiper-slide, .swiper-slide.visual1 {
-  background: url('/travel/db/image/main/main-visual-01.png?t') no-repeat;
+  background: url('/travel/meritz/image/main/main-visual-01.png?t') no-repeat;
   background-size: cover;
 }
 .swiper-slide.visual2 {
-  background: url('/travel/db/image/main/main-visual-02.png?t') no-repeat;
+  background: url('/travel/meritz/image/main/main-visual-02.png?t') no-repeat;
   background-size: cover;
 }
 .swiper-slide.visual3 {
-  background: url('/travel/db/image/main/main-visual-03.png?t') no-repeat;
+  background: url('/travel/meritz/image/main/main-visual-03.png?t') no-repeat;
   background-size: cover;
 }
 .swiper-slide .title {

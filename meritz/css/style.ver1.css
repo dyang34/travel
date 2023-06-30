@@ -1,0 +1,495 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* 
+   v1.0 | 20220516
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0;
+	font-size: 100%; font: inherit; font-family: "Noto Sans KR", 'Malgun Gothic', "맑은고딕", Dotum, sans-serif; line-height: 110%;
+  letter-spacing: -.0313rem; color: var(--color-fontColor);
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; position: relative; min-width: 1200px; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+div { display: block }
+article, aside, footer, header, hgroup, main, nav, section { display: block }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  width: 100%;
+}
+address { display: block; }
+figcaption { display: block }
+hr {
+  display: block; overflow: hidden;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em; margin-block-end: 0.5em; margin-inline-start: auto; margin-inline-end: auto;
+  border-style: inset; border-width: 1px
+}
+map {
+  display: inline
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+}
+video {
+  object-fit: contain;
+}
+video:-webkit-full-page-media {
+  margin: auto; position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  max-height: 100%; max-width: 100%;
+}
+img {
+  border-style: none;
+}
+button {
+  background: none;
+  border: 0;
+}
+strong {
+  font-weight: 700; line-height: 140%;
+}
+p {
+  font-size: var(--font-size-text-02); font-weight: 400;
+}
+
+/* form elements */
+form {
+  display: inline-block;
+  margin-top: 0__qem;
+  width: auto;
+}
+:-webkit-any(table, thead, tbody, tfoot, tr) > form:-internal-is-html {
+  display: none !important;
+}
+label {
+  cursor: default;
+}
+legend {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  border: none
+}
+
+.clearfix:after {
+  content: " "; 
+  display: block; 
+  clear: both;
+}
+
+.inb {
+  font-size: 0;
+}
+.inb > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+h2 {
+  font-size: var(--font-size-58); font-weight: 700;
+  line-height: 140%;
+}
+h3 {
+  font-size: var(--font-size-28); font-weight: 700;
+  line-height: 140%;
+}
+h4 {
+  font-size: var(--font-size-22); font-weight: 700;
+  line-height: 140%;
+}
+p {
+  font-size: var(--font-size-12); font-weight: 400;
+  line-height: 140%;
+}
+
+.mgT0 {
+  margin-top: 0px !important;
+}
+.mgT10 {
+  margin-top: 10px !important;
+}
+.mgT30 {
+  margin-top: 30px !important;
+}
+
+.pdT5 {
+  padding-top: 5px !important;
+}
+.pdT10 {
+  padding-top: 10px !important;
+}
+
+.fc-red {
+  color: var(--color-red);
+}
+.fc-blue {
+  color: var(--color-blue);
+}
+.fc-sky {
+  color: var(--color-sky);
+}
+
+
+
+/******************************************************************
+           input & textarea Style Css 
+***********************/
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=url], input[type=number], input[type=search], input[type=date],
+textarea {
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; 
+  outline: none; 
+  font-family: sans-serif;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* PLACEHOLDER */
+::-webkit-input-placeholder { color: #aaa; }
+     :-ms-input-placeholder { color: #aaa; }
+         ::-moz-placeholder { color: #aaa; }
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { color: transparent; }
+          input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { color: transparent; }
+                  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { color: transparent; }
+
+input {
+  vertical-align: middle;
+  outline: none; border:none;
+  border-radius: 0;
+}
+input:focus {
+  border-color: var(--color-point);
+}
+.input01 {
+  width: 100%; height: 58px; line-height: 58px;
+  border:1px solid var(--color-light-gray); border-radius: 3px;
+  background-color: var(--color-white);
+  padding:0 5%;
+  font-size: var(--font-size-15); font-weight: 400;
+}
+.input02 {
+  width: 100%; height: 38px; line-height: 38px;
+  border:1px solid var(--color-light-gray); border-radius: 3px;
+  background-color: var(--color-white);
+  padding:0 15px;
+  font-size: var(--font-size-13); font-weight: 400;
+}
+
+
+/******************************************************************
+           checkbox Style Css 
+***********************/
+.choice-round input, .choice-circle input {
+  display: none;
+}
+.choice-round, .choice-circle {
+  position: relative;
+  user-select: none;
+}
+.choice-round label, .choice-circle label{
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 300;
+  padding-left: 35px;
+}
+/***************************************** circle */
+.choice-circle span.box {
+  display: inline-block;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--color-light-gray);
+  vertical-align: middle;
+  transition: 0.3s ease;
+  position: absolute; left: 0;
+  padding: 0;
+}
+.choice-circle span.box:before, .choice-circle span.box:after {
+  content: "";
+  position: absolute;
+  width: 2px; height: 9px;
+  background: var(--color-light-gray);
+  transition: all 0.3s ease;
+}
+.choice-circle span.box:before {
+  transform: rotate(45deg) translateY(-3px) translateX(11px);
+}
+.choice-circle span.box:after {
+  height: 6px;
+  transform: rotate(-45deg) translateY(10px) translateX(-2px);
+}
+.choice-circle input:checked + label span.box {
+  border-color: var(--color-red);
+}
+.choice-circle input:checked + label span.box:before {
+  transform: rotate(45deg) translateY(-3px) translateX(11px);
+  background-color: var(--color-red);
+}
+.choice-circle input:checked + label span.box:after {
+  height: 6px;
+  transform: rotate(-45deg) translateY(10px) translateX(-2px);
+  background-color: var(--color-red);
+}
+.choice-circle input:disabled:checked + span.box {
+  background: var(--color-light-gray);
+  border: var(--color-light-gray);
+}
+.choice-circle input:disabled:checked ~ label:before, .choice-circle input:disabled:checked ~ label:after,
+.choice-round input:disabled:checked ~ label:before, .choice-round input:disabled:checked ~ label:after {
+  background: var(--color-black);
+}
+/***************************************** round */
+.choice-round span.box {
+  display: inline-block;
+  width: 25px; height: 25px;
+  border-radius: 3px;
+  border: 1px solid var(--color-light-gray);
+  vertical-align: middle;
+  transition: 0.3s ease;
+  position: absolute; left: 0;
+  padding: 0px;
+}
+.choice-round span.box:before, .choice-round span.box:after {
+  content: "";
+  position: absolute;
+  width: 2px; height: 12px;
+  background: var(--color-light-gray);
+  transition: all 0.3s ease;
+}
+.choice-round span.box:before {
+  transform: rotate(45deg) translateY(-5px) translateX(16px);
+}
+.choice-round span.box:after {
+  height: 8px;
+  transform: rotate(-45deg) translateY(14px) translateX(-3px);
+}
+.choice-round input:checked + label span.box {
+  border-color: var(--color-red);
+}
+.choice-round input:checked + label span.box:before {
+  transform: rotate(45deg) translateY(-5px) translateX(16px);
+  background-color: var(--color-red);
+}
+.choice-round input:checked + label span.box:after {
+  height: 8px;
+  transform: rotate(-45deg) translateY(14px) translateX(-3px);
+  background-color: var(--color-red);
+}
+.choice-round input:disabled:checked + span.box {
+  background: var(--color-light-gray);
+  border: var(--color-light-gray);
+}
+
+
+/******************************************************************
+           selectBox Style Css 
+***********************/
+
+select { 
+  border-radius:0;          /* 아이폰 사파리 보더 없애기 */
+  /* 네이티브 외형 감추기 */ 
+  -webkit-appearance:none;  /* 화살표 없애기 for chrome*/ 
+     -moz-appearance:none;  /* 화살표 없애기 for firefox*/ 
+          appearance:none;  /* 화살표 없애기 공통*/
+  background: url('') no-repeat 95% 50%;  /* 화살표 모양의 이미지 */ 
+  background-size: 0;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand { 
+  display: none;
+}
+
+select {
+  padding: 0 0 1px;
+  border: 0; border-radius: 0;
+  width: 100%; height: 100%;
+  font-weight: 400;
+  cursor: pointer;
+}
+select:focus, select:active {
+  outline: 0;
+  border-color: var(--color-point);
+}
+.select-box {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%; height: 58px; line-height: 56px;
+  background-color: var(--color-white);
+  border-radius: 3px; border: 1px solid var(--color-light-gray);
+  cursor: pointer;
+}
+.select-box:before {
+  content: '';
+  width: 35px;
+  position: absolute; top: 0px; right: 0px; bottom: 0px;
+  background: var(--color-snow);
+  border-radius: 0 5px 5px 0;
+  pointer-events: none;
+}
+.select-box:after {
+  content: '';
+  position: absolute; top: 0; right: 11px; bottom: 0;
+  width: 12px; height: 12px;
+  background: var(--color-deep-gray);
+  -webkit-mask: url('/new2023/img/sub/icon-arrow.svg?e') no-repeat center;
+          mask: url('/new2023/img/sub/icon-arrow.svg?e') no-repeat center;
+  -webkit-mask-size: cover; mask-size: cover;
+  margin: auto;
+  pointer-events: none;
+}
+.select-box:hover {
+  border: 1px solid var(--color-point);
+}
+.select-box:hover:after {
+  background: var(--color-point);
+}
+
+
+
+
+/******************************************************************
+           root Style Css 
+***********************/
+:root {
+  /* color style */
+  --color-point: #0B69F6;
+  --color-white: #fff;
+  --color-black: #151515;
+  --color-fontColor: #050505;
+  --color-fontGray: #656565;
+  --color-dark-gray: #252525;
+  --color-deep-gray: #555555;
+  --color-gray: #8F8F8F;
+  --color-silver: #AEAEAE;
+  --color-light-gray: #DEDEDE;
+  --color-light-silver: #EFEFEF;
+  --color-snow: #F2F2F2;
+  --color-deep-red: #BC1601;
+  --color-dark-red: #C73232;
+  --color-red: #FE3B1F;
+  --color-coral: #FF6D6D;
+  --color-orange: #FF9015;
+  --color-yellow: #FCE200;
+  --color-blue: #0B69F6;
+  --color-sky: #00A0DF;
+  --color-turquoise: #23FFF2;
+  --color-navy: #2E408E;
+
+  /* widht */
+  --width-first: 100%;
+  --width-second: 49%;
+  --width-third: 32%;
+
+  /* font size style */
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-15: 15px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-38: 38px;
+  --font-size-42: 42px;
+  --font-size-48: 48px;
+  --font-size-58: 58px;
+  --font-size-68: 68px;
+
+  /* font family style */
+  --font-family-noto: 'Noto Sans KR', sans-serif;
+  --font-family-nanmSq: 'NanumSquare', sans-serif;
+  --font-family-malgun: 'Malgun Gothic', "맑은고딕",sans-serif;
+
+  /* Height Row size style */
+  --width-1: 1rem;
+  --height-55: .55rem;
+}
+
+/*********************************************************************************************
+              Mobile Style css
+                        *** 500미만 style ***
+*****************************/
+@media only screen and (max-width:1024px) and (min-width:280px){
+  /********************** tablet 해상도 공통 css */
+  body {
+    min-width: 100%;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  /* root style */
+  :root {
+    /* font size style */
+    --font-size-12: .75rem;
+    --font-size-13: .825rem;
+    --font-size-15: .9375rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-22: 1.375rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 1.85rem;
+    --font-size-38: 2rem;
+    --font-size-48: 2.125rem;
+    --font-size-58: 2.25rem;
+    --font-size-68: 2.55rem;
+  }
+  .input01 {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: var(--font-size-15);
+    font-weight: 400;
+  }
+  .select-box {
+    width: 100%; height: 38px; line-height: 36px;
+  }
+  .input02 {
+    padding: 0 .625rem;
+  }
+  .select-box select {
+    padding-left: .625rem;
+  }
+}
+
+
+@media only screen and (max-device-width: 999px) {
+  body { height: calc(100vh - 50px); }
+}
