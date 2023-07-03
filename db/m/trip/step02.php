@@ -69,8 +69,8 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 		
 		list($cal_age,$term_year) = age_cal($start_date,$birth_date);	// cal_age 보험나이, term_year 만나이.
 		
-		if ($cal_age > 100) {
-		    $cal_age=100;
+		if ($cal_age > 99) {
+		    $cal_age=99;
 		}
 		
 		if ($tripType=="2") {
@@ -84,8 +84,10 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 				}
 			} elseif ($cal_age >= 70 && $cal_age <= 79) {
 				$cal_type="3";
-			} elseif ($cal_age >= 80) {
+			} elseif ($cal_age >= 80 && $cal_age <= 89) {
 				$cal_type="4";
+			} elseif ($cal_age >= 90) {
+				$cal_type="5";
 			}
 		} elseif ($tripType=="1") {
 			if ($cal_age >= 0 && $cal_age <= 14) {
@@ -111,7 +113,7 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 $cal_type_query=implode( ',', array_unique($cal_type_array) );
 
 // 고급형(3), 표준형(2), 실속형(1)
-$sql="select plan_title, left(MIN(plan_type),1) as plan_type_src from plan_code_hana where company_type=4 and member_no='".$site_config_member_no
+$sql="select plan_title, left(MIN(cast(plan_type AS UNSIGNED)),1) as plan_type_src from plan_code_hana where company_type=4 and member_no='".$site_config_member_no
 	."' and trip_type='".$tripType
 	."' and cal_type in (".$cal_type_query.") group by plan_title order by plan_type desc";
 $result=mysql_query($sql, $conn);

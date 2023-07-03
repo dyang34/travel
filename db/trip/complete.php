@@ -28,7 +28,7 @@ $apply_no = getApplyNo($row_check["company_type"],$row_check["regdate"],$row_che
 			<h2>여행자 보험 가입이 완료되었습니다.</h2>
 			<p>여행자 보험 가입 완료</p>
 
-			<a href="../" class="button red">확인</a>
+			<a href="./step0101.php" class="button next-btn">확인</a>
 		</div>
 	</div>
 <?php

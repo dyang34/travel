@@ -225,7 +225,7 @@ $url = $site_ssl."://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 <input type="hidden" name="PayUrl"> 
 <input type="hidden" id="pay_method" name="pay_method" value="CARD" readonly>
 <input type="hidden" name="ordr_idxx" value="<?=$o_num?>" maxlength="40"/>
-<input type="hidden" name="good_name" value="유다이렉트(DB손해보험(주)) 여행자보험"/>
+<input type="hidden" name="good_name" value="유다이렉트(DB손보) 여행자보험"/>
 <input type="hidden" name="good_mny" value="<?=$_SESSION["travel_step"]["2"]["sum_price"]?>" maxlength="9"/>
 <input type="hidden" name="buyr_name" value="<?=stripslashes($_SESSION["travel_step"]["1"]["member"][0]["name"])?>"/>
 <input type="hidden" name="buyr_mail" value="" maxlength="30">

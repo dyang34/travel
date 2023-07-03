@@ -133,7 +133,7 @@ $sql_tmp="insert into hana_plan_tmp set
 			join_cnt='".count($_SESSION["travel_step"]["1"]["member"])."',
 			plan_type='".$plan_type."',
 			referer_type='1',
-			company_type = 2,
+			company_type = 4,
 			regdate='".time()."'
 ";	
 
@@ -149,7 +149,7 @@ for($i=0;$i<count($arrMember);$i++) {
 	$sql_price="select a.plan_code, price, b.plan_title, b.plan_title_src from plan_code_price_hana a 
 				left join plan_code_hana b 
 				on a.plan_code = b.plan_code and a.company_type = b.company_type and a.member_no = b.member_no and a.trip_type = b.trip_type 
-				where a.company_type=2 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
+				where a.company_type=4 and a.member_no='".$site_config_member_no."' and a.trip_type='".$tripType."' 
 				and a.plan_type like '%".$plan_type."%' and b.cal_type = '".$arrMember[$i]["cal_type"]."' and sex = '".$arrMember[$i]["gender"]."' 
 				and age = '".$arrMember[$i]["cal_age"]."' and term_day >= '".$term_day."' order by term_day asc limit 1";
 

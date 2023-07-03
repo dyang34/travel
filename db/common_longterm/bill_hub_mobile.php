@@ -371,7 +371,7 @@
 									tno='".$tno."',
 									app_no='".$app_no."',
                                     is_mobile='1',
-                                    company_type = 2,
+                                    company_type = 6,
                                     referer_type='".$row_check['referer_type']."',
 									regdate='".time()."'
 								";	
@@ -465,7 +465,7 @@ https://".$_SERVER['HTTP_HOST']."/travel/db/m/check/check.php
 												in_price='".$all_price."',
 												change_date='',
 												com_percent='".$com_percent."',
-                                                company_type = 2,
+                                                company_type = 6,
 												regdate='".time()."'
 												";
 						mysql_query($sql_insert_change);
