@@ -95,13 +95,19 @@ if ($pageStepNo <= 4) {
             <img src="/img/logo_meritz.png" alt="로고">
 <?php
           } else {
+			if (strpos(getcwd() , "trip_longterm") == true) {
+?>
+            <img src="/travel/meritz/image/common/hd_logo.png" alt="현대해상 로고">
+<?php
+				}else{
 ?>
             <img src="/travel/meritz/image/common/logo-meritz-row.png" alt="메리츠화재 로고">
-<?php
-          }
+<?
+			}
+}
 ?>				
 				<span></span>
-				<img src="/travel/meritz/image/common/logo-direct_left.png?t" alt="U 다이렉트 로고">
+				<img src="/travel/meritz/image/common/Udirect-logo-sm.png?e" alt="유다이렉트 로고">
 			</li>
 			<li class="text">유다이렉트 고객센터</li>
 			<li class="tel">1800-9010</li>

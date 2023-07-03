@@ -98,7 +98,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- /** header start -->
     <header>
         <h1>
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
             <a href="/travel/db/index.php">
+<?php
+  }            
+?>
+
                 <span>
     <?php
             if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo_meritz.png")) {
@@ -112,33 +119,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
     ?>
                 </span>
-            </a>
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
+              </a>
+<?php
+  }            
+?>
+
             <span class="multiply"><img src="/travel/db/image/common/icon-multiply.png?e" alt="icon multiply"></span>
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
             <a href="https://udirect.co.kr/">
                 <span><img src="/travel/db/image/common/Uudirect.png?e" alt="다이렉트 로고"></span>
             </a>
+<?php
+  } else {
+?>
+                <span><img src="/travel/db/image/common/Uudirect.png?e" alt="다이렉트 로고"></span>
+<?php
+  }            
+?>
         </h1>
         <nav>
         <ul class="clearfix inb">
             <li class="menu02"><a href="/travel/db/trip/step0101.php">보험료 계산/가입</a></li>
             <li class="menu03 <?=($mNum==3)?"active":""?>"><a href="/travel/db/check/check.php">가입조회</a></li>
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
             <li class="menu01 <?=($mNum==1)?"active":""?>"><a href="/travel/db/life/life_list.php">라이프</a></li>
             <li class="menu04 <?=($mNum==4)?"active":""?>"><a href="/travel/db/service/faq.php">FAQ</a></li>
+<?php
+  }
+?>  
         </ul>
         </nav>
-      <div class="mobile-gnb" onclick="openNav()">
-		    <span></span>
-      </div>
-      <div id="Sidenav" class="sidenav">
-        <div class="close-box">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		</div>
-        <ul class="gnb">
-          <li><a href="/travel/db/trip/step0101.php" class="">보험료 계산/가입</a></li>
-          <li><a href="/travel/db/check/check.php" class="">가입조회</a></li>
-          <li><a href="/life/life-list.php" class="">라이프</a></li>
-          <li><a href="/travel/db/service/faq.php" class="">FAQ</a></li>
-        </ul>
-      </div>
     </header>
     <!-- header end **/ -->

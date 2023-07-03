@@ -67,12 +67,6 @@ if ($_GET["adm_show_session"]=="Y") {
 	<!-- mobile CSS -->
 	<link rel="stylesheet" type="text/css" href="/travel/db/css/mobile.css?v=<?=time()?>">
 
-<?/*
-	
-	<script src="http://code.jquery.com/jquery.min.js?v=<?=time()?>"></script>
-	<script src="../js/jquery-ui.min.js?v=<?=time()?>"></script>
-*/?>
-
 	<script type="text/javascript" src="/travel/db/js/jquery-3.6.1.min.js?v=<?=time()?>"></script>
 	<script type="text/javascript" src="/travel/db/js/jquery-ui.min.js?v=<?=time()?>"></script>
 	<script type="text/javascript" src="/travel/db/js/script.js?v=<?=time()?>"></script>
@@ -99,6 +93,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="head-wrap">
             <h1>여행자보험 가입</h1>
 			<div class="end-btn">
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
 				<a href="/travel/db/" class="link-end">종료 <i class="icon-end"></i></a>
+<?php
+	} else {
+?>
+				<a href="/travel/db/check/check.php" class="button search">가입조회</a>
+				<?php		
+	}
+?>	
 			</div>
         </div>
