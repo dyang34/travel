@@ -278,23 +278,31 @@ if ($tripType=="2") {
 												<label for="chk3_3_n">동의안함</label>
 											</span>
 										</li>
-
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
 										<!-- 마케팅 활용 start -->
-										<li style="display:none;">
+										<li>
 											<span>- 마케팅 활용을 위한 개인정보 수집 및 이용 동의 (선택)</span>
 										</li>
-										<li class="choice" style="display:none;">
+										<li class="choice">
 											<span class="choiceChk first">
-												<input type="radio" id="check_type_marketing_y" name="check_type_marketing" class="cls_chk_T cls_chk3_T" value="Y" <?=$_SESSION["travel_step"][4]["check_type_marketing"]=="Y"?"checked='checked'":""?>>
+												<input type="radio" id="check_type_marketing_y" name="check_type_marketing" class="cls_chk cls_chk3" value="Y" <?=$_SESSION["travel_step"][4]["check_type_marketing"]=="Y"?"checked='checked'":""?>>
 												<label for="check_type_marketing_y">동의</label>
 											</span>
 											<span class="choiceChk second">
-												<input type="radio" id="check_type_marketing_n" name="check_type_marketing" class="cls_chk_T cls_chk3_T" value="N" <?=$_SESSION["travel_step"][4]["check_type_marketing"]!="Y"?"checked='checked'":""?>>
+												<input type="radio" id="check_type_marketing_n" name="check_type_marketing" class="cls_chk cls_chk3" value="N" <?=$_SESSION["travel_step"][4]["check_type_marketing"]!="Y"?"checked='checked'":""?>>
 												<label for="check_type_marketing_n">동의안함</label>
 											</span>
 										</li>
 										<!-- 마케팅 활용 start -->
-
+<?php
+	} else {
+?>
+										<input type="hidden" name="check_type_marketing" value="N" />
+<?php		
+	}
+?>	
 									</ul>
 								</dd>
 							</dl>

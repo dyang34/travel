@@ -223,7 +223,9 @@ if ($tripType=="2") {
 						</div>
 						<div class="terms-list">
 							<dl>
-								<dt>개인정보 처리 및 단체가입규약 동의</dt>
+								<dt>개인정보 처리 및 단체가입규약 동의
+									<span></span>
+								</dt>
 								<dd>
 									<ul>
 										<li>
@@ -267,7 +269,9 @@ if ($tripType=="2") {
 												<label for="chk3_3_n">동의안함</label>
 											</span>
 										</li>
-										
+<?php
+	if(_UDIRECT_SUBSITE_USE_TYPE != 2) {
+?>
 										<li>
 											<span>- 마케팅 활용을 위한 개인정보 수집 및 이용 동의 (선택)</span>
 										</li>
@@ -281,6 +285,13 @@ if ($tripType=="2") {
 												<label for="check_type_marketing_n">동의안함</label>
 											</span>
 										</li>
+<?php
+	} else {
+?>
+										<input type="hidden" name="check_type_marketing" value="N" />
+<?php		
+	}
+?>
 									</ul>
 								</dd>
 							</dl>
@@ -294,11 +305,11 @@ if ($tripType=="2") {
 <?php
 if ($tripType=="2") {
 ?>
-								<a href="/travel/db/files/overseas.pdf" class="button red-line" target="_blank">해외여행보험약관 다운로드</a>
+								<a href="/travel/db/files/overseas.pdf" class="button lineBtn" target="_blank">해외여행보험약관 다운로드</a>
 <?php
 } else {
 ?>
-								<a href="/travel/db/files/domestic.pdf" class="button red-line" target="_blank">국내여행보험약관 다운로드</a>
+								<a href="/travel/db/files/domestic.pdf" class="button lineBtn" target="_blank">국내여행보험약관 다운로드</a>
 <?php	
 }
 ?>							
@@ -326,7 +337,7 @@ if ($tripType=="2") {
 						<a href="#" class="button gray" name="btnBack">이전</a>
 					</li>
 					<li>
-						<a href="#" class="button red" name="btnNext">최종 확인 및 결제</a>
+						<a href="#" class="button next-btn" name="btnNext">최종 확인 및 결제</a>
 					</li>
 				</ul>
 			</div>
