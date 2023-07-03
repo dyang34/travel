@@ -223,7 +223,7 @@ if ($tripType=="2") {
 						</div>
 						<div class="terms-list">
 							<dl>
-								<dt>개인정보 처리 및 단체가입규약 동의</dt>
+								<dt>개인정보 처리 및 단체가입규약 동의<span></span></dt>
 								<dd>
 									<ul>
 										<li>
