@@ -94,38 +94,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   
-  <div id="wrap">
+<div id="wrap">
     <!-- /** header start -->
     <header>
-      <h1>
-        <a href="/travel/db/index.php">
-          <span>
-<?php
-          if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo_meritz.png")) {
-?>
-            <img src="/img/logo_meritz.png" alt="로고">
-<?php
-          } else {
-?>
-            <img src="/travel/db/image/common/logo-meritz-row.png" alt="DB손보(주) 로고">
-<?php
-          }
-?>
-          </span>
-          <span><img src="/travel/db/image/common/icon-multiply.png" alt="icon multiply"></span>
-        </a>
-        <a href="https://udirect.co.kr/">
-          <span><img src="/travel/db/image/common/logo-direct.png" alt="유다이렉트 로고"></span>
-        </a>
-      </h1>
-      <nav>
+        <h1>
+            <a href="/travel/db/index.php">
+                <span>
+    <?php
+            if(file_exists($_SERVER['DOCUMENT_ROOT']."/img/logo_meritz.png")) {
+    ?>
+                    <img src="/img/logo_meritz.png" alt="로고">
+    <?php
+            } else {
+    ?>
+                    <img src="/travel/db/image/common/logo-meritz-row.png" alt="DB손보(주) 로고">
+    <?php
+            }
+    ?>
+                </span>
+            </a>
+            <span class="multiply"><img src="/travel/db/image/common/icon-multiply.png?e" alt="icon multiply"></span>
+            <a href="https://udirect.co.kr/">
+                <span><img src="/travel/db/image/common/Uudirect.png?e" alt="다이렉트 로고"></span>
+            </a>
+        </h1>
+        <nav>
         <ul class="clearfix inb">
-          <li class="menu02"><a href="/travel/db/trip/step0101.php">보험료 계산/가입</a></li>
-		  <li class="menu03 <?=($mNum==3)?"active":""?>"><a href="/travel/db/check/check.php">가입조회</a></li>
-          <li class="menu01 <?=($mNum==1)?"active":""?>"><a href="/travel/db/life/life_list.php">라이프</a></li>
-          <li class="menu04 <?=($mNum==4)?"active":""?>"><a href="/travel/db/service/faq.php">FAQ</a></li>
+            <li class="menu02"><a href="/travel/db/trip/step0101.php">보험료 계산/가입</a></li>
+            <li class="menu03 <?=($mNum==3)?"active":""?>"><a href="/travel/db/check/check.php">가입조회</a></li>
+            <li class="menu01 <?=($mNum==1)?"active":""?>"><a href="/travel/db/life/life_list.php">라이프</a></li>
+            <li class="menu04 <?=($mNum==4)?"active":""?>"><a href="/travel/db/service/faq.php">FAQ</a></li>
         </ul>
-      </nav>
+        </nav>
       <div class="mobile-gnb" onclick="openNav()">
 		    <span></span>
       </div>
