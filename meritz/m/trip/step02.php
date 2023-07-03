@@ -111,7 +111,7 @@ for ($i=0;$i<count($_SESSION["travel_step"]["1"]["member"]);$i++) {
 $cal_type_query=implode( ',', array_unique($cal_type_array) );
 
 // 고급형(3), 표준형(2), 실속형(1)
-$sql="select plan_title, left(MIN(plan_type),1) as plan_type_src from plan_code_hana where company_type=2 and member_no='".$site_config_member_no
+$sql="select plan_title, left(MIN(cast(plan_type AS UNSIGNED)),1) as plan_type_src from plan_code_hana where company_type=2 and member_no='".$site_config_member_no
 	."' and trip_type='".$tripType
 	."' and cal_type in (".$cal_type_query.") group by plan_title order by plan_type desc";
 $result=mysql_query($sql, $conn);
