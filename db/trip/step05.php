@@ -176,7 +176,7 @@ require_once $SYS_ROOT_DIR."/travel/db/bill_kcp/cfg/site_conf_inc.php";
 
 <input type="hidden" id="pay_method" name="pay_method" value="100000000000" readonly>
 <input type="hidden" name="ordr_idxx" value="<?=$o_num?>" maxlength="40" readonly/>
-<input type="hidden" name="good_name" value="유다이렉트(메리츠) 여행자보험" readonly/>
+<input type="hidden" name="good_name" value="유다이렉트(DB손보) 여행자보험" readonly/>
 <input type="hidden" name="good_mny" value="<?=$_SESSION["travel_step"]["2"]["sum_price"]?>" maxlength="9" readonly/>
 <input type="hidden" name="buyr_name" value="<?=stripslashes($_SESSION["travel_step"]["1"]["member"][0]["name"])?>" readonly/>
 <input type="hidden" name="buyr_mail" value="" maxlength="30" readonly>

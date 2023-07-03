@@ -116,11 +116,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<img src="/travel/db/m/image/common/logo-meritz-row.png" alt="DB손해보험(주) 로고">
 <?php
 		  }
-?>				
-				<span><img src="/travel/db/m/image/common/icon-multiply.png" alt="x"></span>
+?>
 			</a>
+			<span><img src="/travel/db/m/image/common/icon-multiply.png" alt="x"></span>
 			<a <?=_UDIRECT_SUBSITE_USE_TYPE!=2?"href='https://udirect.co.kr/'":""?>>
-				<img src="/travel/db/m/image/common/logo-direct.png" alt="다이렉트 여행자 보험 로고">
+				<img src="/travel/db/image/common/Uudirect.png" alt="다이렉트 로고">
+				<!-- <img src="/travel/db/m/image/common/logo-direct.png" alt="다이렉트 로고"> -->
 			</a>
 			</h1>
 			<div class="icon-list" onclick="openNav()">
@@ -141,7 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ?>
 					</a>
 					<a <?=_UDIRECT_SUBSITE_USE_TYPE!=2?"href='https://udirect.co.kr/'":""?>>	
-						<img src="/travel/db/m/image/common/logo-direct-white.png?v=<?=filemtime($_SERVER['DOCUMENT_ROOT']."/travel/db/m/image/common/logo-direct-white.png")?>" alt="유라이프 로고">
+						<img src="/travel/db/image/common/Uudirect-white.png?v=<?=filemtime($_SERVER['DOCUMENT_ROOT']."/travel/db/image/common/Uudirect-white.png?e")?>" alt="유다이렉트 로고" class="allmenu">
 					</a>
 
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/travel/db/m/image/common/icon-X.png" alt="DB손해보험(주) 로고"></a>

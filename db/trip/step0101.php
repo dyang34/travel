@@ -146,7 +146,7 @@ require_once $SYS_ROOT_DIR."/travel/db/include/leftmenu_trip.php";
 			</div>
 
 			<div class="button-right-area">
-				<a href="#" class="button red" name="btnNext">다음</a>
+				<a href="#" class="button next-btn" name="btnNext">다음</a>
 			</div>
 		</div>
 	</div>

@@ -17,7 +17,7 @@ if ($pageStepNo < 1) {
 				<ul>
 					<li class="type-dot">여행지 : <?=$_SESSION["travel_step"]["1"]["nation_search"]?></li>
 					<li class="type-dot">여행 목적 : <?=$trip_purpose_array[$_SESSION["travel_step"]["1"]["trip_purpose"]]?></li>
-					<li class="purpose"><?=$_SESSION["travel_step"]["1"]["start_date"]?> ~ <?=$_SESSION["travel_step"]["1"]["end_date"]?></li>
+					<li class="purpose"><?=$_SESSION["travel_step"]["1"]["start_date"]." ".$_SESSION["travel_step"]["1"]["start_hour"]."시"?> ~ <?=$_SESSION["travel_step"]["1"]["end_date"]." ".$_SESSION["travel_step"]["1"]["end_hour"]."시"?></li>
 <?php
 		if ($pageStepNo > 1) {
 ?>

@@ -14,7 +14,7 @@
 						</h3>
 						<p class="first">여행지 : <?=$_SESSION["travel_step"]["1"]["nation_search"]?></p>
 						<p>여행 목적 : <?=$trip_purpose_array[$_SESSION["travel_step"]["1"]["trip_purpose"]]?></p>
-						<p>여행 기간 : <?=$_SESSION["travel_step"]["1"]["start_date"]?> ~ <?=$_SESSION["travel_step"]["1"]["end_date"]?></p>
+						<p>여행 기간 : <?=$_SESSION["travel_step"]["1"]["start_date"]." ".$_SESSION["travel_step"]["1"]["start_hour"]."시"?> ~ <?=$_SESSION["travel_step"]["1"]["end_date"]." ".$_SESSION["travel_step"]["1"]["end_hour"]."시"?></p>
 <?/*						
 						<p>가입 유형 : <?=$_SESSION["travel_step"]["1"]["trip_group_type"]=="1"?"개인":"단체"?></p>
 */?>						

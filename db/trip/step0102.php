@@ -108,7 +108,7 @@ if (count($_SESSION['travel_step'][1]['member']) > 1) {
 			<div class="button-area">
 				<ul>
 					<li><a href="#" class="button gray" name="btnBack">이전</a></li>
-					<li><a href="#" class="button red" name="btnNext">다음</a></li>
+					<li><a href="#" class="button next-btn" name="btnNext">다음</a></li>
 				</ul>
 			</div>
 		</div>
