@@ -215,7 +215,7 @@ for($i=0;$i<count($arrPlanList);$i++) {
 		for($i_cal_type=0;$i_cal_type<count($arrPlanList[$i]['plan_list']);$i_cal_type++) {
 
 ?>
-							<th><?=$arrPlanList[$i]['plan_list'][$i_cal_type]['plan_start_age']?> ~ <?=$arrPlanList[$i]['plan_list'][$i_cal_type]['plan_end_age']?>세</th>
+							<th><?=$arrPlanList[$i]['plan_list'][$i_cal_type]['plan_start_age']?>~ <?=$arrPlanList[$i]['plan_list'][$i_cal_type]['plan_end_age']?>세</th>
 <?php
 		}
 ?>
